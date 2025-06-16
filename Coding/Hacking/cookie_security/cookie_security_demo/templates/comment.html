@@ -1,0 +1,10 @@
+<h3>Post Comment</h3>
+<form method="post">
+  <textarea name="comment"></textarea>
+  <button>Post</button>
+</form>
+
+<h4>All Comments:</h4>
+{% for c in comments %}
+  <p>{{ c|safe }}</p>
+{% endfor %}
