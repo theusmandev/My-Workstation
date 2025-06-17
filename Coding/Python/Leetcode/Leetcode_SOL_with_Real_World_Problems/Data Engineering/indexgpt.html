@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkedIn Post Formatter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #preview {
+      white-space: pre-wrap;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl">
+    <h1 class="text-2xl font-bold text-center mb-4">LinkedIn Post Formatter</h1>
+    <p class="text-gray-600 text-center mb-4">Type your text here, apply formatting, and copy it for LinkedIn.</p>
+
+    <div class="mb-4">
+      <textarea id="inputText" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="6" placeholder="Enter your LinkedIn post here..."></textarea>
+      <p class="text-sm text-gray-500 mt-2">Characters: <span id="charCount">0</span>/3000</p>
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+      <button onclick="applyFormatting('bold')" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Bold</button>
+      <button onclick="applyFormatting('italic')" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Italic</button>
+      <button onclick="copyToClipboard()" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Copy Text</button>
+    </div>
+
+    <div class="mt-4">
+      <h2 class="text-lg font-semibold">Preview:</h2>
+      <div id="preview" class="w-full p-3 border rounded-lg bg-gray-50">Your formatted text will appear here...</div>
+    </div>
+
+    <p class="text-sm text-gray-500 mt-4">Note: This uses Unicode characters to mimic bold and italic on LinkedIn. These won't appear in searches and may not be accessible to screen readers. Use sparingly.</p>
+  </div>
+
+  <script>
+    const unicodeMap = {
+      bold: {
+        'a': '𝗮', 'b': '𝗯', 'c': '𝗰', 'd': '𝗱', 'e': '𝗲', 'f': '𝗳', 'g': '𝗴', 'h': '𝗵', 'i': '𝗶', 'j': '𝗷',
+        'k': '𝗸', 'l': '𝗹', 'm': '𝗺', 'n': '𝗻', 'o': '𝗼', 'p': '𝗽', 'q': '𝗾', 'r': '𝗿', 's': '𝘀', 't': '𝘁',
+        'u': '𝘂', 'v': '𝘃', 'w': '𝘄', 'x': '𝘅', 'y': '𝘆', 'z': '𝘇',
+        'A': '𝗔', 'B': '𝗕', 'C': '𝗖', 'D': '𝗗', 'E': '𝗘', 'F': '𝗙', 'G': '𝗚', 'H': '𝗛', 'I': '𝗜', 'J': '𝗝',
+        'K': '𝗞', 'L': '𝗟', 'M': '𝗠', 'N': '𝗡', 'O': '𝗢', 'P': '𝗣', 'Q': '𝗤', 'R': '𝗥', 'S': '𝗦', 'T': '𝗧',
+        'U': '𝗨', 'V': '𝗩', 'W': '𝗪', 'X': '𝗫', 'Y': '𝗬', 'Z': '𝗭',
+        '0': '𝟬', '1': '𝟭', '2': '𝟮', '3': '𝟯', '4': '𝟰', '5': '𝟱', '6': '𝟲', '7': '𝟳', '8': '𝟴', '9': '𝟵'
+      },
+      italic: {
+        'a': '𝘢', 'b': '𝘣', 'c': '𝘤', 'd': '𝘥', 'e': '𝘦', 'f': '𝘧', 'g': '𝘨', 'h': '𝘩', 'i': '𝘪', 'j': '𝘫',
+        'k': '𝘬', 'l': '𝘭', 'm': '𝘮', 'n': '𝘯', 'o': '𝘰', 'p': '𝘱', 'q': '𝘲', 'r': '𝘳', 's': '𝘴', 't': '𝘵',
+        'u': '𝘶', 'v': '𝘷', 'w': '𝘸', 'x': '𝘹', 'y': '𝘺', 'z': '𝘻',
+        'A': '𝘈', 'B': '𝘉', 'C': '𝘊', 'D': '𝘋', 'E': '𝘌', 'F': '𝘍', 'G': '𝘎', 'H': '𝘏', 'I': '𝘐', 'J': '𝘑',
+        'K': '𝘒', 'L': '𝘓', 'M': '𝘔', 'N': '𝘕', 'O': '𝘖', 'P': '𝘗', 'Q': '𝘘', 'R': '𝘙', 'S': '𝘚', 'T': '𝘛',
+        'U': '𝘜', 'V': '𝘝', 'W': '𝘞', 'X': '𝘟', 'Y': '𝘠', 'Z': '𝘡'
+      }
+    };
+
+    function applyFormatting(style) {
+      const textarea = document.getElementById('inputText');
+      const start = textarea.selectionStart;
+      const end = textarea.selectionEnd;
+      const selectedText = textarea.value.substring(start, end);
+
+      if (!selectedText) {
+        alert('Please select text first!');
+        return;
+      }
+
+      let formattedText = '';
+      for (let char of selectedText) {
+        const newChar = unicodeMap[style][char] || char;
+        formattedText += newChar;
+      }
+
+      const newText = textarea.value.substring(0, start) + formattedText + textarea.value.substring(end);
+      textarea.value = newText;
+      updatePreview(newText);
+      updateCharCount(newText.length);
+    }
+
+    function updatePreview(text) {
+      const preview = document.getElementById('preview');
+      preview.textContent = text || 'Your formatted text will appear here...';
+    }
+
+    function updateCharCount(count) {
+      document.getElementById('charCount').textContent = count;
+    }
+
+    async function copyToClipboard() {
+      const textarea = document.getElementById('inputText');
+      try {
+        await navigator.clipboard.writeText(textarea.value);
+        alert('Text copied to clipboard!');
+      } catch (err) {
+        console.error('Copy failed:', err);
+        alert('Failed to copy text. Please copy manually.');
+      }
+    }
+
+    document.getElementById('inputText').addEventListener('input', function () {
+      updatePreview(this.value);
+      updateCharCount(this.value.length);
+    });
+  </script>
+</body>
+</html>

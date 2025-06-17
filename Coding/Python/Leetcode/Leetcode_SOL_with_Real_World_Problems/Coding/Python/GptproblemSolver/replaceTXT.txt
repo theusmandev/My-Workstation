@@ -1,0 +1,23 @@
+T = 'ab##c#j#jfa##'         #Good
+
+# Convert the string into a list since strings are immutable
+T_list = list(T)
+
+# Use a while loop to go through the list and remove # and the previous character
+i = 0
+while i < len(T_list):
+    if T_list[i] == "#":
+        # Remove the current '#' and the previous character if it exists
+        if i > 0:
+            del T_list[i]      # Delete the '#'
+            del T_list[i-1]    # Delete the previous character
+            i -= 1  # Adjust the index after deletion
+        else:
+            del T_list[i]  # If '#' is at the beginning, just remove it
+    else:
+        i += 1  # Move to the next character if no '#' is found
+
+# Join the list back into a string
+new_string = ''.join(T_list)
+
+print(new_string)
