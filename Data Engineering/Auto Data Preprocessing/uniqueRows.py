@@ -3,7 +3,7 @@ import os
 from rapidfuzz import fuzz
 
 # Load the Excel file
-excel_input_path = r"D:\workstation\writers\Nazia kanwal nazi_sorted.xlsx"# Replace with your file path
+excel_input_path = r""# Replace with your file path
 df = pd.read_excel(excel_input_path)
 
 # Ensure 'Titles' column exists
