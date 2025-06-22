@@ -25,7 +25,7 @@ import pandas as pd
 import os
 
 # Input file path
-input_file = r"D:\workstation\writers\Nazia kanwal nazi.xlsx"
+input_file = r""
 
 # Read the Excel file
 df = pd.read_excel(input_file)
