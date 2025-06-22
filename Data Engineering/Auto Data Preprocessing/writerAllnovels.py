@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Input JSON file path
-json_file_path = r"D:\workstation\smarturdunovelbank.json"
+json_file_path = r""
 
 # Input search name
 search_name = "sairaraza" # Case-insensitive search term
