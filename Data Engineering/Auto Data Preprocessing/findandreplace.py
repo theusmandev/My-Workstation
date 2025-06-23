@@ -35,7 +35,7 @@ def find_replace_excel(input_file, find_text, replace_text):
 
 # Example usage
 if __name__ == "__main__":
-    input_file = r"D:\workstation\writers\Nabeela_aziz.xlsx"# Replace with your input file path
+    input_file = r""# Replace with your input file path
     find_text = 'Nabila aziz'       # Text to find (case-insensitive)
     replace_text = 'Nabeela Aziz'    # Replacement text
     find_replace_excel(input_file, find_text, replace_text)
