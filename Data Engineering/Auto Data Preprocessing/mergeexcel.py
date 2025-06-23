@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load both Excel files
 file1 = r""
-file2 = r"D:\workstation\writers\Nabeela aziz.xlsx"
+file2 = r""
 
 # Read the Excel files into DataFrames
 df1 = pd.read_excel(file1)
