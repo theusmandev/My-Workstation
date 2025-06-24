@@ -148,3 +148,10 @@
 2025-06-24 22:34:59,662 - INFO - Interactive visualizations generated
 2025-06-24 22:34:59,666 - INFO - Report saved to E:\Reports\backlink_eda_report.html
 2025-06-24 22:34:59,666 - INFO - Report generated successfully: E:\Reports\backlink_eda_report.html
+2025-06-24 22:44:38,642 - ERROR - Unexpected error: name 'os' is not defined
+2025-06-24 22:45:07,921 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-24 22:45:07,991 - INFO - Basic statistics generated
+2025-06-24 22:45:07,994 - INFO - Imputation suggestions generated
+2025-06-24 22:45:12,478 - INFO - Interactive visualizations generated
+2025-06-24 22:45:12,482 - INFO - Report saved to E:\Reports\backlink_eda_report.html
+2025-06-24 22:45:12,482 - INFO - Report generated successfully: E:\Reports\backlink_eda_report.html
