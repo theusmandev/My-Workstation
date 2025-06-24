@@ -44,3 +44,8 @@
 2025-06-24 15:11:13,221 - INFO - Visualizations saved
 2025-06-24 15:11:13,222 - INFO - Final report saved to E:\Reports\employees_eda_report.html
 2025-06-24 15:11:13,222 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
+2025-06-24 15:23:51,954 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 15:23:51,967 - INFO - Basic statistics generated
+2025-06-24 15:23:53,357 - INFO - Visualizations saved
+2025-06-24 15:23:53,358 - INFO - Final report saved to E:\Reports\employees_eda_report.html
+2025-06-24 15:23:53,358 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
