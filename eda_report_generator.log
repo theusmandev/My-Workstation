@@ -1,0 +1,46 @@
+2025-06-24 14:26:29,477 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:26:29,505 - ERROR - Error generating visualizations: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-06-24 14:26:29,505 - ERROR - Error: Failed to generate visualizations: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-06-24 14:26:29,506 - INFO - Cleaned up output directory E:\Reports
+2025-06-24 14:29:43,005 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:29:46,667 - ERROR - Error generating Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:29:46,668 - ERROR - Error: Failed to generate Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:29:46,669 - INFO - Cleaned up output directory E:\Reports
+2025-06-24 14:34:04,770 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:34:06,893 - ERROR - Error generating Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:34:06,893 - ERROR - Error: Failed to generate Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:34:06,895 - INFO - Cleaned up output directory E:\Reports
+2025-06-24 14:37:17,547 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:37:19,365 - ERROR - Error generating Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:37:19,366 - ERROR - Error: Failed to generate Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:37:19,367 - INFO - Cleaned up output directory E:\Reports
+2025-06-24 14:39:42,196 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:39:44,299 - ERROR - Error generating Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:39:44,300 - ERROR - Error: Failed to generate Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:39:44,302 - INFO - Cleaned up output directory E:\Reports
+2025-06-24 14:43:30,356 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:43:32,313 - ERROR - Error generating Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:43:32,314 - ERROR - Error: Failed to generate Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:43:32,315 - INFO - Cleaned up output directory E:\Reports
+2025-06-24 14:46:54,766 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:46:54,791 - INFO - Basic statistics generated
+2025-06-24 14:46:56,153 - INFO - Visualizations saved
+2025-06-24 14:46:56,951 - ERROR - Error generating Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:46:56,952 - ERROR - Error: Failed to generate Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:46:56,953 - INFO - Cleaned up output directory E:\Reports
+2025-06-24 14:48:47,710 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:48:47,737 - INFO - Basic statistics generated
+2025-06-24 14:48:49,114 - INFO - Visualizations saved
+2025-06-24 14:48:49,869 - ERROR - Error generating Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:48:49,869 - ERROR - Error: Failed to generate Sweetviz report: module 'numpy' has no attribute 'VisibleDeprecationWarning'
+2025-06-24 14:48:49,871 - INFO - Cleaned up output directory E:\Reports
+2025-06-24 14:51:38,614 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 14:51:38,637 - INFO - Basic statistics generated
+2025-06-24 14:51:39,998 - INFO - Visualizations saved
+2025-06-24 14:51:39,999 - INFO - Final report saved to E:\Reports\employees_eda_report.html
+2025-06-24 14:51:39,999 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
+2025-06-24 15:11:11,724 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 15:11:11,751 - INFO - Basic statistics generated
+2025-06-24 15:11:13,221 - INFO - Visualizations saved
+2025-06-24 15:11:13,222 - INFO - Final report saved to E:\Reports\employees_eda_report.html
+2025-06-24 15:11:13,222 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
