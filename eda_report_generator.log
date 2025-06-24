@@ -49,3 +49,13 @@
 2025-06-24 15:23:53,357 - INFO - Visualizations saved
 2025-06-24 15:23:53,358 - INFO - Final report saved to E:\Reports\employees_eda_report.html
 2025-06-24 15:23:53,358 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
+2025-06-24 15:30:26,929 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 15:30:26,944 - INFO - Basic statistics generated
+2025-06-24 15:30:28,396 - INFO - Visualizations saved
+2025-06-24 15:30:28,396 - INFO - Final report saved to E:\Reports\employees_eda_report.html
+2025-06-24 15:30:28,397 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
+2025-06-24 15:33:52,939 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 15:33:52,955 - INFO - Basic statistics generated
+2025-06-24 15:33:54,431 - INFO - Visualizations saved
+2025-06-24 15:33:54,431 - INFO - Final report saved to E:\Reports\employees_eda_report.html
+2025-06-24 15:33:54,432 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
