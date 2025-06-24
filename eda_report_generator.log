@@ -109,3 +109,42 @@
 2025-06-24 21:50:43,730 - INFO - Visualizations generated
 2025-06-24 21:50:43,733 - INFO - Report saved to E:/Reports\backlink_eda_report.html
 2025-06-24 21:50:43,734 - INFO - Report generated successfully: E:/Reports\backlink_eda_report.html
+2025-06-24 22:11:08,824 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-24 22:11:08,930 - INFO - Basic statistics generated
+2025-06-24 22:11:08,933 - INFO - Imputation suggestions generated
+2025-06-24 22:11:29,580 - INFO - Interactive visualizations generated
+2025-06-24 22:11:29,581 - INFO - Report saved to E:/Reports\backlink_eda_report.html
+2025-06-24 22:11:29,582 - INFO - Report generated successfully: E:/Reports\backlink_eda_report.html
+2025-06-24 22:21:12,311 - INFO - Loading file: E:\Data_Csv\employees.csv
+2025-06-24 22:21:12,552 - INFO - Combined dataset with 1000 rows and 8 columns
+2025-06-24 22:21:12,617 - INFO - Basic statistics generated
+2025-06-24 22:21:12,620 - INFO - Imputation suggestions generated
+2025-06-24 22:21:15,691 - INFO - Interactive visualizations generated
+2025-06-24 22:21:15,692 - INFO - Report saved to E:/Reports\backlink_eda_report.html
+2025-06-24 22:21:15,693 - INFO - Report generated successfully: E:/Reports\backlink_eda_report.html
+2025-06-24 22:21:44,755 - INFO - Loading file: E:\Data_Csv\employees.csv
+2025-06-24 22:21:44,928 - INFO - Combined dataset with 1000 rows and 8 columns
+2025-06-24 22:21:44,981 - INFO - Basic statistics generated
+2025-06-24 22:21:44,985 - INFO - Imputation suggestions generated
+2025-06-24 22:21:47,443 - INFO - Interactive visualizations generated
+2025-06-24 22:21:47,444 - INFO - Report saved to E:/Reports\backlink_eda_report.html
+2025-06-24 22:21:47,445 - INFO - Report generated successfully: E:/Reports\backlink_eda_report.html
+2025-06-24 22:24:02,922 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-24 22:24:03,019 - INFO - Basic statistics generated
+2025-06-24 22:24:03,023 - INFO - Imputation suggestions generated
+2025-06-24 22:24:05,451 - INFO - Interactive visualizations generated
+2025-06-24 22:24:05,453 - INFO - Report saved to E:/Reports\backlink_eda_report.html
+2025-06-24 22:24:05,453 - INFO - Report generated successfully: E:/Reports\backlink_eda_report.html
+2025-06-24 22:29:15,590 - INFO - Successfully loaded E:\SEO\ConvertedCSVs\Guest Post Site.csv with 6050 rows and 15 columns
+2025-06-24 22:29:15,855 - INFO - Basic statistics generated
+2025-06-24 22:29:15,863 - INFO - Imputation suggestions generated
+2025-06-24 22:29:18,471 - INFO - Interactive visualizations generated
+2025-06-24 22:29:18,478 - INFO - Report saved to E:/Reports\backlink_eda_report.html
+2025-06-24 22:29:18,479 - INFO - Report generated successfully: E:/Reports\backlink_eda_report.html
+2025-06-24 22:33:13,491 - ERROR - Unexpected error: name 'os' is not defined
+2025-06-24 22:34:56,831 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-24 22:34:56,917 - INFO - Basic statistics generated
+2025-06-24 22:34:56,921 - INFO - Imputation suggestions generated
+2025-06-24 22:34:59,662 - INFO - Interactive visualizations generated
+2025-06-24 22:34:59,666 - INFO - Report saved to E:\Reports\backlink_eda_report.html
+2025-06-24 22:34:59,666 - INFO - Report generated successfully: E:\Reports\backlink_eda_report.html
