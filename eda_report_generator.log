@@ -59,3 +59,35 @@
 2025-06-24 15:33:54,431 - INFO - Visualizations saved
 2025-06-24 15:33:54,431 - INFO - Final report saved to E:\Reports\employees_eda_report.html
 2025-06-24 15:33:54,432 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
+2025-06-24 15:44:15,140 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 15:44:15,157 - INFO - Basic statistics generated
+2025-06-24 15:44:16,684 - INFO - Visualizations saved
+2025-06-24 15:44:16,685 - INFO - Final report saved to E:\Reports\employees_eda_report.html
+2025-06-24 15:44:16,685 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
+2025-06-24 15:44:57,357 - INFO - Successfully loaded E:\\Data_Csv\\employees.csv with 1000 rows and 8 columns
+2025-06-24 15:44:57,374 - INFO - Basic statistics generated
+2025-06-24 15:44:58,800 - INFO - Visualizations saved
+2025-06-24 15:44:58,801 - INFO - Final report saved to E:\Reports\employees_eda_report.html
+2025-06-24 15:44:58,801 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\employees_eda_report.html
+2025-06-24 15:47:19,631 - ERROR - Input file E:\SEO\Backlink Data DROFSEO.xlsx must be a CSV file
+2025-06-24 15:47:19,631 - ERROR - Error: Input file must be a CSV file
+2025-06-24 15:48:07,411 - ERROR - Input file E:\SEO\Backlink Data DROFSEO.xlsx does not exist
+2025-06-24 15:48:07,411 - ERROR - Error: Input file E:\SEO\Backlink Data DROFSEO.xlsx does not exist
+2025-06-24 15:48:55,720 - ERROR - Error loading file E:\SEO\Backlink Data DROFSEO.csv: 'utf-8' codec can't decode byte 0x87 in position 10: invalid start byte
+2025-06-24 15:48:55,720 - ERROR - Error: 'utf-8' codec can't decode byte 0x87 in position 10: invalid start byte
+2025-06-24 15:58:23,619 - INFO - Successfully loaded E:\SEO\ConvertedCSVs\Guest Post Site.csv with 6050 rows and 15 columns
+2025-06-24 15:58:23,679 - INFO - Basic statistics generated
+2025-06-24 15:58:23,681 - WARNING - No numerical columns found for visualizations
+2025-06-24 15:58:23,682 - INFO - Final report saved to E:\Reports\backlink_eda_report.html
+2025-06-24 15:58:23,683 - INFO - EDA report generation completed successfully. Report saved to: E:\Reports\backlink_eda_report.html
+2025-06-24 16:32:28,367 - INFO - Successfully loaded E:/SEO/ConvertedCSVs/Guest Post Site.csv with 6050 rows and 15 columns
+2025-06-24 16:32:28,384 - ERROR - Error generating basic stats: Cannot describe a DataFrame without columns
+2025-06-24 16:32:28,462 - INFO - Cleaned up E:/Reports
+2025-06-24 16:34:22,295 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-24 16:34:22,402 - INFO - Basic statistics generated
+2025-06-24 16:34:27,267 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 16:34:27,346 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 16:34:33,564 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 16:34:33,617 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 16:34:38,097 - INFO - Visualizations generated
+2025-06-24 16:34:38,098 - INFO - Report saved to E:/Reports\backlink_eda_report.html
