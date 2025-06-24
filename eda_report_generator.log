@@ -91,3 +91,21 @@
 2025-06-24 16:34:33,617 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2025-06-24 16:34:38,097 - INFO - Visualizations generated
 2025-06-24 16:34:38,098 - INFO - Report saved to E:/Reports\backlink_eda_report.html
+2025-06-24 21:49:55,401 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-24 21:49:55,495 - INFO - Basic statistics generated
+2025-06-24 21:50:02,052 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 21:50:02,117 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 21:50:07,953 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 21:50:08,024 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 21:50:12,391 - INFO - Visualizations generated
+2025-06-24 21:50:12,392 - INFO - Report saved to E:/Reports\backlink_eda_report.html
+2025-06-24 21:50:12,393 - INFO - Report generated successfully: E:/Reports\backlink_eda_report.html
+2025-06-24 21:50:16,941 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-24 21:50:17,017 - INFO - Basic statistics generated
+2025-06-24 21:50:22,022 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 21:50:22,107 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 21:50:33,761 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 21:50:33,871 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-24 21:50:43,730 - INFO - Visualizations generated
+2025-06-24 21:50:43,733 - INFO - Report saved to E:/Reports\backlink_eda_report.html
+2025-06-24 21:50:43,734 - INFO - Report generated successfully: E:/Reports\backlink_eda_report.html
