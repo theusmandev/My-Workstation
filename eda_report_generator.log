@@ -161,3 +161,1895 @@
 2025-06-24 22:50:59,242 - INFO - Interactive visualizations generated
 2025-06-24 22:50:59,523 - INFO - Report saved to E:\Reports\backlink_eda_report.html
 2025-06-24 22:50:59,528 - INFO - Report generated successfully: E:\Reports\backlink_eda_report.html
+2025-06-25 15:05:38,074 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-25 15:05:39,568 - INFO - Basic statistics generated
+2025-06-25 15:05:39,569 - INFO - Imputation suggestions generated
+2025-06-25 15:05:41,179 - ERROR - Error generating histogram for Salary: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,181 - ERROR - Error generating box for Salary: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,185 - ERROR - Error generating histogram for Bonus %: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,186 - ERROR - Error generating bar for Gender: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,187 - ERROR - Error generating bar for Last Login Time: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,187 - ERROR - Error generating bar for Senior Management: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,187 - ERROR - Error generating bar for Team: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,187 - ERROR - Error generating bar for Start Date: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,187 - ERROR - Error generating bar for First Name: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,188 - ERROR - Error generating box for Bonus %: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,189 - ERROR - Visualization error: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,189 - ERROR - Error: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-06-25 15:05:41,190 - INFO - Cleaned up E:\Reports
+2025-06-25 15:06:23,104 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-25 15:06:23,563 - INFO - Basic statistics generated
+2025-06-25 15:06:23,564 - INFO - Imputation suggestions generated
+2025-06-25 15:06:24,878 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,879 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,879 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,880 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,880 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,880 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,880 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,880 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,881 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,881 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,881 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,881 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:24,881 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,881 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,882 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,882 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,883 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,883 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,884 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,884 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:24,885 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpz2mwhzd8.
+2025-06-25 15:06:24,885 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpz8dy61t2.
+2025-06-25 15:06:24,885 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpzm2m_dx7.
+2025-06-25 15:06:24,885 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp4d1j0hl_.
+2025-06-25 15:06:24,885 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp2s07exvq.
+2025-06-25 15:06:24,885 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpulsaf4f7.
+2025-06-25 15:06:24,885 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpixe85tx6.
+2025-06-25 15:06:24,885 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp_wsh8bhq.
+2025-06-25 15:06:24,886 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpvegcc656.
+2025-06-25 15:06:24,886 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp6ln5sz17.
+2025-06-25 15:06:24,888 - INFO - Opening browser.
+2025-06-25 15:06:24,888 - INFO - Opening browser.
+2025-06-25 15:06:24,888 - INFO - Opening browser.
+2025-06-25 15:06:24,888 - INFO - Opening browser.
+2025-06-25 15:06:24,889 - INFO - Opening browser.
+2025-06-25 15:06:24,889 - INFO - Opening browser.
+2025-06-25 15:06:24,890 - INFO - Opening browser.
+2025-06-25 15:06:24,890 - INFO - Opening browser.
+2025-06-25 15:06:24,891 - INFO - Opening browser.
+2025-06-25 15:06:24,891 - INFO - Opening browser.
+2025-06-25 15:06:24,892 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpekkvjc6p.
+2025-06-25 15:06:24,893 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpame35ztl.
+2025-06-25 15:06:24,894 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp5ikqw9ie.
+2025-06-25 15:06:24,895 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp2oqgmaxa.
+2025-06-25 15:06:24,895 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpjbcw5xtj.
+2025-06-25 15:06:24,897 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpwzybq8e2.
+2025-06-25 15:06:24,897 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpekkvjc6p
+2025-06-25 15:06:24,897 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpokn0m8ey.
+2025-06-25 15:06:24,897 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpame35ztl
+2025-06-25 15:06:24,898 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp5ikqw9ie
+2025-06-25 15:06:24,898 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpk54t4urx.
+2025-06-25 15:06:24,898 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpamm36dv8.
+2025-06-25 15:06:24,898 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp2oqgmaxa
+2025-06-25 15:06:24,898 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpjbcw5xtj
+2025-06-25 15:06:24,899 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpspv8n8i_.
+2025-06-25 15:06:24,902 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpspv8n8i_
+2025-06-25 15:06:24,899 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpokn0m8ey
+2025-06-25 15:06:24,900 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpk54t4urx
+2025-06-25 15:06:24,900 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpamm36dv8
+2025-06-25 15:06:24,899 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpwzybq8e2
+2025-06-25 15:06:25,889 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpz2mwhzd8/index.html
+2025-06-25 15:06:26,355 - INFO - Waiting on all navigates
+2025-06-25 15:06:26,372 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp2s07exvq/index.html
+2025-06-25 15:06:26,378 - INFO - Waiting on all navigates
+2025-06-25 15:06:26,775 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp4d1j0hl_/index.html
+2025-06-25 15:06:26,776 - INFO - Waiting on all navigates
+2025-06-25 15:06:26,776 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpzm2m_dx7/index.html
+2025-06-25 15:06:26,777 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpulsaf4f7/index.html
+2025-06-25 15:06:26,777 - INFO - Waiting on all navigates
+2025-06-25 15:06:26,778 - INFO - Waiting on all navigates
+2025-06-25 15:06:27,171 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpz8dy61t2/index.html
+2025-06-25 15:06:27,172 - INFO - Waiting on all navigates
+2025-06-25 15:06:27,172 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp_wsh8bhq/index.html
+2025-06-25 15:06:27,173 - INFO - Waiting on all navigates
+2025-06-25 15:06:27,456 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp6ln5sz17/index.html
+2025-06-25 15:06:27,456 - INFO - Waiting on all navigates
+2025-06-25 15:06:28,016 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpvegcc656/index.html
+2025-06-25 15:06:28,016 - INFO - Waiting on all navigates
+2025-06-25 15:06:28,316 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpixe85tx6/index.html
+2025-06-25 15:06:28,316 - INFO - Waiting on all navigates
+2025-06-25 15:06:30,430 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:30,431 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:30,432 - INFO - Got 7C08
+2025-06-25 15:06:30,432 - INFO - Processing Value_Counts_of_Senior_Management.png
+2025-06-25 15:06:30,432 - INFO - Sending big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:06:30,544 - INFO - Sent big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:06:30,545 - INFO - Reloading tab 7C08 before return.
+2025-06-25 15:06:30,874 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:30,875 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:30,876 - INFO - Got AE22
+2025-06-25 15:06:30,876 - INFO - Processing Box_Plot_of_Salary.png
+2025-06-25 15:06:30,876 - INFO - Sending big command for Box_Plot_of_Salary.png.
+2025-06-25 15:06:31,009 - INFO - Sent big command for Box_Plot_of_Salary.png.
+2025-06-25 15:06:31,009 - INFO - Reloading tab AE22 before return.
+2025-06-25 15:06:31,498 - INFO - Putting tab 7C08 back (queue size: 0).
+2025-06-25 15:06:31,498 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:31,498 - INFO - Exiting Kaleido
+2025-06-25 15:06:31,499 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:31,500 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:31,500 - INFO - Cancelling tasks.
+2025-06-25 15:06:31,500 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:31,500 - INFO - Closing browser.
+2025-06-25 15:06:31,506 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:31,511 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:31,511 - INFO - Cancelling tasks.
+2025-06-25 15:06:31,511 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:31,511 - INFO - Closing browser.
+2025-06-25 15:06:31,987 - INFO - Putting tab AE22 back (queue size: 0).
+2025-06-25 15:06:31,987 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:31,988 - INFO - Exiting Kaleido
+2025-06-25 15:06:32,009 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:32,010 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:32,010 - INFO - Cancelling tasks.
+2025-06-25 15:06:32,010 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:32,011 - INFO - Closing browser.
+2025-06-25 15:06:32,014 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:32,015 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:32,015 - INFO - Cancelling tasks.
+2025-06-25 15:06:32,015 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:32,015 - INFO - Closing browser.
+2025-06-25 15:06:32,380 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:32,383 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:32,668 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:32,668 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:34,056 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:34,057 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:34,057 - INFO - Got D9F3
+2025-06-25 15:06:34,057 - INFO - Processing Distribution_of_Salary.png
+2025-06-25 15:06:34,058 - INFO - Sending big command for Distribution_of_Salary.png.
+2025-06-25 15:06:34,278 - INFO - Sent big command for Distribution_of_Salary.png.
+2025-06-25 15:06:34,279 - INFO - Reloading tab D9F3 before return.
+2025-06-25 15:06:34,902 - INFO - Putting tab D9F3 back (queue size: 0).
+2025-06-25 15:06:34,902 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:34,902 - INFO - Exiting Kaleido
+2025-06-25 15:06:34,904 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:34,905 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:34,905 - INFO - Cancelling tasks.
+2025-06-25 15:06:34,905 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:34,905 - INFO - Closing browser.
+2025-06-25 15:06:34,907 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:34,907 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:34,907 - INFO - Cancelling tasks.
+2025-06-25 15:06:34,907 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:34,908 - INFO - Closing browser.
+2025-06-25 15:06:35,048 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:35,049 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:35,049 - INFO - Got B9A2
+2025-06-25 15:06:35,050 - INFO - Processing Value_Counts_of_Start_Date.png
+2025-06-25 15:06:35,050 - INFO - Sending big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:06:35,072 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:35,074 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:35,074 - INFO - Got CA49
+2025-06-25 15:06:35,074 - INFO - Processing Box_Plot_of_Bonus_.png
+2025-06-25 15:06:35,074 - INFO - Sending big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:06:35,209 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:35,210 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:35,211 - INFO - Got 02D6
+2025-06-25 15:06:35,211 - INFO - Processing Distribution_of_Bonus_.png
+2025-06-25 15:06:35,211 - INFO - Sending big command for Distribution_of_Bonus_.png.
+2025-06-25 15:06:35,243 - INFO - Sent big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:06:35,243 - INFO - Reloading tab CA49 before return.
+2025-06-25 15:06:35,279 - INFO - Sent big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:06:35,281 - INFO - Reloading tab B9A2 before return.
+2025-06-25 15:06:35,339 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:35,341 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:35,341 - INFO - Got F767
+2025-06-25 15:06:35,341 - INFO - Processing Value_Counts_of_Gender.png
+2025-06-25 15:06:35,341 - INFO - Sending big command for Value_Counts_of_Gender.png.
+2025-06-25 15:06:35,482 - INFO - Sent big command for Value_Counts_of_Gender.png.
+2025-06-25 15:06:35,483 - INFO - Reloading tab F767 before return.
+2025-06-25 15:06:35,522 - INFO - Sent big command for Distribution_of_Bonus_.png.
+2025-06-25 15:06:35,523 - INFO - Reloading tab 02D6 before return.
+2025-06-25 15:06:35,840 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:35,841 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:35,841 - INFO - Got 7584
+2025-06-25 15:06:35,841 - INFO - Processing Value_Counts_of_First_Name.png
+2025-06-25 15:06:35,842 - INFO - Sending big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:06:35,848 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:35,849 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,087 - INFO - Sent big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:06:36,088 - INFO - Reloading tab 7584 before return.
+2025-06-25 15:06:36,315 - INFO - Putting tab CA49 back (queue size: 0).
+2025-06-25 15:06:36,316 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:36,316 - INFO - Exiting Kaleido
+2025-06-25 15:06:36,317 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:36,317 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,318 - INFO - Cancelling tasks.
+2025-06-25 15:06:36,318 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:36,319 - INFO - Closing browser.
+2025-06-25 15:06:36,340 - INFO - Putting tab B9A2 back (queue size: 0).
+2025-06-25 15:06:36,341 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:36,341 - INFO - Exiting Kaleido
+2025-06-25 15:06:36,342 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:36,342 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,342 - INFO - Cancelling tasks.
+2025-06-25 15:06:36,343 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:36,343 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:36,343 - INFO - Closing browser.
+2025-06-25 15:06:36,343 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,343 - INFO - Cancelling tasks.
+2025-06-25 15:06:36,343 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:36,344 - INFO - Closing browser.
+2025-06-25 15:06:36,370 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:36,371 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,371 - INFO - Cancelling tasks.
+2025-06-25 15:06:36,372 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:36,372 - INFO - Closing browser.
+2025-06-25 15:06:36,600 - INFO - Putting tab F767 back (queue size: 0).
+2025-06-25 15:06:36,600 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:36,600 - INFO - Exiting Kaleido
+2025-06-25 15:06:36,602 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:36,603 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,604 - INFO - Cancelling tasks.
+2025-06-25 15:06:36,604 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:36,604 - INFO - Closing browser.
+2025-06-25 15:06:36,609 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:36,609 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,609 - INFO - Cancelling tasks.
+2025-06-25 15:06:36,610 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:36,610 - INFO - Closing browser.
+2025-06-25 15:06:36,638 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:36,640 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:36,640 - INFO - Got E7FB
+2025-06-25 15:06:36,640 - INFO - Processing Value_Counts_of_Team.png
+2025-06-25 15:06:36,641 - INFO - Sending big command for Value_Counts_of_Team.png.
+2025-06-25 15:06:36,662 - INFO - Putting tab 02D6 back (queue size: 0).
+2025-06-25 15:06:36,663 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:36,663 - INFO - Exiting Kaleido
+2025-06-25 15:06:36,664 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:36,665 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,667 - INFO - Cancelling tasks.
+2025-06-25 15:06:36,667 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:36,667 - INFO - Closing browser.
+2025-06-25 15:06:36,683 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:36,683 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:36,684 - INFO - Cancelling tasks.
+2025-06-25 15:06:36,684 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:36,684 - INFO - Closing browser.
+2025-06-25 15:06:36,865 - INFO - Sent big command for Value_Counts_of_Team.png.
+2025-06-25 15:06:36,866 - INFO - Reloading tab E7FB before return.
+2025-06-25 15:06:37,138 - INFO - Putting tab 7584 back (queue size: 0).
+2025-06-25 15:06:37,138 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:37,138 - INFO - Exiting Kaleido
+2025-06-25 15:06:37,140 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,140 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,140 - INFO - Cancelling tasks.
+2025-06-25 15:06:37,140 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:37,141 - INFO - Closing browser.
+2025-06-25 15:06:37,144 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,144 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,145 - INFO - Cancelling tasks.
+2025-06-25 15:06:37,145 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:37,145 - INFO - Closing browser.
+2025-06-25 15:06:37,304 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,304 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,305 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,306 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,339 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,339 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,378 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,378 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,578 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,578 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,714 - INFO - Putting tab E7FB back (queue size: 0).
+2025-06-25 15:06:37,714 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:37,714 - INFO - Exiting Kaleido
+2025-06-25 15:06:37,715 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,715 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,716 - INFO - Cancelling tasks.
+2025-06-25 15:06:37,716 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:37,716 - INFO - Closing browser.
+2025-06-25 15:06:37,717 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:37,718 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:37,719 - INFO - Cancelling tasks.
+2025-06-25 15:06:37,719 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:37,720 - INFO - Closing browser.
+2025-06-25 15:06:38,151 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:38,152 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:46,167 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:46,168 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:46,168 - INFO - Got 2359
+2025-06-25 15:06:46,168 - INFO - Processing Value_Counts_of_Last_Login_Time.png
+2025-06-25 15:06:46,168 - INFO - Sending big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:06:46,286 - INFO - Sent big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:06:46,287 - INFO - Reloading tab 2359 before return.
+2025-06-25 15:06:46,861 - INFO - Putting tab 2359 back (queue size: 0).
+2025-06-25 15:06:46,861 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:46,862 - INFO - Exiting Kaleido
+2025-06-25 15:06:46,863 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:46,863 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:46,863 - INFO - Cancelling tasks.
+2025-06-25 15:06:46,863 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:46,863 - INFO - Closing browser.
+2025-06-25 15:06:46,865 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:46,865 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:46,866 - INFO - Cancelling tasks.
+2025-06-25 15:06:46,866 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:46,866 - INFO - Closing browser.
+2025-06-25 15:06:47,201 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:47,202 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:47,225 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:06:47,226 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:06:47,226 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp0yfzqfdt.
+2025-06-25 15:06:47,227 - INFO - Opening browser.
+2025-06-25 15:06:47,228 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmporbfmdrw.
+2025-06-25 15:06:47,228 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmporbfmdrw
+2025-06-25 15:06:47,474 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp0yfzqfdt/index.html
+2025-06-25 15:06:47,475 - INFO - Waiting on all navigates
+2025-06-25 15:06:48,631 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:06:48,632 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:06:48,633 - INFO - Got 5E4F
+2025-06-25 15:06:48,633 - INFO - Processing Correlation_Matrix.png
+2025-06-25 15:06:48,633 - INFO - Sending big command for Correlation_Matrix.png.
+2025-06-25 15:06:48,722 - INFO - Sent big command for Correlation_Matrix.png.
+2025-06-25 15:06:48,723 - INFO - Reloading tab 5E4F before return.
+2025-06-25 15:06:49,268 - INFO - Putting tab 5E4F back (queue size: 0).
+2025-06-25 15:06:49,268 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:06:49,268 - INFO - Exiting Kaleido
+2025-06-25 15:06:49,269 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,269 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,270 - INFO - Cancelling tasks.
+2025-06-25 15:06:49,270 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:49,270 - INFO - Closing browser.
+2025-06-25 15:06:49,272 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,272 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,272 - INFO - Cancelling tasks.
+2025-06-25 15:06:49,273 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:06:49,273 - INFO - Closing browser.
+2025-06-25 15:06:49,542 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,542 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,599 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,600 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,620 - INFO - Static visualizations generated
+2025-06-25 15:06:49,622 - ERROR - Failed to create report: [WinError 2] The system cannot find the file specified
+2025-06-25 15:06:49,623 - ERROR - Error: [WinError 2] The system cannot find the file specified
+2025-06-25 15:06:49,625 - INFO - Cleaned up E:\Reports
+2025-06-25 15:06:49,671 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,671 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,672 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,672 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,672 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,673 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,673 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,673 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,674 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,674 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,674 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,675 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,675 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,675 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,675 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,676 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,676 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,676 - INFO - shutil.rmtree worked.
+2025-06-25 15:06:49,676 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:06:49,677 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:26,423 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-25 15:11:26,900 - INFO - Basic statistics generated
+2025-06-25 15:11:26,902 - INFO - Imputation suggestions generated
+2025-06-25 15:11:28,131 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,132 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,132 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,133 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,133 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,133 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,134 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,134 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,135 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,135 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,135 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,135 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,136 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,136 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,136 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:28,137 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,137 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,138 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,138 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp8yy1s4me.
+2025-06-25 15:11:28,138 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp8e7bta3w.
+2025-06-25 15:11:28,139 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpps0ty79m.
+2025-06-25 15:11:28,139 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpb2rmgx31.
+2025-06-25 15:11:28,139 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp3xmn19qq.
+2025-06-25 15:11:28,139 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,140 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:28,140 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpuj1758sh.
+2025-06-25 15:11:28,140 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpdg59m69f.
+2025-06-25 15:11:28,140 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpus9275kp.
+2025-06-25 15:11:28,141 - INFO - Opening browser.
+2025-06-25 15:11:28,142 - INFO - Opening browser.
+2025-06-25 15:11:28,142 - INFO - Opening browser.
+2025-06-25 15:11:28,142 - INFO - Opening browser.
+2025-06-25 15:11:28,143 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpsxrztnv2.
+2025-06-25 15:11:28,143 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpdya_pl6r.
+2025-06-25 15:11:28,143 - INFO - Opening browser.
+2025-06-25 15:11:28,144 - INFO - Opening browser.
+2025-06-25 15:11:28,145 - INFO - Opening browser.
+2025-06-25 15:11:28,145 - INFO - Opening browser.
+2025-06-25 15:11:28,146 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpgs15r1x5.
+2025-06-25 15:11:28,147 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpwts8618i.
+2025-06-25 15:11:28,148 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmps0cisjnb.
+2025-06-25 15:11:28,149 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpgu1wh4ok.
+2025-06-25 15:11:28,149 - INFO - Opening browser.
+2025-06-25 15:11:28,150 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpgs15r1x5
+2025-06-25 15:11:28,150 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpzkv47n6z.
+2025-06-25 15:11:28,150 - INFO - Opening browser.
+2025-06-25 15:11:28,150 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpwts8618i
+2025-06-25 15:11:28,151 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmps0cisjnb
+2025-06-25 15:11:28,151 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpx0v_fway.
+2025-06-25 15:11:28,151 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpgu1wh4ok
+2025-06-25 15:11:28,151 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpld_pjo5k.
+2025-06-25 15:11:28,153 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmprexygnmb.
+2025-06-25 15:11:28,153 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpzkv47n6z
+2025-06-25 15:11:28,155 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpzravg439.
+2025-06-25 15:11:28,156 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpx0v_fway
+2025-06-25 15:11:28,157 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpld_pjo5k
+2025-06-25 15:11:28,157 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmprexygnmb
+2025-06-25 15:11:28,157 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp3v6c0w2w.
+2025-06-25 15:11:28,158 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpzravg439
+2025-06-25 15:11:28,161 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp3v6c0w2w
+2025-06-25 15:11:28,850 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpus9275kp/index.html
+2025-06-25 15:11:28,929 - INFO - Waiting on all navigates
+2025-06-25 15:11:28,933 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpps0ty79m/index.html
+2025-06-25 15:11:28,967 - INFO - Waiting on all navigates
+2025-06-25 15:11:29,161 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp8e7bta3w/index.html
+2025-06-25 15:11:29,162 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp8yy1s4me/index.html
+2025-06-25 15:11:29,383 - INFO - Waiting on all navigates
+2025-06-25 15:11:29,677 - INFO - Waiting on all navigates
+2025-06-25 15:11:29,680 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpuj1758sh/index.html
+2025-06-25 15:11:29,691 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp3xmn19qq/index.html
+2025-06-25 15:11:29,692 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpb2rmgx31/index.html
+2025-06-25 15:11:29,694 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpdya_pl6r/index.html
+2025-06-25 15:11:29,694 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpdg59m69f/index.html
+2025-06-25 15:11:30,001 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpsxrztnv2/index.html
+2025-06-25 15:11:30,045 - INFO - Waiting on all navigates
+2025-06-25 15:11:30,123 - INFO - Waiting on all navigates
+2025-06-25 15:11:30,197 - INFO - Waiting on all navigates
+2025-06-25 15:11:30,325 - INFO - Waiting on all navigates
+2025-06-25 15:11:30,439 - INFO - Waiting on all navigates
+2025-06-25 15:11:30,476 - INFO - Waiting on all navigates
+2025-06-25 15:11:33,156 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:33,157 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:33,164 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:33,168 - INFO - Got F238
+2025-06-25 15:11:33,168 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:33,168 - INFO - Processing Value_Counts_of_Last_Login_Time.png
+2025-06-25 15:11:33,169 - INFO - Got CAD3
+2025-06-25 15:11:33,169 - INFO - Sending big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:11:33,170 - INFO - Processing Box_Plot_of_Bonus_.png
+2025-06-25 15:11:33,172 - INFO - Sending big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:11:33,319 - INFO - Sent big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:11:33,330 - INFO - Reloading tab CAD3 before return.
+2025-06-25 15:11:33,378 - INFO - Sent big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:11:33,383 - INFO - Reloading tab F238 before return.
+2025-06-25 15:11:34,049 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:34,062 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:34,088 - INFO - Got 961E
+2025-06-25 15:11:34,095 - INFO - Processing Distribution_of_Bonus_.png
+2025-06-25 15:11:34,099 - INFO - Sending big command for Distribution_of_Bonus_.png.
+2025-06-25 15:11:34,348 - INFO - Putting tab CAD3 back (queue size: 0).
+2025-06-25 15:11:34,349 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:34,349 - INFO - Exiting Kaleido
+2025-06-25 15:11:34,350 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:34,350 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:34,351 - INFO - Cancelling tasks.
+2025-06-25 15:11:34,351 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:34,351 - INFO - Closing browser.
+2025-06-25 15:11:34,353 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:34,355 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:34,367 - INFO - Cancelling tasks.
+2025-06-25 15:11:34,368 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:34,369 - INFO - Closing browser.
+2025-06-25 15:11:34,383 - INFO - Putting tab F238 back (queue size: 0).
+2025-06-25 15:11:34,383 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:34,384 - INFO - Exiting Kaleido
+2025-06-25 15:11:34,385 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:34,386 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:34,386 - INFO - Cancelling tasks.
+2025-06-25 15:11:34,387 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:34,387 - INFO - Closing browser.
+2025-06-25 15:11:34,395 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:34,401 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:34,410 - INFO - Cancelling tasks.
+2025-06-25 15:11:34,417 - INFO - Sent big command for Distribution_of_Bonus_.png.
+2025-06-25 15:11:34,420 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:34,421 - INFO - Reloading tab 961E before return.
+2025-06-25 15:11:34,421 - INFO - Closing browser.
+2025-06-25 15:11:34,438 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:34,456 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:34,457 - INFO - Got BDF9
+2025-06-25 15:11:34,459 - INFO - Processing Value_Counts_of_Senior_Management.png
+2025-06-25 15:11:34,460 - INFO - Sending big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:11:34,596 - INFO - Sent big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:11:34,596 - INFO - Reloading tab BDF9 before return.
+2025-06-25 15:11:35,137 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:35,146 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:35,146 - INFO - Got BC5C
+2025-06-25 15:11:35,147 - INFO - Processing Value_Counts_of_Team.png
+2025-06-25 15:11:35,148 - INFO - Sending big command for Value_Counts_of_Team.png.
+2025-06-25 15:11:35,353 - INFO - Sent big command for Value_Counts_of_Team.png.
+2025-06-25 15:11:35,353 - INFO - Reloading tab BC5C before return.
+2025-06-25 15:11:35,479 - INFO - Putting tab 961E back (queue size: 0).
+2025-06-25 15:11:35,485 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:35,488 - INFO - Exiting Kaleido
+2025-06-25 15:11:35,506 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:35,511 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:35,521 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:35,532 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:35,537 - INFO - Cancelling tasks.
+2025-06-25 15:11:35,551 - INFO - Got CD84
+2025-06-25 15:11:35,569 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:35,584 - INFO - Processing Value_Counts_of_Gender.png
+2025-06-25 15:11:35,586 - INFO - Closing browser.
+2025-06-25 15:11:35,587 - INFO - Sending big command for Value_Counts_of_Gender.png.
+2025-06-25 15:11:35,664 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:35,665 - INFO - Putting tab BC5C back (queue size: 0).
+2025-06-25 15:11:35,667 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:35,668 - INFO - Exiting Kaleido
+2025-06-25 15:11:35,670 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:35,694 - INFO - Cancelling tasks.
+2025-06-25 15:11:35,671 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:35,722 - INFO - Putting tab BDF9 back (queue size: 0).
+2025-06-25 15:11:35,725 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:35,726 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:35,726 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:35,730 - INFO - Closing browser.
+2025-06-25 15:11:35,730 - INFO - Cancelling tasks.
+2025-06-25 15:11:35,730 - INFO - Exiting Kaleido
+2025-06-25 15:11:35,731 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:35,734 - INFO - Closing browser.
+2025-06-25 15:11:35,738 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:35,748 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:35,749 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:35,754 - INFO - Cancelling tasks.
+2025-06-25 15:11:35,757 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:35,759 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:35,759 - INFO - Cancelling tasks.
+2025-06-25 15:11:35,759 - INFO - Closing browser.
+2025-06-25 15:11:35,760 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:35,760 - INFO - Closing browser.
+2025-06-25 15:11:35,764 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:35,769 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:35,769 - INFO - Cancelling tasks.
+2025-06-25 15:11:35,780 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:35,782 - INFO - Closing browser.
+2025-06-25 15:11:35,820 - INFO - Sent big command for Value_Counts_of_Gender.png.
+2025-06-25 15:11:35,821 - INFO - Reloading tab CD84 before return.
+2025-06-25 15:11:36,603 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:36,625 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:36,772 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:36,774 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:36,775 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:36,784 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:36,786 - INFO - Got E507
+2025-06-25 15:11:36,795 - INFO - Got BBEA
+2025-06-25 15:11:36,798 - INFO - Processing Value_Counts_of_First_Name.png
+2025-06-25 15:11:36,799 - INFO - Processing Box_Plot_of_Salary.png
+2025-06-25 15:11:36,800 - INFO - Sending big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:11:36,800 - INFO - Sending big command for Box_Plot_of_Salary.png.
+2025-06-25 15:11:36,862 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:36,878 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:36,881 - INFO - Got BC9D
+2025-06-25 15:11:36,882 - INFO - Processing Value_Counts_of_Start_Date.png
+2025-06-25 15:11:36,882 - INFO - Sending big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:11:36,931 - INFO - Putting tab CD84 back (queue size: 0).
+2025-06-25 15:11:36,938 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:36,939 - INFO - Exiting Kaleido
+2025-06-25 15:11:36,944 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:36,947 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:36,947 - INFO - Cancelling tasks.
+2025-06-25 15:11:36,954 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:36,955 - INFO - Closing browser.
+2025-06-25 15:11:36,970 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:36,975 - INFO - Sent big command for Box_Plot_of_Salary.png.
+2025-06-25 15:11:36,976 - INFO - Reloading tab BBEA before return.
+2025-06-25 15:11:36,986 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:37,027 - INFO - Cancelling tasks.
+2025-06-25 15:11:37,087 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:37,092 - INFO - Sent big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:11:37,104 - INFO - Closing browser.
+2025-06-25 15:11:37,105 - INFO - Reloading tab E507 before return.
+2025-06-25 15:11:37,137 - INFO - Sent big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:11:37,169 - INFO - Reloading tab BC9D before return.
+2025-06-25 15:11:37,428 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:11:37,902 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:37,903 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,024 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,046 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,048 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,046 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,106 - INFO - Putting tab BBEA back (queue size: 0).
+2025-06-25 15:11:38,109 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:38,109 - INFO - Exiting Kaleido
+2025-06-25 15:11:38,111 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,113 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,114 - INFO - Cancelling tasks.
+2025-06-25 15:11:38,116 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:38,117 - INFO - Closing browser.
+2025-06-25 15:11:38,122 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,126 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,131 - INFO - Cancelling tasks.
+2025-06-25 15:11:38,138 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:38,142 - INFO - Closing browser.
+2025-06-25 15:11:38,188 - INFO - Putting tab E507 back (queue size: 0).
+2025-06-25 15:11:38,199 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:38,199 - INFO - Exiting Kaleido
+2025-06-25 15:11:38,202 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,205 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:38,209 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,222 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:38,222 - INFO - Cancelling tasks.
+2025-06-25 15:11:38,227 - INFO - Got B29A
+2025-06-25 15:11:38,231 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:38,232 - INFO - Processing Distribution_of_Salary.png
+2025-06-25 15:11:38,233 - INFO - Closing browser.
+2025-06-25 15:11:38,233 - INFO - Sending big command for Distribution_of_Salary.png.
+2025-06-25 15:11:38,246 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,251 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,251 - INFO - Cancelling tasks.
+2025-06-25 15:11:38,252 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:38,252 - INFO - Closing browser.
+2025-06-25 15:11:38,286 - INFO - Putting tab BC9D back (queue size: 0).
+2025-06-25 15:11:38,290 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:38,296 - INFO - Exiting Kaleido
+2025-06-25 15:11:38,324 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,331 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,343 - INFO - Cancelling tasks.
+2025-06-25 15:11:38,355 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:38,359 - INFO - Closing browser.
+2025-06-25 15:11:38,368 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,390 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,398 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,417 - INFO - Cancelling tasks.
+2025-06-25 15:11:38,425 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:38,420 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,432 - INFO - Closing browser.
+2025-06-25 15:11:38,549 - INFO - Sent big command for Distribution_of_Salary.png.
+2025-06-25 15:11:38,550 - INFO - Reloading tab B29A before return.
+2025-06-25 15:11:38,628 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,631 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,919 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,920 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,924 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,925 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:38,934 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:38,934 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:39,439 - INFO - Putting tab B29A back (queue size: 0).
+2025-06-25 15:11:39,439 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:39,439 - INFO - Exiting Kaleido
+2025-06-25 15:11:39,440 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:39,441 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:39,441 - INFO - Cancelling tasks.
+2025-06-25 15:11:39,441 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:39,442 - INFO - Closing browser.
+2025-06-25 15:11:39,443 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:39,444 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:39,445 - INFO - Cancelling tasks.
+2025-06-25 15:11:39,445 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:39,446 - INFO - Closing browser.
+2025-06-25 15:11:39,793 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:39,793 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:39,806 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:11:39,807 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:11:39,807 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpcd76f5sm.
+2025-06-25 15:11:39,808 - INFO - Opening browser.
+2025-06-25 15:11:39,809 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpupl3n5b6.
+2025-06-25 15:11:39,809 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpupl3n5b6
+2025-06-25 15:11:40,095 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpcd76f5sm/index.html
+2025-06-25 15:11:40,097 - INFO - Waiting on all navigates
+2025-06-25 15:11:40,872 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:11:40,873 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:11:40,873 - INFO - Got 14CA
+2025-06-25 15:11:40,874 - INFO - Processing Correlation_Matrix.png
+2025-06-25 15:11:40,874 - INFO - Sending big command for Correlation_Matrix.png.
+2025-06-25 15:11:40,962 - INFO - Sent big command for Correlation_Matrix.png.
+2025-06-25 15:11:40,962 - INFO - Reloading tab 14CA before return.
+2025-06-25 15:11:41,549 - INFO - Putting tab 14CA back (queue size: 0).
+2025-06-25 15:11:41,549 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:11:41,549 - INFO - Exiting Kaleido
+2025-06-25 15:11:41,550 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:41,551 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:41,551 - INFO - Cancelling tasks.
+2025-06-25 15:11:41,551 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:41,551 - INFO - Closing browser.
+2025-06-25 15:11:41,553 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:41,553 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:41,554 - INFO - Cancelling tasks.
+2025-06-25 15:11:41,554 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:11:41,554 - INFO - Closing browser.
+2025-06-25 15:11:41,807 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:41,807 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:41,834 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:41,834 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:41,853 - INFO - Static visualizations generated
+2025-06-25 15:11:41,856 - ERROR - Failed to create report: [WinError 2] The system cannot find the file specified
+2025-06-25 15:11:41,856 - ERROR - Error: [WinError 2] The system cannot find the file specified
+2025-06-25 15:11:41,858 - INFO - Cleaned up E:\Reports
+2025-06-25 15:11:53,746 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,747 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,747 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,748 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,748 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,749 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,749 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,749 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,749 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,750 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,750 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,751 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,751 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,751 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,752 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,752 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,752 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,753 - INFO - shutil.rmtree worked.
+2025-06-25 15:11:53,753 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:11:53,753 - INFO - shutil.rmtree worked.
+2025-06-25 15:12:12,349 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-25 15:12:12,392 - INFO - Basic statistics generated
+2025-06-25 15:12:12,394 - INFO - Imputation suggestions generated
+2025-06-25 15:12:14,757 - INFO - Interactive visualizations generated
+2025-06-25 15:12:14,759 - INFO - Report saved to E:\Reports\backlink_eda_report.html
+2025-06-25 15:12:14,760 - INFO - Report generated successfully: E:\Reports\backlink_eda_report.html
+2025-06-25 15:23:13,435 - INFO - Loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-25 15:23:14,243 - INFO - Basic statistics generated
+2025-06-25 15:23:14,247 - INFO - Imputation suggestions generated
+2025-06-25 15:23:17,863 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,864 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,866 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,866 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,866 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,866 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,866 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,867 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,867 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,867 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,868 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,869 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:17,869 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,869 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,870 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,871 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,872 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpe3gop7qw.
+2025-06-25 15:23:17,872 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpkohrzoz_.
+2025-06-25 15:23:17,872 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,873 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,873 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,874 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:17,875 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmplziki9ai.
+2025-06-25 15:23:17,875 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmprsxyx9bv.
+2025-06-25 15:23:17,875 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp3wk8iean.
+2025-06-25 15:23:17,876 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp_o25wkeh.
+2025-06-25 15:23:17,878 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpkng7z_2b.
+2025-06-25 15:23:17,878 - INFO - Opening browser.
+2025-06-25 15:23:17,878 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp1qoadtc5.
+2025-06-25 15:23:17,878 - INFO - Opening browser.
+2025-06-25 15:23:17,879 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp16sv0pxa.
+2025-06-25 15:23:17,879 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmptaofebv5.
+2025-06-25 15:23:17,882 - INFO - Opening browser.
+2025-06-25 15:23:17,882 - INFO - Opening browser.
+2025-06-25 15:23:17,883 - INFO - Opening browser.
+2025-06-25 15:23:17,886 - INFO - Opening browser.
+2025-06-25 15:23:17,886 - INFO - Opening browser.
+2025-06-25 15:23:17,887 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpslt80p4v.
+2025-06-25 15:23:17,888 - INFO - Opening browser.
+2025-06-25 15:23:17,889 - INFO - Opening browser.
+2025-06-25 15:23:17,890 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp21sv8_gu.
+2025-06-25 15:23:17,893 - INFO - Opening browser.
+2025-06-25 15:23:17,894 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpo6ien2ir.
+2025-06-25 15:23:17,896 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpslt80p4v
+2025-06-25 15:23:17,896 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp03908m8b.
+2025-06-25 15:23:17,897 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp62vvyg8o.
+2025-06-25 15:23:17,898 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp1nw7vnu_.
+2025-06-25 15:23:17,899 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp21sv8_gu
+2025-06-25 15:23:17,900 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpuf67p_ig.
+2025-06-25 15:23:17,901 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpo6ien2ir
+2025-06-25 15:23:17,902 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp03908m8b
+2025-06-25 15:23:17,903 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp153ac866.
+2025-06-25 15:23:17,903 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp62vvyg8o
+2025-06-25 15:23:17,904 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp9fuawqc9.
+2025-06-25 15:23:17,904 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp1nw7vnu_
+2025-06-25 15:23:17,906 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpuy_md51k.
+2025-06-25 15:23:17,906 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpuf67p_ig
+2025-06-25 15:23:17,909 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp153ac866
+2025-06-25 15:23:17,915 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp9fuawqc9
+2025-06-25 15:23:17,921 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpuy_md51k
+2025-06-25 15:23:19,467 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp3wk8iean/index.html
+2025-06-25 15:23:19,774 - INFO - Waiting on all navigates
+2025-06-25 15:23:19,488 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmplziki9ai/index.html
+2025-06-25 15:23:19,755 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp_o25wkeh/index.html
+2025-06-25 15:23:19,487 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpkohrzoz_/index.html
+2025-06-25 15:23:19,782 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpe3gop7qw/index.html
+2025-06-25 15:23:21,268 - INFO - Waiting on all navigates
+2025-06-25 15:23:20,852 - INFO - Waiting on all navigates
+2025-06-25 15:23:19,785 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpkng7z_2b/index.html
+2025-06-25 15:23:21,262 - INFO - Waiting on all navigates
+2025-06-25 15:23:21,267 - INFO - Waiting on all navigates
+2025-06-25 15:23:21,498 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmprsxyx9bv/index.html
+2025-06-25 15:23:21,569 - INFO - Waiting on all navigates
+2025-06-25 15:23:20,856 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp16sv0pxa/index.html
+2025-06-25 15:23:21,498 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp1qoadtc5/index.html
+2025-06-25 15:23:21,542 - INFO - Waiting on all navigates
+2025-06-25 15:23:21,602 - INFO - Waiting on all navigates
+2025-06-25 15:23:21,836 - INFO - Waiting on all navigates
+2025-06-25 15:23:24,241 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmptaofebv5/index.html
+2025-06-25 15:23:24,241 - INFO - Waiting on all navigates
+2025-06-25 15:23:24,851 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:24,853 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:24,854 - INFO - Got 7458
+2025-06-25 15:23:24,854 - INFO - Processing Value_Counts_of_Senior_Management.png
+2025-06-25 15:23:24,855 - INFO - Sending big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:23:25,122 - INFO - Sent big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:23:25,123 - INFO - Reloading tab 7458 before return.
+2025-06-25 15:23:26,277 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:26,278 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:26,279 - INFO - Got DB67
+2025-06-25 15:23:26,279 - INFO - Processing Value_Counts_of_Start_Date.png
+2025-06-25 15:23:26,280 - INFO - Sending big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:23:26,638 - INFO - Sent big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:23:26,640 - INFO - Reloading tab DB67 before return.
+2025-06-25 15:23:26,836 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:26,838 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:26,838 - INFO - Got F040
+2025-06-25 15:23:26,839 - INFO - Processing Value_Counts_of_Last_Login_Time.png
+2025-06-25 15:23:26,839 - INFO - Sending big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:23:27,087 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:27,089 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:27,089 - INFO - Got 1ECD
+2025-06-25 15:23:27,090 - INFO - Processing Value_Counts_of_Gender.png
+2025-06-25 15:23:27,090 - INFO - Sending big command for Value_Counts_of_Gender.png.
+2025-06-25 15:23:27,151 - INFO - Putting tab 7458 back (queue size: 0).
+2025-06-25 15:23:27,151 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:27,152 - INFO - Exiting Kaleido
+2025-06-25 15:23:27,154 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:27,154 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:27,155 - INFO - Cancelling tasks.
+2025-06-25 15:23:27,155 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:27,155 - INFO - Closing browser.
+2025-06-25 15:23:27,178 - INFO - Sent big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:23:27,179 - INFO - Reloading tab F040 before return.
+2025-06-25 15:23:27,362 - INFO - Sent big command for Value_Counts_of_Gender.png.
+2025-06-25 15:23:27,363 - INFO - Reloading tab 1ECD before return.
+2025-06-25 15:23:27,603 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:27,605 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:27,607 - INFO - Cancelling tasks.
+2025-06-25 15:23:27,607 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:27,609 - INFO - Closing browser.
+2025-06-25 15:23:28,505 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:28,507 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:28,508 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:28,508 - INFO - Got F3DF
+2025-06-25 15:23:28,509 - INFO - Processing Value_Counts_of_First_Name.png
+2025-06-25 15:23:28,510 - INFO - Sending big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:23:28,510 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:28,515 - INFO - Got E386
+2025-06-25 15:23:28,516 - INFO - Processing Distribution_of_Bonus_.png
+2025-06-25 15:23:28,517 - INFO - Sending big command for Distribution_of_Bonus_.png.
+2025-06-25 15:23:28,667 - INFO - Putting tab DB67 back (queue size: 0).
+2025-06-25 15:23:28,668 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:28,668 - INFO - Exiting Kaleido
+2025-06-25 15:23:28,670 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:28,671 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:28,671 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:28,672 - INFO - Cancelling tasks.
+2025-06-25 15:23:28,673 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:28,673 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:28,673 - INFO - Got C957
+2025-06-25 15:23:28,673 - INFO - Closing browser.
+2025-06-25 15:23:28,674 - INFO - Processing Value_Counts_of_Team.png
+2025-06-25 15:23:28,674 - INFO - Sending big command for Value_Counts_of_Team.png.
+2025-06-25 15:23:28,702 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:28,703 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:28,703 - INFO - Cancelling tasks.
+2025-06-25 15:23:28,703 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:28,704 - INFO - Closing browser.
+2025-06-25 15:23:28,858 - INFO - Sent big command for Distribution_of_Bonus_.png.
+2025-06-25 15:23:28,859 - INFO - Reloading tab E386 before return.
+2025-06-25 15:23:28,973 - INFO - Sent big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:23:28,975 - INFO - Reloading tab F3DF before return.
+2025-06-25 15:23:29,049 - INFO - Sent big command for Value_Counts_of_Team.png.
+2025-06-25 15:23:29,050 - INFO - Reloading tab C957 before return.
+2025-06-25 15:23:29,305 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:29,307 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:29,307 - INFO - Got B86E
+2025-06-25 15:23:29,307 - INFO - Processing Distribution_of_Salary.png
+2025-06-25 15:23:29,307 - INFO - Sending big command for Distribution_of_Salary.png.
+2025-06-25 15:23:29,312 - INFO - Putting tab F040 back (queue size: 0).
+2025-06-25 15:23:29,313 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:29,313 - INFO - Exiting Kaleido
+2025-06-25 15:23:29,315 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:29,315 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:29,316 - INFO - Cancelling tasks.
+2025-06-25 15:23:29,316 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:29,316 - INFO - Closing browser.
+2025-06-25 15:23:29,340 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:29,341 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:29,341 - INFO - Cancelling tasks.
+2025-06-25 15:23:29,342 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:29,342 - INFO - Closing browser.
+2025-06-25 15:23:29,477 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:29,478 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:29,479 - INFO - Got 6D79
+2025-06-25 15:23:29,479 - INFO - Processing Box_Plot_of_Salary.png
+2025-06-25 15:23:29,479 - INFO - Sending big command for Box_Plot_of_Salary.png.
+2025-06-25 15:23:29,590 - INFO - Sent big command for Distribution_of_Salary.png.
+2025-06-25 15:23:29,591 - INFO - Reloading tab B86E before return.
+2025-06-25 15:23:29,692 - INFO - Putting tab 1ECD back (queue size: 0).
+2025-06-25 15:23:29,692 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:29,693 - INFO - Exiting Kaleido
+2025-06-25 15:23:29,694 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:29,695 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:29,695 - INFO - Cancelling tasks.
+2025-06-25 15:23:29,695 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:29,695 - INFO - Closing browser.
+2025-06-25 15:23:29,717 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:29,718 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:29,719 - INFO - Cancelling tasks.
+2025-06-25 15:23:29,719 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:29,719 - INFO - Closing browser.
+2025-06-25 15:23:29,737 - INFO - Sent big command for Box_Plot_of_Salary.png.
+2025-06-25 15:23:29,738 - INFO - Reloading tab 6D79 before return.
+2025-06-25 15:23:29,970 - INFO - Putting tab B86E back (queue size: 0).
+2025-06-25 15:23:29,970 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:29,970 - INFO - Exiting Kaleido
+2025-06-25 15:23:29,972 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:29,972 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:29,973 - INFO - Cancelling tasks.
+2025-06-25 15:23:29,973 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:29,973 - INFO - Closing browser.
+2025-06-25 15:23:29,976 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:29,977 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:29,977 - INFO - Cancelling tasks.
+2025-06-25 15:23:29,977 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:29,978 - INFO - Closing browser.
+2025-06-25 15:23:30,360 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:30,361 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:30,362 - INFO - Got 3217
+2025-06-25 15:23:30,362 - INFO - Processing Box_Plot_of_Bonus_.png
+2025-06-25 15:23:30,362 - INFO - Sending big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:23:30,577 - INFO - Sent big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:23:30,578 - INFO - Reloading tab 3217 before return.
+2025-06-25 15:23:30,617 - INFO - Putting tab E386 back (queue size: 0).
+2025-06-25 15:23:30,617 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:30,618 - INFO - Exiting Kaleido
+2025-06-25 15:23:30,620 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:30,621 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:30,622 - INFO - Cancelling tasks.
+2025-06-25 15:23:30,623 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:30,623 - INFO - Closing browser.
+2025-06-25 15:23:30,628 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:30,629 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:30,629 - INFO - Cancelling tasks.
+2025-06-25 15:23:30,629 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:30,630 - INFO - Closing browser.
+2025-06-25 15:23:30,644 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:23:30,716 - INFO - Putting tab F3DF back (queue size: 0).
+2025-06-25 15:23:30,716 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:30,717 - INFO - Exiting Kaleido
+2025-06-25 15:23:30,718 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:30,719 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:30,719 - INFO - Cancelling tasks.
+2025-06-25 15:23:30,719 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:30,720 - INFO - Closing browser.
+2025-06-25 15:23:30,725 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:30,725 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:30,726 - INFO - Cancelling tasks.
+2025-06-25 15:23:30,726 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:30,726 - INFO - Closing browser.
+2025-06-25 15:23:30,834 - INFO - Putting tab C957 back (queue size: 0).
+2025-06-25 15:23:30,834 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:30,835 - INFO - Exiting Kaleido
+2025-06-25 15:23:30,837 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:30,837 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:30,838 - INFO - Cancelling tasks.
+2025-06-25 15:23:30,838 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:30,838 - INFO - Closing browser.
+2025-06-25 15:23:30,841 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:30,842 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:30,843 - INFO - Cancelling tasks.
+2025-06-25 15:23:30,843 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:30,843 - INFO - Closing browser.
+2025-06-25 15:23:31,389 - INFO - Putting tab 6D79 back (queue size: 0).
+2025-06-25 15:23:31,389 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:31,390 - INFO - Exiting Kaleido
+2025-06-25 15:23:31,391 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:31,392 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:31,392 - INFO - Cancelling tasks.
+2025-06-25 15:23:31,392 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:31,393 - INFO - Closing browser.
+2025-06-25 15:23:31,396 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:31,396 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:31,397 - INFO - Cancelling tasks.
+2025-06-25 15:23:31,397 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:31,397 - INFO - Closing browser.
+2025-06-25 15:23:31,835 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:23:32,210 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:32,219 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:32,238 - INFO - Putting tab 3217 back (queue size: 0).
+2025-06-25 15:23:32,238 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:32,239 - INFO - Exiting Kaleido
+2025-06-25 15:23:32,240 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:32,241 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:32,242 - INFO - Cancelling tasks.
+2025-06-25 15:23:32,242 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:32,243 - INFO - Closing browser.
+2025-06-25 15:23:32,246 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:32,247 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:32,247 - INFO - Cancelling tasks.
+2025-06-25 15:23:32,247 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:32,248 - INFO - Closing browser.
+2025-06-25 15:23:32,562 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:23:32,756 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:32,757 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:32,828 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:23:32,842 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:32,844 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:32,971 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:32,972 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:32,985 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:32,985 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:33,072 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:33,075 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:33,159 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:33,159 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:33,171 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:33,172 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:33,181 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:33,181 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:33,187 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:33,187 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:33,209 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:33,210 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:33,211 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp0ikg_hrr.
+2025-06-25 15:23:33,213 - INFO - Opening browser.
+2025-06-25 15:23:33,214 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpkf4th_eq.
+2025-06-25 15:23:33,215 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpkf4th_eq
+2025-06-25 15:23:33,675 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp0ikg_hrr/index.html
+2025-06-25 15:23:33,693 - INFO - Waiting on all navigates
+2025-06-25 15:23:35,023 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:35,025 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:35,026 - INFO - Got 6B24
+2025-06-25 15:23:35,026 - INFO - Processing Correlation_Matrix.png
+2025-06-25 15:23:35,026 - INFO - Sending big command for Correlation_Matrix.png.
+2025-06-25 15:23:35,205 - INFO - Sent big command for Correlation_Matrix.png.
+2025-06-25 15:23:35,206 - INFO - Reloading tab 6B24 before return.
+2025-06-25 15:23:36,120 - INFO - Putting tab 6B24 back (queue size: 0).
+2025-06-25 15:23:36,121 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:36,121 - INFO - Exiting Kaleido
+2025-06-25 15:23:36,123 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:36,123 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:36,124 - INFO - Cancelling tasks.
+2025-06-25 15:23:36,124 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:36,125 - INFO - Closing browser.
+2025-06-25 15:23:36,128 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:36,129 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:36,130 - INFO - Cancelling tasks.
+2025-06-25 15:23:36,131 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:36,132 - INFO - Closing browser.
+2025-06-25 15:23:36,479 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:36,480 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:36,543 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:36,543 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:36,598 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:23:36,599 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:23:36,600 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpe9_nf2zj.
+2025-06-25 15:23:36,601 - INFO - Opening browser.
+2025-06-25 15:23:36,604 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpeal3rflj.
+2025-06-25 15:23:36,605 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpeal3rflj
+2025-06-25 15:23:37,152 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpe9_nf2zj/index.html
+2025-06-25 15:23:37,165 - INFO - Waiting on all navigates
+2025-06-25 15:23:38,379 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:23:38,381 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:23:38,381 - INFO - Got 3756
+2025-06-25 15:23:38,381 - INFO - Processing Pair_Plot.png
+2025-06-25 15:23:38,382 - INFO - Sending big command for Pair_Plot.png.
+2025-06-25 15:23:39,412 - INFO - Sent big command for Pair_Plot.png.
+2025-06-25 15:23:39,417 - INFO - Reloading tab 3756 before return.
+2025-06-25 15:23:40,346 - INFO - Putting tab 3756 back (queue size: 0).
+2025-06-25 15:23:40,346 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:23:40,346 - INFO - Exiting Kaleido
+2025-06-25 15:23:40,348 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:40,349 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:40,349 - INFO - Cancelling tasks.
+2025-06-25 15:23:40,349 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:40,350 - INFO - Closing browser.
+2025-06-25 15:23:40,353 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:40,355 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:40,356 - INFO - Cancelling tasks.
+2025-06-25 15:23:40,357 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:23:40,358 - INFO - Closing browser.
+2025-06-25 15:23:40,706 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:40,707 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:40,711 - INFO - Visualizations generated
+2025-06-25 15:23:40,720 - ERROR - Error creating report: [WinError 2] The system cannot find the file specified
+2025-06-25 15:23:40,720 - ERROR - Error: [WinError 2] The system cannot find the file specified
+2025-06-25 15:23:40,725 - INFO - Cleaned up E:\Reports
+2025-06-25 15:23:47,895 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,897 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,897 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,898 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,898 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,899 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,899 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,900 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,901 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,901 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,902 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,902 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,903 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,903 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,904 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,905 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,905 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,906 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,906 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,907 - INFO - shutil.rmtree worked.
+2025-06-25 15:23:47,907 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:23:47,908 - INFO - shutil.rmtree worked.
+2025-06-25 15:26:49,504 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-25 15:26:49,808 - INFO - Basic statistics generated
+2025-06-25 15:26:49,810 - INFO - Imputation suggestions generated
+2025-06-25 15:26:53,167 - ERROR - Error generating bar for Team: Invalid value
+2025-06-25 15:26:56,410 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,412 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,412 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,413 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,414 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,414 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,415 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,416 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,416 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,417 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,418 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:26:56,419 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,419 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,420 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,422 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,423 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,423 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpa3i7z1mt.
+2025-06-25 15:26:56,424 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpvtevej53.
+2025-06-25 15:26:56,424 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,425 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpu_1ofue1.
+2025-06-25 15:26:56,426 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp66qvpqp2.
+2025-06-25 15:26:56,426 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:26:56,426 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpabxov31m.
+2025-06-25 15:26:56,427 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp9nuho1au.
+2025-06-25 15:26:56,428 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp0v1tumcf.
+2025-06-25 15:26:56,431 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpe4fvkk05.
+2025-06-25 15:26:56,432 - INFO - Opening browser.
+2025-06-25 15:26:56,433 - INFO - Opening browser.
+2025-06-25 15:26:56,433 - INFO - Opening browser.
+2025-06-25 15:26:56,434 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp5pbg3rbc.
+2025-06-25 15:26:56,434 - INFO - Opening browser.
+2025-06-25 15:26:56,436 - INFO - Opening browser.
+2025-06-25 15:26:56,438 - INFO - Opening browser.
+2025-06-25 15:26:56,439 - INFO - Opening browser.
+2025-06-25 15:26:56,441 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmppz6asbi2.
+2025-06-25 15:26:56,441 - INFO - Opening browser.
+2025-06-25 15:26:56,444 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpesilnu0o.
+2025-06-25 15:26:56,446 - INFO - Opening browser.
+2025-06-25 15:26:56,447 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpdqr_fzbu.
+2025-06-25 15:26:56,448 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmppz6asbi2
+2025-06-25 15:26:56,449 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpn74e8ezs.
+2025-06-25 15:26:56,450 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpgqi7aode.
+2025-06-25 15:26:56,451 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpesilnu0o
+2025-06-25 15:26:56,452 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpyid21fcw.
+2025-06-25 15:26:56,452 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpdqr_fzbu
+2025-06-25 15:26:56,455 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpr5foe4t_.
+2025-06-25 15:26:56,455 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpn74e8ezs
+2025-06-25 15:26:56,457 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpgqi7aode
+2025-06-25 15:26:56,457 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpmbesxkgt.
+2025-06-25 15:26:56,459 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpyid21fcw
+2025-06-25 15:26:56,459 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpk6d8fexm.
+2025-06-25 15:26:56,460 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpr5foe4t_
+2025-06-25 15:26:56,465 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpmbesxkgt
+2025-06-25 15:26:56,469 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpk6d8fexm
+2025-06-25 15:26:57,839 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpvtevej53/index.html
+2025-06-25 15:26:57,866 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpu_1ofue1/index.html
+2025-06-25 15:26:57,881 - INFO - Waiting on all navigates
+2025-06-25 15:26:57,893 - INFO - Waiting on all navigates
+2025-06-25 15:26:57,963 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpe4fvkk05/index.html
+2025-06-25 15:26:57,974 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpa3i7z1mt/index.html
+2025-06-25 15:26:58,139 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp66qvpqp2/index.html
+2025-06-25 15:26:58,335 - INFO - Waiting on all navigates
+2025-06-25 15:26:58,338 - INFO - Waiting on all navigates
+2025-06-25 15:26:58,339 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpabxov31m/index.html
+2025-06-25 15:26:58,393 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp5pbg3rbc/index.html
+2025-06-25 15:26:58,397 - INFO - Waiting on all navigates
+2025-06-25 15:26:58,401 - INFO - Waiting on all navigates
+2025-06-25 15:26:58,402 - INFO - Waiting on all navigates
+2025-06-25 15:26:59,138 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp0v1tumcf/index.html
+2025-06-25 15:26:59,139 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp9nuho1au/index.html
+2025-06-25 15:27:00,350 - INFO - Waiting on all navigates
+2025-06-25 15:27:01,009 - INFO - Waiting on all navigates
+2025-06-25 15:27:05,231 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:05,236 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:05,236 - INFO - Got 5EA5
+2025-06-25 15:27:05,237 - INFO - Processing Value_Counts_of_First_Name.png
+2025-06-25 15:27:05,237 - INFO - Sending big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:27:05,588 - INFO - Sent big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:27:05,590 - INFO - Reloading tab 5EA5 before return.
+2025-06-25 15:27:07,372 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:07,374 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:07,377 - INFO - Got 63E6
+2025-06-25 15:27:07,377 - INFO - Processing Value_Counts_of_Gender.png
+2025-06-25 15:27:07,378 - INFO - Sending big command for Value_Counts_of_Gender.png.
+2025-06-25 15:27:07,411 - INFO - Putting tab 5EA5 back (queue size: 0).
+2025-06-25 15:27:07,412 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:07,415 - INFO - Exiting Kaleido
+2025-06-25 15:27:07,422 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:07,427 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:07,428 - INFO - Cancelling tasks.
+2025-06-25 15:27:07,428 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:07,428 - INFO - Closing browser.
+2025-06-25 15:27:07,454 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:07,467 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:07,469 - INFO - Cancelling tasks.
+2025-06-25 15:27:07,470 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:07,470 - INFO - Closing browser.
+2025-06-25 15:27:07,643 - INFO - Sent big command for Value_Counts_of_Gender.png.
+2025-06-25 15:27:07,647 - INFO - Reloading tab 63E6 before return.
+2025-06-25 15:27:09,478 - INFO - Putting tab 63E6 back (queue size: 0).
+2025-06-25 15:27:09,513 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:09,533 - INFO - Exiting Kaleido
+2025-06-25 15:27:09,547 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:09,563 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:09,568 - INFO - Cancelling tasks.
+2025-06-25 15:27:09,570 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:09,583 - INFO - Closing browser.
+2025-06-25 15:27:09,601 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:09,602 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:09,603 - INFO - Cancelling tasks.
+2025-06-25 15:27:09,604 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:09,605 - INFO - Closing browser.
+2025-06-25 15:27:10,521 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:27:11,635 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:11,637 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:11,638 - INFO - Got A2EF
+2025-06-25 15:27:11,642 - INFO - Processing Distribution_of_Salary.png
+2025-06-25 15:27:11,643 - INFO - Sending big command for Distribution_of_Salary.png.
+2025-06-25 15:27:11,714 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:11,728 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:11,748 - INFO - Got 9936
+2025-06-25 15:27:11,751 - INFO - Processing Value_Counts_of_Last_Login_Time.png
+2025-06-25 15:27:11,762 - INFO - Sending big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:27:12,130 - INFO - Sent big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:27:12,143 - INFO - Reloading tab 9936 before return.
+2025-06-25 15:27:12,203 - INFO - Sent big command for Distribution_of_Salary.png.
+2025-06-25 15:27:12,238 - INFO - Reloading tab A2EF before return.
+2025-06-25 15:27:12,693 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:27:13,120 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:13,252 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:13,436 - INFO - Got F3FD
+2025-06-25 15:27:13,437 - INFO - Processing Value_Counts_of_Start_Date.png
+2025-06-25 15:27:13,437 - INFO - Sending big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:27:13,491 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:13,567 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:13,802 - INFO - Sent big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:27:13,953 - INFO - Reloading tab F3FD before return.
+2025-06-25 15:27:13,954 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:14,173 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:14,216 - INFO - Got 383B
+2025-06-25 15:27:14,217 - INFO - Processing Value_Counts_of_Senior_Management.png
+2025-06-25 15:27:14,218 - INFO - Putting tab A2EF back (queue size: 0).
+2025-06-25 15:27:14,230 - INFO - Putting tab 9936 back (queue size: 0).
+2025-06-25 15:27:14,234 - INFO - Sending big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:27:14,234 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:14,235 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:14,240 - INFO - Exiting Kaleido
+2025-06-25 15:27:14,246 - INFO - Exiting Kaleido
+2025-06-25 15:27:14,261 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:14,261 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:14,285 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:14,286 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:14,407 - INFO - Cancelling tasks.
+2025-06-25 15:27:14,407 - INFO - Cancelling tasks.
+2025-06-25 15:27:14,413 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:14,415 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:14,416 - INFO - Closing browser.
+2025-06-25 15:27:14,416 - INFO - Closing browser.
+2025-06-25 15:27:14,423 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:14,440 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:14,497 - INFO - Sent big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:27:14,498 - INFO - Reloading tab 383B before return.
+2025-06-25 15:27:14,501 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:14,501 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:14,527 - INFO - Cancelling tasks.
+2025-06-25 15:27:14,528 - INFO - Cancelling tasks.
+2025-06-25 15:27:14,531 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:14,534 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:14,535 - INFO - Closing browser.
+2025-06-25 15:27:14,535 - INFO - Closing browser.
+2025-06-25 15:27:15,178 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:15,227 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:15,234 - INFO - Got D8C2
+2025-06-25 15:27:15,235 - INFO - Processing Distribution_of_Bonus_.png
+2025-06-25 15:27:15,304 - INFO - Sending big command for Distribution_of_Bonus_.png.
+2025-06-25 15:27:15,475 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:15,528 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:15,583 - INFO - Got 453B
+2025-06-25 15:27:15,645 - INFO - Processing Box_Plot_of_Bonus_.png
+2025-06-25 15:27:15,683 - INFO - Sending big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:27:15,862 - INFO - Sent big command for Distribution_of_Bonus_.png.
+2025-06-25 15:27:15,993 - INFO - Reloading tab D8C2 before return.
+2025-06-25 15:27:15,996 - INFO - Sent big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:27:16,085 - INFO - Putting tab F3FD back (queue size: 0).
+2025-06-25 15:27:16,095 - INFO - Reloading tab 453B before return.
+2025-06-25 15:27:16,181 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:16,186 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:27:16,274 - INFO - Exiting Kaleido
+2025-06-25 15:27:16,298 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:27:16,299 - INFO - Got 7028
+2025-06-25 15:27:16,300 - INFO - Processing Box_Plot_of_Salary.png
+2025-06-25 15:27:16,303 - INFO - Sending big command for Box_Plot_of_Salary.png.
+2025-06-25 15:27:16,332 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:16,364 - INFO - Putting tab 383B back (queue size: 0).
+2025-06-25 15:27:16,364 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:16,365 - INFO - Exiting Kaleido
+2025-06-25 15:27:16,369 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:16,371 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:16,413 - INFO - Cancelling tasks.
+2025-06-25 15:27:16,416 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:16,427 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:16,428 - INFO - Cancelling tasks.
+2025-06-25 15:27:16,430 - INFO - Closing browser.
+2025-06-25 15:27:16,431 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:16,462 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:16,542 - INFO - Closing browser.
+2025-06-25 15:27:16,542 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:16,545 - INFO - Cancelling tasks.
+2025-06-25 15:27:16,575 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:16,582 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:16,583 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:16,583 - INFO - Closing browser.
+2025-06-25 15:27:16,608 - INFO - Sent big command for Box_Plot_of_Salary.png.
+2025-06-25 15:27:16,611 - INFO - Cancelling tasks.
+2025-06-25 15:27:16,639 - INFO - Reloading tab 7028 before return.
+2025-06-25 15:27:16,645 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:16,654 - INFO - Closing browser.
+2025-06-25 15:27:17,537 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:27:17,553 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:27:17,845 - INFO - Putting tab D8C2 back (queue size: 0).
+2025-06-25 15:27:17,876 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:17,885 - INFO - Exiting Kaleido
+2025-06-25 15:27:17,887 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:17,890 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:17,899 - INFO - Cancelling tasks.
+2025-06-25 15:27:17,900 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:17,900 - INFO - Closing browser.
+2025-06-25 15:27:17,923 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:17,934 - INFO - Putting tab 453B back (queue size: 0).
+2025-06-25 15:27:17,934 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:17,939 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:17,950 - INFO - Cancelling tasks.
+2025-06-25 15:27:17,954 - INFO - Exiting Kaleido
+2025-06-25 15:27:17,959 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:17,962 - INFO - Closing browser.
+2025-06-25 15:27:17,963 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:17,965 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:17,968 - INFO - Cancelling tasks.
+2025-06-25 15:27:17,969 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:17,970 - INFO - Closing browser.
+2025-06-25 15:27:17,981 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:17,988 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:17,990 - INFO - Cancelling tasks.
+2025-06-25 15:27:18,004 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:18,013 - INFO - Closing browser.
+2025-06-25 15:27:18,377 - INFO - Putting tab 7028 back (queue size: 0).
+2025-06-25 15:27:18,378 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:27:18,378 - INFO - Exiting Kaleido
+2025-06-25 15:27:18,380 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:18,381 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:18,381 - INFO - Cancelling tasks.
+2025-06-25 15:27:18,382 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:18,382 - INFO - Closing browser.
+2025-06-25 15:27:18,388 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:18,389 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:18,391 - INFO - Cancelling tasks.
+2025-06-25 15:27:18,393 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:27:18,394 - INFO - Closing browser.
+2025-06-25 15:27:18,875 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:18,875 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:18,891 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:18,899 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:18,981 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:18,986 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:18,991 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:19,007 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:19,137 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:19,138 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:19,392 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:19,393 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:19,404 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:19,405 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:19,425 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:19,425 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:19,439 - ERROR - Visualization error: Invalid value
+2025-06-25 15:27:19,439 - ERROR - Error: Invalid value
+2025-06-25 15:27:19,444 - INFO - Cleaned up E:\Reports
+2025-06-25 15:27:35,024 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,026 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:35,027 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,028 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:35,029 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,030 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:35,031 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,033 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:35,033 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,035 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:35,035 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,036 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:35,037 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,039 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:35,040 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,042 - INFO - shutil.rmtree worked.
+2025-06-25 15:27:35,042 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:27:35,044 - INFO - shutil.rmtree worked.
+2025-06-25 15:29:47,013 - INFO - Successfully loaded E:\Data_Csv\Crime_Data_from_2020_to_Present.csv with 1005091 rows and 28 columns
+2025-06-25 15:30:15,324 - INFO - Successfully loaded E:\Data_Csv\employees.csv with 1000 rows and 8 columns
+2025-06-25 15:30:15,522 - INFO - Basic statistics generated
+2025-06-25 15:30:15,524 - INFO - Imputation suggestions generated
+2025-06-25 15:30:19,280 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,284 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,284 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,285 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,285 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,287 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,287 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,288 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,289 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,289 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,290 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:19,291 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,292 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,292 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,295 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,296 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,296 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,296 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmprkwelfuz.
+2025-06-25 15:30:19,298 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,298 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,300 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:19,300 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpsawk_pmn.
+2025-06-25 15:30:19,301 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpbkcz9rc2.
+2025-06-25 15:30:19,301 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp7wyzopgj.
+2025-06-25 15:30:19,302 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpplth9xgx.
+2025-06-25 15:30:19,303 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpmmyhyg7g.
+2025-06-25 15:30:19,304 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp5r5dcczs.
+2025-06-25 15:30:19,305 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpwks08k2s.
+2025-06-25 15:30:19,306 - INFO - Opening browser.
+2025-06-25 15:30:19,307 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmphl5_3qsd.
+2025-06-25 15:30:19,307 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmphcn763nc.
+2025-06-25 15:30:19,311 - INFO - Opening browser.
+2025-06-25 15:30:19,312 - INFO - Opening browser.
+2025-06-25 15:30:19,313 - INFO - Opening browser.
+2025-06-25 15:30:19,315 - INFO - Opening browser.
+2025-06-25 15:30:19,317 - INFO - Opening browser.
+2025-06-25 15:30:19,319 - INFO - Opening browser.
+2025-06-25 15:30:19,319 - INFO - Opening browser.
+2025-06-25 15:30:19,322 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpyl9e4fl7.
+2025-06-25 15:30:19,324 - INFO - Opening browser.
+2025-06-25 15:30:19,325 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpp7deag1q.
+2025-06-25 15:30:19,325 - INFO - Opening browser.
+2025-06-25 15:30:19,327 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpvlp69m2s.
+2025-06-25 15:30:19,331 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpbod40n68.
+2025-06-25 15:30:19,332 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpyl9e4fl7
+2025-06-25 15:30:19,334 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpidvdrjn5.
+2025-06-25 15:30:19,336 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpghpmftz8.
+2025-06-25 15:30:19,336 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpp7deag1q
+2025-06-25 15:30:19,338 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpa4kifhq6.
+2025-06-25 15:30:19,340 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpvlp69m2s
+2025-06-25 15:30:19,341 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpbod40n68
+2025-06-25 15:30:19,342 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp5tyxkbzw.
+2025-06-25 15:30:19,343 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp6dnwe6i7.
+2025-06-25 15:30:19,346 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpidvdrjn5
+2025-06-25 15:30:19,346 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp3bmb7h2m.
+2025-06-25 15:30:19,357 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp3bmb7h2m
+2025-06-25 15:30:19,347 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpa4kifhq6
+2025-06-25 15:30:19,352 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp5tyxkbzw
+2025-06-25 15:30:19,352 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp6dnwe6i7
+2025-06-25 15:30:19,346 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpghpmftz8
+2025-06-25 15:30:20,833 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp5r5dcczs/index.html
+2025-06-25 15:30:20,836 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmprkwelfuz/index.html
+2025-06-25 15:30:21,124 - INFO - Waiting on all navigates
+2025-06-25 15:30:21,126 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmp7wyzopgj/index.html
+2025-06-25 15:30:21,128 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmphl5_3qsd/index.html
+2025-06-25 15:30:21,311 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpmmyhyg7g/index.html
+2025-06-25 15:30:22,274 - INFO - Waiting on all navigates
+2025-06-25 15:30:22,276 - INFO - Waiting on all navigates
+2025-06-25 15:30:22,276 - INFO - Waiting on all navigates
+2025-06-25 15:30:22,277 - INFO - Waiting on all navigates
+2025-06-25 15:30:22,325 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpwks08k2s/index.html
+2025-06-25 15:30:22,326 - INFO - Waiting on all navigates
+2025-06-25 15:30:22,342 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmphcn763nc/index.html
+2025-06-25 15:30:22,343 - INFO - Waiting on all navigates
+2025-06-25 15:30:22,856 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpbkcz9rc2/index.html
+2025-06-25 15:30:22,858 - INFO - Waiting on all navigates
+2025-06-25 15:30:22,861 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpplth9xgx/index.html
+2025-06-25 15:30:22,862 - INFO - Waiting on all navigates
+2025-06-25 15:30:23,786 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpsawk_pmn/index.html
+2025-06-25 15:30:23,786 - INFO - Waiting on all navigates
+2025-06-25 15:30:25,916 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:25,918 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:25,919 - INFO - Got 4F48
+2025-06-25 15:30:25,919 - INFO - Processing Value_Counts_of_Senior_Management.png
+2025-06-25 15:30:25,920 - INFO - Sending big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:30:26,248 - INFO - Sent big command for Value_Counts_of_Senior_Management.png.
+2025-06-25 15:30:26,249 - INFO - Reloading tab 4F48 before return.
+2025-06-25 15:30:27,771 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:27,772 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:27,773 - INFO - Got A7CD
+2025-06-25 15:30:27,773 - INFO - Processing Distribution_of_Bonus_.png
+2025-06-25 15:30:27,774 - INFO - Sending big command for Distribution_of_Bonus_.png.
+2025-06-25 15:30:27,850 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:27,852 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:27,852 - INFO - Got FF8B
+2025-06-25 15:30:27,853 - INFO - Processing Value_Counts_of_Gender.png
+2025-06-25 15:30:27,853 - INFO - Sending big command for Value_Counts_of_Gender.png.
+2025-06-25 15:30:28,212 - INFO - Putting tab 4F48 back (queue size: 0).
+2025-06-25 15:30:28,213 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:28,213 - INFO - Exiting Kaleido
+2025-06-25 15:30:28,218 - INFO - Sent big command for Value_Counts_of_Gender.png.
+2025-06-25 15:30:28,220 - INFO - Reloading tab FF8B before return.
+2025-06-25 15:30:28,274 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:28,276 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:28,276 - INFO - Cancelling tasks.
+2025-06-25 15:30:28,276 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:28,277 - INFO - Closing browser.
+2025-06-25 15:30:28,315 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:28,350 - INFO - Sent big command for Distribution_of_Bonus_.png.
+2025-06-25 15:30:28,351 - INFO - Reloading tab A7CD before return.
+2025-06-25 15:30:28,357 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:28,357 - INFO - Cancelling tasks.
+2025-06-25 15:30:28,358 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:28,358 - INFO - Closing browser.
+2025-06-25 15:30:30,158 - INFO - Putting tab FF8B back (queue size: 0).
+2025-06-25 15:30:30,159 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:30,159 - INFO - Exiting Kaleido
+2025-06-25 15:30:30,161 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:30,161 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:30,162 - INFO - Cancelling tasks.
+2025-06-25 15:30:30,162 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:30,162 - INFO - Closing browser.
+2025-06-25 15:30:30,166 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:30,166 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:30,167 - INFO - Cancelling tasks.
+2025-06-25 15:30:30,167 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:30,168 - INFO - Closing browser.
+2025-06-25 15:30:30,269 - INFO - Putting tab A7CD back (queue size: 0).
+2025-06-25 15:30:30,270 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:30,271 - INFO - Exiting Kaleido
+2025-06-25 15:30:30,272 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:30,273 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:30,273 - INFO - Cancelling tasks.
+2025-06-25 15:30:30,274 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:30,274 - INFO - Closing browser.
+2025-06-25 15:30:30,277 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:30,278 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:30,279 - INFO - Cancelling tasks.
+2025-06-25 15:30:30,279 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:30,280 - INFO - Closing browser.
+2025-06-25 15:30:31,414 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:31,416 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:31,416 - INFO - Got 4006
+2025-06-25 15:30:31,416 - INFO - Processing Value_Counts_of_Start_Date.png
+2025-06-25 15:30:31,417 - INFO - Sending big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:30:31,482 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:30:31,758 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:31,759 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:31,761 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:31,761 - INFO - Got 6A58
+2025-06-25 15:30:31,763 - INFO - Processing Value_Counts_of_Team.png
+2025-06-25 15:30:31,763 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:31,763 - INFO - Sending big command for Value_Counts_of_Team.png.
+2025-06-25 15:30:31,764 - INFO - Got 0FC1
+2025-06-25 15:30:31,769 - INFO - Processing Distribution_of_Salary.png
+2025-06-25 15:30:31,769 - INFO - Sending big command for Distribution_of_Salary.png.
+2025-06-25 15:30:31,797 - INFO - Sent big command for Value_Counts_of_Start_Date.png.
+2025-06-25 15:30:31,800 - INFO - Reloading tab 4006 before return.
+2025-06-25 15:30:31,855 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:31,856 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:31,857 - INFO - Got 4212
+2025-06-25 15:30:31,857 - INFO - Processing Value_Counts_of_First_Name.png
+2025-06-25 15:30:31,858 - INFO - Sending big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:30:31,965 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:31,967 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:31,967 - INFO - Got 7FEC
+2025-06-25 15:30:31,968 - INFO - Processing Box_Plot_of_Salary.png
+2025-06-25 15:30:31,969 - INFO - Sending big command for Box_Plot_of_Salary.png.
+2025-06-25 15:30:32,095 - INFO - Sent big command for Value_Counts_of_Team.png.
+2025-06-25 15:30:32,096 - INFO - Reloading tab 6A58 before return.
+2025-06-25 15:30:32,207 - INFO - Sent big command for Box_Plot_of_Salary.png.
+2025-06-25 15:30:32,208 - INFO - Reloading tab 7FEC before return.
+2025-06-25 15:30:32,265 - INFO - Sent big command for Value_Counts_of_First_Name.png.
+2025-06-25 15:30:32,266 - INFO - Reloading tab 4212 before return.
+2025-06-25 15:30:32,333 - INFO - Sent big command for Distribution_of_Salary.png.
+2025-06-25 15:30:32,335 - INFO - Reloading tab 0FC1 before return.
+2025-06-25 15:30:33,252 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:30:33,387 - WARNING - Resorting to unclean kill browser.
+2025-06-25 15:30:33,639 - INFO - Putting tab 4006 back (queue size: 0).
+2025-06-25 15:30:33,640 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:33,640 - INFO - Exiting Kaleido
+2025-06-25 15:30:33,641 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:33,642 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:33,642 - INFO - Cancelling tasks.
+2025-06-25 15:30:33,643 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:33,643 - INFO - Closing browser.
+2025-06-25 15:30:33,671 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:33,672 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:33,672 - INFO - Cancelling tasks.
+2025-06-25 15:30:33,672 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:33,673 - INFO - Closing browser.
+2025-06-25 15:30:33,970 - INFO - Putting tab 6A58 back (queue size: 0).
+2025-06-25 15:30:33,971 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:33,971 - INFO - Exiting Kaleido
+2025-06-25 15:30:33,973 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:33,973 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:33,974 - INFO - Cancelling tasks.
+2025-06-25 15:30:33,974 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:33,974 - INFO - Closing browser.
+2025-06-25 15:30:33,978 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:33,979 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:33,980 - INFO - Cancelling tasks.
+2025-06-25 15:30:33,981 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:33,981 - INFO - Closing browser.
+2025-06-25 15:30:34,028 - INFO - Putting tab 7FEC back (queue size: 0).
+2025-06-25 15:30:34,028 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:34,029 - INFO - Exiting Kaleido
+2025-06-25 15:30:34,030 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:34,031 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:34,032 - INFO - Cancelling tasks.
+2025-06-25 15:30:34,033 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:34,033 - INFO - Closing browser.
+2025-06-25 15:30:34,047 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:34,048 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:34,048 - INFO - Cancelling tasks.
+2025-06-25 15:30:34,049 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:34,049 - INFO - Closing browser.
+2025-06-25 15:30:34,082 - INFO - Putting tab 0FC1 back (queue size: 0).
+2025-06-25 15:30:34,083 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:34,083 - INFO - Exiting Kaleido
+2025-06-25 15:30:34,086 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:34,087 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:34,087 - INFO - Cancelling tasks.
+2025-06-25 15:30:34,087 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:34,088 - INFO - Closing browser.
+2025-06-25 15:30:34,092 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:34,093 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:34,093 - INFO - Cancelling tasks.
+2025-06-25 15:30:34,094 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:34,094 - INFO - Closing browser.
+2025-06-25 15:30:34,127 - INFO - Putting tab 4212 back (queue size: 0).
+2025-06-25 15:30:34,127 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:34,128 - INFO - Exiting Kaleido
+2025-06-25 15:30:34,130 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:34,131 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:34,131 - INFO - Cancelling tasks.
+2025-06-25 15:30:34,132 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:34,133 - INFO - Closing browser.
+2025-06-25 15:30:34,204 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:34,205 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:34,206 - INFO - Cancelling tasks.
+2025-06-25 15:30:34,206 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:34,207 - INFO - Closing browser.
+2025-06-25 15:30:34,638 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:34,639 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:36,368 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:36,369 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:36,427 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:36,428 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:36,497 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:36,497 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:36,505 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:36,506 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:36,635 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:36,636 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:36,679 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:36,680 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:36,724 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:36,724 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:37,951 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:37,954 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:37,955 - INFO - Got 37AB
+2025-06-25 15:30:37,955 - INFO - Processing Value_Counts_of_Last_Login_Time.png
+2025-06-25 15:30:37,956 - INFO - Sending big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:30:38,275 - INFO - Sent big command for Value_Counts_of_Last_Login_Time.png.
+2025-06-25 15:30:38,276 - INFO - Reloading tab 37AB before return.
+2025-06-25 15:30:39,613 - INFO - Putting tab 37AB back (queue size: 0).
+2025-06-25 15:30:39,613 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:39,613 - INFO - Exiting Kaleido
+2025-06-25 15:30:39,615 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:39,616 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:39,616 - INFO - Cancelling tasks.
+2025-06-25 15:30:39,617 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:39,617 - INFO - Closing browser.
+2025-06-25 15:30:39,620 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:39,621 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:39,621 - INFO - Cancelling tasks.
+2025-06-25 15:30:39,622 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:39,622 - INFO - Closing browser.
+2025-06-25 15:30:40,122 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:40,123 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:40,124 - INFO - Got 58F3
+2025-06-25 15:30:40,124 - INFO - Processing Box_Plot_of_Bonus_.png
+2025-06-25 15:30:40,124 - INFO - Sending big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:30:40,206 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:40,207 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:40,300 - INFO - Sent big command for Box_Plot_of_Bonus_.png.
+2025-06-25 15:30:40,301 - INFO - Reloading tab 58F3 before return.
+2025-06-25 15:30:41,598 - INFO - Putting tab 58F3 back (queue size: 0).
+2025-06-25 15:30:41,599 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:41,600 - INFO - Exiting Kaleido
+2025-06-25 15:30:41,602 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:41,603 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:41,603 - INFO - Cancelling tasks.
+2025-06-25 15:30:41,604 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:41,604 - INFO - Closing browser.
+2025-06-25 15:30:41,609 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:41,611 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:41,612 - INFO - Cancelling tasks.
+2025-06-25 15:30:41,612 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:41,613 - INFO - Closing browser.
+2025-06-25 15:30:42,225 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:42,226 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:42,262 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:42,263 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:42,264 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpe5_fnhft.
+2025-06-25 15:30:42,267 - INFO - Opening browser.
+2025-06-25 15:30:42,270 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpvernrr8c.
+2025-06-25 15:30:42,270 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmpvernrr8c
+2025-06-25 15:30:42,836 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpe5_fnhft/index.html
+2025-06-25 15:30:42,839 - INFO - Waiting on all navigates
+2025-06-25 15:30:44,506 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:44,508 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:44,509 - INFO - Got DB95
+2025-06-25 15:30:44,509 - INFO - Processing Correlation_Matrix.png
+2025-06-25 15:30:44,509 - INFO - Sending big command for Correlation_Matrix.png.
+2025-06-25 15:30:44,702 - INFO - Sent big command for Correlation_Matrix.png.
+2025-06-25 15:30:44,703 - INFO - Reloading tab DB95 before return.
+2025-06-25 15:30:45,574 - INFO - Putting tab DB95 back (queue size: 0).
+2025-06-25 15:30:45,575 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:45,575 - INFO - Exiting Kaleido
+2025-06-25 15:30:45,577 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:45,578 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:45,578 - INFO - Cancelling tasks.
+2025-06-25 15:30:45,579 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:45,579 - INFO - Closing browser.
+2025-06-25 15:30:45,582 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:45,583 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:45,584 - INFO - Cancelling tasks.
+2025-06-25 15:30:45,584 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:45,585 - INFO - Closing browser.
+2025-06-25 15:30:45,945 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:45,946 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:46,000 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:46,001 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:46,053 - INFO - Chromium init'ed with kwargs {}
+2025-06-25 15:30:46,054 - INFO - Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-06-25 15:30:46,055 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmpjb3de9zm.
+2025-06-25 15:30:46,057 - INFO - Opening browser.
+2025-06-25 15:30:46,059 - INFO - Temp directory created: C:\Users\PCS\AppData\Local\Temp\tmp3wwa1t6l.
+2025-06-25 15:30:46,060 - INFO - Temporary directory at: C:\Users\PCS\AppData\Local\Temp\tmp3wwa1t6l
+2025-06-25 15:30:46,571 - INFO - Conforming 1 to file:///C:/Users/PCS/AppData/Local/Temp/tmpjb3de9zm/index.html
+2025-06-25 15:30:46,572 - INFO - Waiting on all navigates
+2025-06-25 15:30:47,785 - INFO - All navigates done, putting them all in queue.
+2025-06-25 15:30:47,786 - INFO - Getting tab from queue (has 1)
+2025-06-25 15:30:47,787 - INFO - Got ACBD
+2025-06-25 15:30:47,787 - INFO - Processing Pair_Plot.png
+2025-06-25 15:30:47,787 - INFO - Sending big command for Pair_Plot.png.
+2025-06-25 15:30:48,512 - INFO - Sent big command for Pair_Plot.png.
+2025-06-25 15:30:48,515 - INFO - Reloading tab ACBD before return.
+2025-06-25 15:30:49,509 - INFO - Putting tab ACBD back (queue size: 0).
+2025-06-25 15:30:49,510 - INFO - Waiting for all cleanups to finish.
+2025-06-25 15:30:49,510 - INFO - Exiting Kaleido
+2025-06-25 15:30:49,511 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:49,512 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:49,512 - INFO - Cancelling tasks.
+2025-06-25 15:30:49,513 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:49,513 - INFO - Closing browser.
+2025-06-25 15:30:49,515 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:49,516 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:49,517 - INFO - Cancelling tasks.
+2025-06-25 15:30:49,517 - INFO - Exiting Kaleido/Choreo
+2025-06-25 15:30:49,518 - INFO - Closing browser.
+2025-06-25 15:30:49,942 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:49,944 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:49,949 - INFO - Visualizations generated
+2025-06-25 15:30:49,952 - INFO - LaTeX report saved to E:\Reports\backlink_eda_report.tex
+2025-06-25 15:30:49,958 - ERROR - pdflatex not found. Please install a LaTeX distribution (e.g., MiKTeX or TeX Live)
+2025-06-25 15:30:49,959 - ERROR - Failed to write or compile report: [WinError 2] The system cannot find the file specified
+2025-06-25 15:30:49,960 - ERROR - Error: [WinError 2] The system cannot find the file specified
+2025-06-25 15:30:49,966 - INFO - Cleaned up E:\Reports
+2025-06-25 15:30:50,766 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,767 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,768 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,768 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,769 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,769 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,770 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,770 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,771 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,771 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,772 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,772 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,773 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,774 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,774 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,775 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,775 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,776 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,776 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,777 - INFO - shutil.rmtree worked.
+2025-06-25 15:30:50,777 - INFO - TemporaryDirectory.cleanup() worked.
+2025-06-25 15:30:50,777 - INFO - shutil.rmtree worked.
