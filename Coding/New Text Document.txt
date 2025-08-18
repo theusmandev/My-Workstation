@@ -1,0 +1,73 @@
+# 📦 E-Commerce Order Confirmation Analytics Project
+
+# Step 1: Setup mock database using SQLite for simplicity
+import sqlite3
+import pandas as pd
+
+# Create in-memory SQLite database
+conn = sqlite3.connect(":memory:")
+cursor = conn.cursor()
+
+# Create Users table
+cursor.execute("""
+CREATE TABLE Users (
+    user_id INTEGER PRIMARY KEY,
+    signup_time DATETIME
+);
+""")
+
+# Create OrderAttempts table
+cursor.execute("""
+CREATE TABLE OrderAttempts (
+    user_id INTEGER,
+    order_time DATETIME,
+    status TEXT CHECK(status IN ('confirmed', 'timeout')),
+    FOREIGN KEY(user_id) REFERENCES Users(user_id)
+);
+""")
+
+# Step 2: Insert mock data into tables
+users = [
+    (1, '2023-01-01 10:00:00'),
+    (2, '2023-01-02 11:00:00'),
+    (3, '2023-01-03 12:00:00'),
+    (4, '2023-01-04 13:00:00')
+]
+cursor.executemany("INSERT INTO Users VALUES (?, ?);", users)
+
+order_attempts = [
+    (1, '2023-02-01 09:00:00', 'confirmed'),
+    (1, '2023-02-01 09:05:00', 'confirmed'),
+    (2, '2023-02-01 10:00:00', 'timeout'),
+    (2, '2023-02-01 10:05:00', 'confirmed'),
+    (2, '2023-02-01 10:10:00', 'timeout'),
+    (3, '2023-02-01 11:00:00', 'timeout')
+    # user 4 has no order attempts
+]
+cursor.executemany("INSERT INTO OrderAttempts VALUES (?, ?, ?);", order_attempts)
+
+conn.commit()
+
+# Step 3: Query to compute confirmation rate
+query = """
+SELECT 
+    Users.user_id,
+    ROUND(
+        IFNULL(SUM(CASE WHEN OrderAttempts.status = 'confirmed' THEN 1 ELSE 0 END) * 1.0 /
+               COUNT(OrderAttempts.status), 0),
+        2
+    ) AS confirmation_rate
+FROM 
+    Users
+LEFT JOIN 
+    OrderAttempts ON Users.user_id = OrderAttempts.user_id
+GROUP BY 
+    Users.user_id;
+"""
+
+# Step 4: Run the query and display the result
+result = pd.read_sql_query(query, conn)
+print(result)
+
+# Close the connection
+conn.close()

@@ -1,0 +1,51 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Muhammad Usman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/aos.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Muhammad Usman</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mode-toggle">
+                <input type="checkbox" id="mode-switch">
+                <label for="mode-switch"></label>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact" data-aos="fade-up">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/username" target="_blank"><img src="assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/username" target="_blank"><img src="assets/github-icon.png" alt="GitHub"></a>
+            <a href="mailto:email@example.com"><img src="assets/email-icon.png" alt="Email"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Usman</p>
+    </footer>
+
+   <script src="libs/aos.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

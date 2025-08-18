@@ -1,0 +1,2 @@
+TRIM 
+UPPER, LOWER and PROPER

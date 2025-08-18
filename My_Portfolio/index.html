@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Usman - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/aos.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Muhammad Usman</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mode-toggle">
+                <input type="checkbox" id="mode-switch">
+                <label for="mode-switch"></label>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-content">
+            <h1>Hello, I'm Muhammad Usman</h1>
+            <p>A <span id="typed"></span></p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="intro" data-aos="fade-right">
+        <h2>Welcome to My Portfolio</h2>
+        <p>As a passionate Data Analyst, I specialize in turning data into actionable insights using tools like SQL, Python, Power BI, and Excel.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Usman</p>
+    </footer>
+
+    <script src="libs/typed.min.js"></script>
+    <script src="libs/aos.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Typed.js for hero section
+        new Typed('#typed', {
+            strings: ['Data Analyst', 'SQL Expert', 'Python Developer', 'Power BI Specialist', 'Excel Pro'],
+            typeSpeed: 50,
+            delaySpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+</html>

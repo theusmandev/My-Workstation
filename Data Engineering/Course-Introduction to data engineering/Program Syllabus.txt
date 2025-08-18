@@ -1,0 +1,182 @@
+What is this program about?
+This program was designed by Joe Reis in partnership with DeepLearning.AI and AWS to cover the fundamentals of data engineering, both in terms of the underlying theory and frameworks for thinking like a data engineering, as well as practical skills for building data engineering solutions on the cloud. 
+
+Who is this program designed for? 
+This program is designed for anyone interested in pursuing a career in or adjacent to data engineering. You might be a student, or already working professionally in a field that involves data. In either case, you’re interested in acquiring data engineering skills and knowledge to support your career goals. Even if you are already working as a data engineer, you will find value in the combination of theoretical background and technical application presented here. 
+
+What background knowledge do I need before taking this course?
+Intermediate Python programming skills are required, including familiarity with Python syntax, data structures, functions, and classes. Some familiarity with Pandas dataframes may also be helpful but is not required. To learn the basics of working with Pandas dataframes, we recommend the 
+W3 School Pandas tutorials
+ or the 
+Kaggle Pandas tutorials
+. 
+
+Basic familiarity with SQL may also helpful but not required. Feel free to check out the 
+SQLBolt Tutorials course
+ if you want to learn the basics of SQL.
+
+Basic familiarity with the technical fundamentals of the AWS cloud will be helpful but not required. To learn the basics of AWS we recommend the 
+AWS Cloud Practitioner Essentials
+ and 
+AWS Cloud Technical Essentials
+ courses.
+
+What is unique about this program? 
+This program teaches you how to think like a data engineer
+This program will teach you how to think like a data engineer when designing, building, and maintaining systems that take raw data, turn it into something useful, and serve it to downstream stakeholders. It’s not just about the tools and technologies! You will first learn how to gather stakeholder needs and understand the business problems they are trying to solve with data. Then you’ll translate those needs into system requirements, and choose the appropriate tools and technologies for the solutions you’re aiming to build. By the end of this program, you’ll walk away with a robust mental framework that you can apply to any data engineering project.
+
+Hands-on practice
+You’ll have plenty of opportunities to practice applying the mental framework for how to think like a data engineer through hands-on activities. You’ll be thrown into simulated stakeholder conversations and be asked to gather requirements for your data systems. You’ll design and implement end-to-end batch and streaming data pipelines on the AWS cloud, troubleshoot common problems that are faced by many new data engineers, use popular open source tools to orchestrate and monitor your data pipelines, build data lake and data lakehouse storage architectures, query, model, and transform your data using various processing frameworks, and serve data to downstream stakeholders for business analytics and machine learning use cases. This program takes a just-in-time approach to introduce you to tools and technologies you’ll need for each exercise, and you’ll be guided through each step of the labs with detailed instructions and video walkthroughs. 
+
+Textbook and Readings
+Fundamentals of Data Engineering
+
+Additional supplementary reading materials will be provided throughout the courses
+
+Program Outline
+This program is structured as 4 courses.
+
+Course 1 - Introduction to Data Engineering
+
+This course consists of 4 weeks of content and covers these main learning objectives:
+
+Identify key upstream and downstream collaborators and stakeholders for data engineers
+
+Articulate a mental framework for building data engineering solutions
+
+Identify some of the necessary considerations for requirements gathering at the start of a new project
+
+Describe the structure of the data engineering lifecycle and its undercurrents, and how to think about data engineering problems through this lens
+
+Identify some of the key technologies that can be employed in different stages of the data engineering lifecycle
+
+Evaluate technologies and tools against the context of requirements and good data architecture
+
+Design a data architecture on AWS based on stakeholder requirements
+
+Implement a batch and streaming pipeline on AWS to support a product recommendation system
+
+Course 2 - Source Systems, Data Ingestion, and Pipelines
+
+This course consists of 4 weeks of content and covers these main learning objectives:
+
+Identify different data formats and determine appropriate source systems for generating each type of data
+
+Explain at a high level how data is generated, stored, and retrieved in various source systems, including relational databases, NoSQL databases, object storage, and streaming systems
+
+Explain the basics of cloud networking
+
+Troubleshoot database connection errors
+
+Explain the difference between batch and streaming ingestions and identify uses cases for each pattern
+
+Differentiate between the two batch ingestion patterns: Extract-Transform-Load (ETL) and Extract-Load-Transform (ELT)
+
+Create a script to ingest data from a REST API
+
+Describe the basic components of an event-streaming platform
+
+Interact with an event streaming platform as a source system and as an ingestion tool
+
+Use Terraform to provision AWS resources for your data pipeline
+
+Identify tools for monitoring your data systems and data quality
+
+Identify and monitor relevant data quality metrics
+
+Explain how orchestration can be applied to a data pipeline, and list its benefits
+
+Build data pipelines with DAGs in Airflow using features such as Taskflow API, operators, XCom variables, etc.
+
+Course 3 - Data Storage and Queries
+
+This course consists of 3 weeks of content and covers these main learning objectives:
+
+Explain how data is physically stored on disk and in memory
+
+Compare how data is stored and queried in object, block, and file storage systems
+
+Explain how data is stored in row-oriented vs column-oriented databases
+
+Explain how graph and vector databases store and retrieve data
+
+Explain the key architectural features of data warehouses, data lakes, and data lakehouses
+
+Implement a data lake using AWS Glue
+
+Implement a data lakehouse with a medallion-like architecture using Lake Formation and Iceberg
+
+Explain the stages of the life of a query
+
+Implement advanced SQL queries
+
+Explain the role of of an index and its impact on query performance
+
+Summarize approaches for processing aggregate and join queries
+
+Compare the execution times of aggregate queries between row and columnar storage
+
+List some strategies for enhancing query performance
+
+Aggregate and join streaming data
+
+Course 4 - Data Modeling, Transformation, and Serving
+
+This course consists of 4 weeks of content and covers these main learning objectives:
+
+Define data modeling and its role in reflecting business logic
+
+Apply the normalization stages to a denormalized table
+
+Describe the fact and dimension tables of a star schema and transform data in third normal form to a star schema
+
+Describe the data warehouse modeling approaches such as Inmon, Kimball, Data Vault, and One Big Table
+
+Use feature engineering to convert a dataset into a tabular form that’s expected by a classical machine learning algorithms
+
+Preprocess and vectorize textual data
+
+List techniques for processing and augmenting image data
+
+Compare an in-memory processing framework like Spark, and a disk-based processing framework like Hadoop
+
+Describe the technical considerations for choosing a distributed processing framework, such as Spark, vs a non-distributed framework like Pandas dataframes
+
+Describe the technical considerations for using Spark SQL vs Spark DataFrames when transforming data using PySpark
+
+Describe how streaming transformation works with a near-real time processing engine such as Spark Structured Streaming
+
+Identify different ways of serving data for analytics and machine learning use cases
+
+Describe the purpose of a semantic layer that sits on top of the data model
+
+Create views and materialized views
+
+Describe the benefits and drawbacks of serving data using views and materialized views
+
+Learning Activities Used in This Program
+Lecture videos: A collection of short videos that cover the underlying theory as well as demonstrations for important tools and technologies you need for each week. There are also “Lab Walkthrough” videos that give you a high level overview of the labs before you dive in. Some of the videos are labeled “[Optional]”, and are designed to supplement your learning experience but you will not be assessed on this content. Some of these optional videos feature industry experts and are intended to provide you with practical feedback from veterans in the field of data.
+
+Labs: Hands-on exercises that allow you to practice applying what you learned in the lecture videos. These are designed to help you develop skills for particular open source or AWS technologies that are commonly used when building data engineering solutions. There are two types of labs:
+
+Graded Programming Assignments: These lab assignments cover critical concepts for that week, and they typically make up a larger percentage of your grade. 
+
+Practice Labs: These labs are ungraded. The concepts covered in these labs are still important. However, to reduce the pressure of needing to excel in all the labs, we've decided to designate some of them as "practice". This way, you can focus on learning from the labs rather than just completing them for a grade. You are encouraged to try all of the labs, whether they are graded or practice labs!
+
+Quizzes: A collection of questions to help you reinforce your learning about the concepts covered in each week. You will find a graded quiz near the end of each week, and the grade you obtain for those quizzes will contribute to your overall grade for each course. Occasionally you will find practice quizzes that contain reflection questions or short graded quizzes that contain questions to check your understanding throughout the week. After completing each quiz, make sure you read the feedback carefully.
+
+Reading items: Content presented in a textual format so that you can more easily reference the information later on. Some of these reading items will include additional links for you to learn more about the topic. Unless otherwise specified, you are not required to review the materials from these external links to be successful in this program. Some of these reading items are labeled “[Optional]” and cover secondary material that is not critical for the program. You can review these readings if you’re interested, but you will not be assessed on this content.
+
+How are Assessments Graded?
+A grade of 80% or more is required to pass all assessment items (quiz assignments, practice labs, and graded programming assignments). Please refer to the "Grades" tab from the course homepage to see your grades for each assessment.
+
+
+
+
+
+
+
+https://www.w3schools.com/python/pandas/default.asp
+https://sqlbolt.com/lesson/select_queries_introduction
+https://www.kaggle.com/learn/pandas
+https://www.redpanda.com/guides/fundamentals-of-data-engineering

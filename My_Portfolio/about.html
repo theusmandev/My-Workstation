@@ -1,0 +1,89 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Muhammad Usman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Muhammad Usman</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mode-toggle">
+                <input type="checkbox" id="mode-switch">
+                <label for="mode-switch"></label>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about" data-aos="fade-up">
+        <h1>About Me</h1>
+        <p>I'm a Data Analyst with experience in data visualization, statistical analysis, and business intelligence.</p>
+        
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="skill-bar">
+                <span>SQL</span>
+                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span>Python</span>
+                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span>Power BI</span>
+                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span>Excel</span>
+                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+            </div>
+        </div>
+        
+        <div class="chart-container" data-aos="zoom-in">
+            <h2>Skill Levels Chart</h2>
+            <canvas id="skillsChart"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Usman</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Chart.js
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['SQL', 'Python', 'Power BI', 'Excel'],
+                datasets: [{
+                    label: 'Proficiency (%)',
+                    data: [90, 85, 80, 95],
+                    backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                    borderColor: 'rgba(0, 123, 255, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: { beginAtZero: true, max: 100 }
+                },
+                responsive: true
+            }
+        });
+    </script>
+</body>
+</html>

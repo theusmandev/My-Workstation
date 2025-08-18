@@ -1,0 +1,1065 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+    <title>Novel Search System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&amp;display=swap" rel="stylesheet"></link>
+    <style>
+       /* Global Styles */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+    color: #212529;
+    line-height: 1.6;
+    padding: 16px;
+    min-height: 100vh;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Marquee */
+marquee {
+    background: linear-gradient(to right, #ffca2c, #f4b400);
+    padding: 10px;
+    font-size: 1rem;
+    color: #212529;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 960px;
+    margin: 0 auto 24px;
+    position: relative;
+}
+#searchBox {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    min-width: 160px; /* Reduced by 20% from 200px */
+}
+#searchBox:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+.search-btn {
+    background-color: #0d6efd;
+    color: #fff;
+}
+.search-btn:hover {
+    background-color: #005cbf;
+}
+.mic-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dc3545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.mic-btn:hover {
+    background-color: #b02a37;
+}
+.mic-btn.listening {
+    background-color: #28a745;
+}
+.clear-btn {
+    background-color: #f87171;
+    color: #fff;
+}
+.clear-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Autosuggestions */
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-width: 960px;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    margin: 0 auto;
+}
+.suggestions.active {
+    display: block;
+}
+.suggestion-item {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    color: #212529;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.suggestion-item:hover,
+.suggestion-item.selected {
+    background-color: #f8f9fa;
+}
+.suggestion-item span {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+/* Results Per Page Dropdown */
+.results-per-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 16px auto;
+    max-width: 960px;
+}
+#resultsPerPage {
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+#resultsPerPage:focus {
+    border-color: #0d6efd;
+}
+
+/* Loader */
+#loading {
+    display: none;
+    margin: 16px auto;
+    text-align: center;
+}
+.loader {
+    border: 5px solid #dee2e6;
+    border-top: 5px solid #0d6efd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Results and Favorites */
+#results, #favorites, #recommendedNovels {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.novel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    gap: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.novel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+.novel span {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.novel a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+}
+.novel a:hover {
+    text-decoration: underline;
+}
+.copy-btn, .share-btn, .favorite-btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+}
+.copy-btn {
+    background-color: #0d6efd;
+    color: #fff;
+}
+.copy-btn:hover {
+    background-color: #005cbf;
+}
+.share-btn {
+    background-color: #198754;
+    color: #fff;
+}
+.share-btn:hover {
+    background-color: #146c43;
+}
+.favorite-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+.favorite-btn.favorited {
+    background-color: #dc3545;
+    color: #fff;
+}
+.favorite-btn:hover {
+    background-color: #ffca2c;
+}
+.favorite-btn.favorited:hover {
+    background-color: #b02a37;
+}
+
+/* Favorites Section */
+#favoritesSection {
+    max-width: 960px;
+    margin: 24px auto;
+}
+#favoritesToggle {
+    display: block;
+    margin: 0 auto 12px;
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: 500;
+}
+#favoritesToggle:hover {
+    background-color: #ffca2c;
+}
+#favorites {
+    display: none;
+}
+#favorites.active {
+    display: block;
+}
+
+/* Recommended Novels Section */
+#recommendedNovels {
+    margin-top: 16px;
+}
+#recommendedNovels p {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', sans-serif;
+    font-size: 0.95rem;
+    color: #212529;
+    margin-bottom: 12px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5.88px; /* Reduced by 2% from 6px */
+    margin: 24px auto;
+    max-width: 960px;
+}
+.pagination button {
+    padding: 5.88px 11.76px; /* Reduced by 2% from 6px 12px */
+    font-size: 0.833rem; /* Reduced by 2% from 0.85rem */
+    background-color: #e9ecef;
+    color: #212529;
+    border-radius: 6px;
+    min-width: 35.28px; /* Reduced by 2% from 36px */
+}
+.pagination button:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+.pagination button.active {
+    background-color: #0d6efd;
+    color: #fff;
+    pointer-events: none;
+}
+.pagination button:disabled {
+    background-color: #ced4da;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+.pagination .ellipsis {
+    padding: 5.88px 11.76px; /* Reduced by 2% from 6px 12px */
+    color: #6c757d;
+    background: none;
+    pointer-events: none;
+    font-size: 0.833rem; /* Reduced by 2% from 0.85rem */
+}
+
+/* Messages */
+.error-message, .success-message, .search-time {
+    max-width: 960px;
+    margin: 12px auto;
+    font-size: 0.85rem;
+    text-align: center;
+}
+.error-message {
+    color: #dc3545;
+}
+.success-message {
+    color: #198754;
+}
+.search-time {
+    color: #6c757d;
+}
+.highlight {
+    background-color: #fff3cd;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+    .search-container {
+        flex-wrap: nowrap;
+        gap: 6px;
+    }
+    #searchBox {
+        flex: 1;
+        padding: 8px 10px;
+        font-size: 0.85rem;
+        min-width: 128px; /* Reduced by 20% from 160px */
+    }
+    .search-btn, .clear-btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    .mic-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+    .suggestions {
+        max-height: 150px;
+    }
+    .novel {
+        flex-direction: column;
+        text-align: center;
+        padding: 12px;
+    }
+    .novel span {
+        white-space: normal;
+        font-size: 0.95rem;
+    }
+    .pagination button {
+        padding: 5.88px 9.8px; /* Reduced by 2% from 6px 10px */
+        font-size: 0.784rem; /* Reduced by 2% from 0.8rem */
+        min-width: 31.36px; /* Reduced by 2% from 32px */
+    }
+    .pagination .ellipsis {
+        padding: 5.88px 9.8px; /* Reduced by 2% from 6px 10px */
+        font-size: 0.784rem; /* Reduced by 2% from 0.8rem */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    marquee {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .search-container {
+        flex-wrap: nowrap;
+        gap: 4px;
+    }
+    #searchBox {
+        font-size: 0.8rem;
+        padding: 6px 8px;
+        min-width: 128px; /* Reduced by 20% from 160px */
+    }
+    .search-btn, .clear-btn {
+        padding: 5px 8px;
+        font-size: 0.75rem;
+    }
+    .mic-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+    .suggestions {
+        max-height: 120px;
+    }
+    .novel {
+        padding: 10px;
+    }
+    .novel span {
+        font-size: 0.9rem;
+    }
+    .copy-btn, .share-btn, .favorite-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    .pagination {
+        gap: 3.92px; /* Reduced by 2% from 4px */
+    }
+    .pagination button {
+        padding: 4.9px 7.84px; /* Reduced by 2% from 5px 8px */
+        font-size: 0.735rem; /* Reduced by 2% from 0.75rem */
+        min-width: 29.4px; /* Reduced by 2% from 30px */
+    }
+    .pagination .ellipsis {
+        padding: 4.9px 7.84px; /* Reduced by 2% from 5px 8px */
+        font-size: 0.735rem; /* Reduced by 2% from 0.75rem */
+    }
+}
+    </style>
+</head>
+<body>
+    <marquee direction="left">📚 Discover Novels Instantly - Search and Download!</marquee>
+    <h2>Fast Novel Searching System</h2>
+    <div class="search-container">
+        <input aria-label="Search novels" id="searchBox" placeholder="Search novels Here..." type="text" />
+        <div class="suggestions" id="suggestions"></div>
+        <button class="search-btn" onclick="searchNovel()">Search</button>
+        <button aria-label="Voice search" class="mic-btn" onclick="startVoiceSearch()">🎤</button>
+        <button class="clear-btn" onclick="clearSearch()">Clear</button>
+    </div>
+    <div class="results-per-page">
+        <label for="resultsPerPage">Results per page:</label>
+        <select id="resultsPerPage" onchange="changeResultsPerPage()">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option selected="" value="20">20</option>
+        </select>
+    </div>
+    <div class="loader" id="loading"></div>
+    <p id="resultCount"></p>
+    <p class="search-time" id="searchTime"></p>
+    <div id="results"></div>
+    <div id="recommendedNovels"></div>
+    <div class="pagination" id="pagination"></div>
+    <div id="favoritesSection">
+        <button id="favoritesToggle" onclick="toggleFavorites()">Show Favorites</button>
+        <div id="favorites"></div>
+    </div>
+    <p class="error-message" id="errorMessage"></p>
+    <p class="success-message" id="successMessage"></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
+    <script>
+        let novels = [];
+        let jsonUrl = "https://raw.githubusercontent.com/novels-sracks/readyok/refs/heads/main/readyready.json"; // REPLACE WITH YOUR ACTUAL GITHUB JSON URL
+        let fuse;
+        let searchResults = [];
+        let currentPage = 1;
+        let resultsPerPage = 20;
+        let selectedSuggestionIndex = -1;
+
+        // Replace with your actual Google Apps Script URL after deployment
+        const googleScriptURL = "https://script.google.com/macros/s/AKfycbzuJc2bicMhDKbrBhaSQj3tKakoihMosV9F2j-HIelvyOp4YIra0fr7V7glc7tLF-N1/exec";
+
+        function isOnline() {
+            return navigator.onLine;
+        }
+
+        // Debounce function to limit the rate of function calls
+        function debounce(func, wait) {
+            let timeout;
+            return function (...args) {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, args), wait);
+            };
+        }
+
+        function loadNovelData(maxRetries = 3, retryDelay = 1000) {
+            if (!isOnline()) {
+                document.getElementById("errorMessage").textContent = "No internet connection. Please check your network.";
+                return;
+            }
+
+            let retries = 0;
+
+            function attemptFetch() {
+                fetch(jsonUrl)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (!Array.isArray(data)) {
+                            throw new Error("Invalid JSON format: Expected an array.");
+                        }
+                        novels = data;
+                        fuse = new Fuse(novels, { keys: ['Titles'], threshold: 0.2, includeScore: true });
+                        displayFavorites();
+                        displayAllNovelsRandomly();
+                        document.getElementById("errorMessage").textContent = "";
+                    })
+                    .catch(error => {
+                        console.error("Error loading JSON:", error);
+                        retries++;
+                        if (retries < maxRetries) {
+                            console.log(`Retrying... Attempt ${retries + 1} of ${maxRetries}`);
+                            setTimeout(attemptFetch, retryDelay);
+                        } else {
+                            document.getElementById("errorMessage").textContent = `Failed to load novel data: ${error.message}.`;
+                        }
+                    });
+            }
+
+            attemptFetch();
+        }
+
+        loadNovelData();
+
+        function showSuggestions(query) {
+            const suggestionsDiv = document.getElementById("suggestions");
+            suggestionsDiv.innerHTML = "";
+            selectedSuggestionIndex = -1;
+
+            if (query.trim() === "") {
+                suggestionsDiv.classList.remove("active");
+                return;
+            }
+
+            const results = fuse.search(query).slice(0, 5);
+            if (results.length === 0) {
+                suggestionsDiv.classList.remove("active");
+                return;
+            }
+
+            results.forEach((result, index) => {
+                const suggestion = document.createElement("div");
+                suggestion.classList.add("suggestion-item");
+                const highlightedTitle = result.item.Titles.replace(
+                    new RegExp(query, "gi"),
+                    (match) => `<span>${match}</span>`
+                );
+                suggestion.innerHTML = highlightedTitle;
+                suggestion.onclick = () => {
+                    document.getElementById("searchBox").value = result.item.Titles;
+                    suggestionsDiv.classList.remove("active");
+                    searchNovel();
+                };
+                suggestionsDiv.appendChild(suggestion);
+            });
+
+            suggestionsDiv.classList.add("active");
+        }
+
+        // Debounced version of showSuggestions
+        const debouncedShowSuggestions = debounce((query) => {
+            showSuggestions(query.trim().toLowerCase());
+        }, 300);
+
+        function handleKeyNavigation(e) {
+            const suggestionsDiv = document.getElementById("suggestions");
+            const suggestionItems = suggestionsDiv.querySelectorAll(".suggestion-item");
+
+            if (!suggestionsDiv.classList.contains("active") || suggestionItems.length === 0) {
+                return;
+            }
+
+            if (e.key === "ArrowDown") {
+                e.preventDefault();
+                selectedSuggestionIndex = Math.min(selectedSuggestionIndex + 1, suggestionItems.length - 1);
+                updateSelectedSuggestion(suggestionItems);
+            } else if (e.key === "ArrowUp") {
+                e.preventDefault();
+                selectedSuggestionIndex = Math.max(selectedSuggestionIndex - 1, -1);
+                updateSelectedSuggestion(suggestionItems);
+            } else if (e.key === "Enter" && selectedSuggestionIndex >= 0) {
+                e.preventDefault();
+                suggestionItems[selectedSuggestionIndex].click();
+            } else if (e.key === "Escape") {
+                suggestionsDiv.classList.remove("active");
+                selectedSuggestionIndex = -1;
+            }
+        }
+
+        function updateSelectedSuggestion(suggestionItems) {
+            suggestionItems.forEach((item, index) => {
+                item.classList.toggle("selected", index === selectedSuggestionIndex);
+            });
+        }
+
+        document.getElementById("searchBox").addEventListener("input", (e) => {
+            debouncedShowSuggestions(e.target.value);
+        });
+
+        document.getElementById("searchBox").addEventListener("keydown", handleKeyNavigation);
+
+        document.addEventListener("click", (e) => {
+            const suggestionsDiv = document.getElementById("suggestions");
+            const searchBox = document.getElementById("searchBox");
+            if (!suggestionsDiv.contains(e.target) && !searchBox.contains(e.target)) {
+                suggestionsDiv.classList.remove("active");
+            }
+        });
+
+        function toggleFavorite(title, link) {
+            let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+            const index = favorites.findIndex(f => f.Titles === title);
+            if (index === -1) {
+                favorites.push({ Titles: title, Links: link });
+            } else {
+                favorites.splice(index, 1);
+            }
+            localStorage.setItem("favorites", JSON.stringify(favorites));
+            displayResults(document.getElementById("searchBox").value.trim().toLowerCase());
+            displayFavorites();
+        }
+
+        function isFavorited(title) {
+            const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+            return favorites.some(f => f.Titles === title);
+        }
+
+        function displayFavorites() {
+            const favoritesDiv = document.getElementById("favorites");
+            const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+            favoritesDiv.innerHTML = "";
+
+            if (favorites.length === 0) {
+                favoritesDiv.innerHTML = "<p>No favorites added.</p>";
+                return;
+            }
+
+            favorites.forEach(favorite => {
+                const div = document.createElement("div");
+                div.classList.add("novel");
+                div.innerHTML = `
+                    <span>${favorite.Titles}</span>
+                    <a href="${favorite.Links}" target="_blank" onclick="handleDownload(event, '${favorite.Links}')">📥 Download</a>
+                    <button class="copy-btn" onclick="copyToClipboard('${favorite.Links}')">Copy Link</button>
+                    <button class="share-btn" onclick="shareNovel('${favorite.Titles}', '${favorite.Links}')">🔗 Share</button>
+                    <button class="favorite-btn favorited" onclick="toggleFavorite('${favorite.Titles}', '${favorite.Links}')">❤️ Remove</button>
+                `;
+                favoritesDiv.appendChild(div);
+            });
+        }
+
+        function toggleFavorites() {
+            const favoritesDiv = document.getElementById("favorites");
+            const toggleButton = document.getElementById("favoritesToggle");
+            favoritesDiv.classList.toggle("active");
+            toggleButton.textContent = favoritesDiv.classList.contains("active") ? "Hide Favorites" : "Show Favorites";
+            if (favoritesDiv.classList.contains("active")) {
+                displayFavorites();
+            }
+        }
+
+        // Fisher-Yates Shuffle Algorithm for efficient randomization
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        function getRandomNovels(count) {
+            const shuffled = shuffleArray(novels);
+            return count ? shuffled.slice(0, Math.min(count, novels.length)) : shuffled;
+        }
+
+        function displayRecommendedNovels(query) {
+            const recommendedDiv = document.getElementById("recommendedNovels");
+            recommendedDiv.innerHTML = "";
+
+            if (searchResults.length !== 0) {
+                return;
+            }
+
+            const message = document.createElement("p");
+            message.setAttribute("dir", "rtl");
+            message.innerHTML = `آپ کا سرچ کردہ ناول "<strong>${query}</strong>" جلد ہی اسمارٹ اردو ناول بینک میں شامل کر دیا جائے گا۔ اس دوران آپ نیچے دیے گئے ناول پڑھ سکتے ہیں:`;
+            recommendedDiv.appendChild(message);
+
+            const randomNovels = getRandomNovels(10);
+            randomNovels.forEach(novel => {
+                const div = document.createElement("div");
+                div.classList.add("novel");
+                const favorited = isFavorited(novel.Titles);
+                div.innerHTML = `
+                    <span>${novel.Titles}</span>
+                    <a href="${novel.Links}" target="_blank" onclick="handleDownload(event, '${novel.Links}')">📥 Download</a>
+                    <button class="copy-btn" onclick="copyToClipboard('${novel.Links}')">Copy Link</button>
+                    <button class="share-btn" onclick="shareNovel('${novel.Titles}', '${novel.Links}')">🔗 Share</button>
+                    <button class="favorite-btn ${favorited ? 'favorited' : ''}" onclick="toggleFavorite('${novel.Titles}', '${novel.Links}')">${favorited ? '❤️ Remove' : '☆ Favorite'}</button>
+                `;
+                recommendedDiv.appendChild(div);
+            });
+        }
+
+        function displayAllNovelsRandomly() {
+            let resultsDiv = document.getElementById("results");
+            let loadingDiv = document.getElementById("loading");
+            let errorMessage = document.getElementById("errorMessage");
+            let successMessage = document.getElementById("successMessage");
+            let searchTimeElement = document.getElementById("searchTime");
+            let suggestionsDiv = document.getElementById("suggestions");
+
+            errorMessage.textContent = "";
+            successMessage.textContent = "";
+            searchTimeElement.textContent = "";
+            suggestionsDiv.classList.remove("active");
+            document.getElementById("recommendedNovels").innerHTML = "";
+
+            if (!isOnline()) {
+                errorMessage.textContent = "No internet connection.";
+                return;
+            }
+
+            resultsDiv.innerHTML = "<p style='color: #6c757d; text-align: center;'>Loading novels...</p>";
+            loadingDiv.style.display = "block";
+            currentPage = 1;
+
+            const startTime = new Date().getTime();
+
+            setTimeout(() => {
+                searchResults = getRandomNovels();
+                loadingDiv.style.display = "none";
+                updateResultCount(searchResults.length);
+
+                const endTime = new Date().getTime();
+                const timeTaken = (endTime - startTime) / 1000;
+                searchTimeElement.textContent = `Loaded in ${timeTaken.toFixed(2)} seconds.`;
+
+                resultsDiv.innerHTML = "";
+                displayResults("");
+                renderPagination();
+                successMessage.textContent = "All novels loaded!";
+            }, 500);
+        }
+
+        function searchNovel() {
+            let query = document.getElementById("searchBox").value.trim().toLowerCase();
+            let resultsDiv = document.getElementById("results");
+            let loadingDiv = document.getElementById("loading");
+            let errorMessage = document.getElementById("errorMessage");
+            let successMessage = document.getElementById("successMessage");
+            let searchTimeElement = document.getElementById("searchTime");
+            let suggestionsDiv = document.getElementById("suggestions");
+
+            errorMessage.textContent = "";
+            successMessage.textContent = "";
+            searchTimeElement.textContent = "";
+            suggestionsDiv.classList.remove("active");
+
+            if (!isOnline()) {
+                errorMessage.textContent = "No internet connection.";
+                return;
+            }
+
+            resultsDiv.innerHTML = "<p style='color: #6c757d; text-align: center;'>Searching...</p>";
+            loadingDiv.style.display = "block";
+            currentPage = 1;
+
+            const startTime = new Date().getTime();
+
+            setTimeout(() => {
+                if (query === "" || query === "all" || query === "all novels" || query === "sab" || query === "sab novels" || query === "all novel" || query === "allnovels" || query === "allNovel" || query === "all novals" || query === "all noeval" || query === "aall novels" || query === "all urdu novels" || query === "all nvoels" || query === "all nvoel" || query === "allnvoels" || query === "all navels" || query === "all navals" || query === "all navils" || query === "all novils" || query === "alll novels") {
+                    searchResults = getRandomNovels();
+                } else {
+                    searchResults = fuse.search(query).map(result => result.item);
+                }
+
+                loadingDiv.style.display = "none";
+                updateResultCount(searchResults.length);
+
+                const endTime = new Date().getTime();
+                const timeTaken = (endTime - startTime) / 1000;
+                searchTimeElement.textContent = `Search completed in ${timeTaken.toFixed(2)} seconds.`;
+
+                const noResults = searchResults.length === 0;
+                if (query !== "") {
+                    saveSearchToGoogleSheet(query, noResults);
+                }
+
+                if (noResults && query !== "") {
+                    resultsDiv.innerHTML = "<p style='color: #dc3545; text-align: center;'>No novels found!</p>";
+                    document.getElementById("pagination").innerHTML = "";
+                    errorMessage.textContent = "No novels found.";
+                    displayRecommendedNovels(document.getElementById("searchBox").value);
+                } else {
+                    resultsDiv.innerHTML = "";
+                    document.getElementById("recommendedNovels").innerHTML = "";
+                    displayResults(query);
+                    renderPagination();
+                    successMessage.textContent = query === "" ? "All novels loaded!" : "Search completed!";
+                }
+            }, 500);
+        }
+
+        function updateResultCount(count) {
+            document.getElementById("resultCount").textContent = `Found: ${count} Novels`;
+        }
+
+        function displayResults(query) {
+            let resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            const startIndex = (currentPage - 1) * resultsPerPage;
+            const endIndex = startIndex + resultsPerPage;
+            let paginatedResults = searchResults.slice(startIndex, endIndex);
+
+            paginatedResults.forEach(novel => {
+                let div = document.createElement("div");
+                div.classList.add("novel");
+
+                let highlightedTitle = query
+                    ? novel.Titles.replace(
+                          new RegExp(query, "gi"),
+                          (match) => `<span class="highlight">${match}</span>`
+                      )
+                    : novel.Titles;
+                const favorited = isFavorited(novel.Titles);
+                div.innerHTML = `
+                    <span>${highlightedTitle}</span>
+                    <a href="${novel.Links}" target="_blank" onclick="handleDownload(event, '${novel.Links}')">📥 Download</a>
+                    <button class="copy-btn" onclick="copyToClipboard('${novel.Links}')">Copy Link</button>
+                    <button class="share-btn" onclick="shareNovel('${novel.Titles}', '${novel.Links}')">🔗 Share</button>
+                    <button class="favorite-btn ${favorited ? 'favorited' : ''}" onclick="toggleFavorite('${novel.Titles}', '${novel.Links}')">${favorited ? '❤️ Remove' : '☆ Favorite'}</button>
+                `;
+                resultsDiv.appendChild(div);
+            });
+        }
+
+        function renderPagination() {
+            const paginationDiv = document.getElementById("pagination");
+            paginationDiv.innerHTML = "";
+
+            const totalPages = Math.ceil(searchResults.length / resultsPerPage);
+
+            if (totalPages <= 1) return;
+
+            const prevButton = document.createElement("button");
+            prevButton.textContent = "Prev";
+            prevButton.disabled = currentPage === 1;
+            prevButton.onclick = () => changePage(currentPage - 1);
+            paginationDiv.appendChild(prevButton);
+
+            const maxVisiblePages = 4;
+            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+            if (endPage - startPage + 1 < maxVisiblePages) {
+                startPage = Math.max(1, endPage - maxVisiblePages + 1);
+            }
+
+            if (startPage > 1) {
+                const firstPageButton = document.createElement("button");
+                firstPageButton.textContent = "1";
+                firstPageButton.onclick = () => changePage(1);
+                paginationDiv.appendChild(firstPageButton);
+
+                if (startPage > 2) {
+                    const ellipsis = document.createElement("span");
+                    ellipsis.textContent = "...";
+                    ellipsis.classList.add("ellipsis");
+                    paginationDiv.appendChild(ellipsis);
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                const pageButton = document.createElement("button");
+                pageButton.textContent = i;
+                if (i === currentPage) pageButton.classList.add("active");
+                pageButton.onclick = () => changePage(i);
+                paginationDiv.appendChild(pageButton);
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    const ellipsis = document.createElement("span");
+                    ellipsis.textContent = "...";
+                    ellipsis.classList.add("ellipsis");
+                    paginationDiv.appendChild(ellipsis);
+                }
+
+                const lastPageButton = document.createElement("button");
+                lastPageButton.textContent = totalPages;
+                lastPageButton.onclick = () => changePage(totalPages);
+                paginationDiv.appendChild(lastPageButton);
+            }
+
+            const nextButton = document.createElement("button");
+            nextButton.textContent = "Next";
+            nextButton.disabled = currentPage === totalPages;
+            nextButton.onclick = () => changePage(currentPage + 1);
+            paginationDiv.appendChild(nextButton);
+        }
+
+        function changePage(page) {
+            currentPage = page;
+            displayResults(document.getElementById("searchBox").value.trim().toLowerCase());
+            renderPagination();
+        }
+
+        function changeResultsPerPage() {
+            resultsPerPage = parseInt(document.getElementById("resultsPerPage").value);
+            currentPage = 1;
+            displayResults(document.getElementById("searchBox").value.trim().toLowerCase());
+            renderPagination();
+        }
+
+        function shareNovel(title, link) {
+            const shareText = `Check out: ${title}\nLink: ${link}\n\nUrdu Novel Bank`;
+            if (navigator.share) {
+                navigator.share({ title, text: shareText, url: link })
+                    .then(() => console.log("Shared!"))
+                    .catch((error) => console.error("Share error:", error));
+            } else {
+                navigator.clipboard.writeText(shareText)
+                    .then(() => alert("Copied to clipboard! 📋"))
+                    .catch((error) => console.error("Copy error:", error));
+            }
+        }
+
+        function handleDownload(event, link) {
+            event.preventDefault();
+            if (!isOnline()) {
+                alert("No internet connection.");
+                return;
+            }
+            if (link.startsWith("https://drive.google.com") || link.includes("mediafire.com")) {
+                window.open(link, "_blank");
+                return;
+            }
+            fetch(link, { method: 'HEAD' })
+                .then(response => {
+                    if (!response.ok) throw new Error("Link not accessible.");
+                    window.open(link, "_blank");
+                })
+                .catch(error => {
+                    console.error("Download error:", error);
+                    alert("Failed to download. Link may be broken.");
+                });
+        }
+
+        function startVoiceSearch() {
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = "en-US";
+            recognition.start();
+
+            document.getElementById("searchBox").placeholder = "Listening...";
+            document.querySelector(".mic-btn").classList.add("listening");
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                document.getElementById("searchBox").value = transcript;
+                searchNovel();
+                document.getElementById("searchBox").placeholder = "Search novels Here...";
+                document.querySelector(".mic-btn").classList.remove("listening");
+            };
+
+            recognition.onerror = (event) => {
+                console.error("Voice error:", event.error);
+                alert("Voice recognition error. Try again.");
+                document.getElementById("searchBox").placeholder = "Search novels Here...";
+                document.querySelector(".mic-btn").classList.remove("listening");
+            };
+
+            recognition.onend = () => {
+                document.getElementById("searchBox").placeholder = "Search novels Here...";
+                document.querySelector(".mic-btn").classList.remove("listening");
+            };
+        }
+
+        function saveSearchToGoogleSheet(query, noResults) {
+            const timestamp = new Date().toISOString();
+            const deviceType = navigator.userAgent.includes("Mobile") ? "Mobile" : "Desktop";
+            const userId = localStorage.getItem("userId") || crypto.randomUUID();
+            localStorage.setItem("userId", userId);
+
+            sendDataToSheet(query, timestamp, deviceType, userId, noResults);
+        }
+
+        function sendDataToSheet(query, timestamp, deviceType, userId, noResults) {
+            const data = `search=${encodeURIComponent(query)}×tamp=${encodeURIComponent(timestamp)}&device=${encodeURIComponent(deviceType)}&userId=${encodeURIComponent(userId)}&noResults=${encodeURIComponent(noResults)}`;
+
+            fetch(googleScriptURL, {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: data,
+            })
+                .then(response => {
+                    if (!response.ok) throw new Error("Failed to save search.");
+                    console.log("Search saved: " + query);
+                })
+                .catch(error => {
+                    console.error("Save error:", error);
+                    document.getElementById("errorMessage").textContent = "Failed to save search data.";
+                });
+        }
+
+        function clearSearch() {
+            document.getElementById("searchBox").value = "";
+            document.getElementById("results").innerHTML = "";
+            document.getElementById("pagination").innerHTML = "";
+            document.getElementById("resultCount").textContent = "";
+            document.getElementById("errorMessage").textContent = "";
+            document.getElementById("successMessage").textContent = "";
+            document.getElementById("searchTime").textContent = "";
+            document.getElementById("suggestions").classList.remove("active");
+            document.getElementById("recommendedNovels").innerHTML = "";
+            displayAllNovelsRandomly();
+        }
+
+        function copyToClipboard(link) {
+            navigator.clipboard.writeText(link)
+                .then(() => alert("Link copied! 📋"))
+                .catch(error => {
+                    console.error("Copy error:", error);
+                    alert("Failed to copy link.");
+                });
+        }
+    </script>
+</body>
+</html>

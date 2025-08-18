@@ -1,0 +1,6 @@
+first_name,gender,start_date,last_login_time,salary,bonus_percent,senior_management,team
+Douglas,Male,1993-08-06,12:42:00,97308,6.945,1,"Marketing"
+Thomas,Male,1993-08-07,13:42:00,61933,4.17,0,"Operator"
+Maria,Female,1993-08-08,14:42:00,130590,11.858,0,"Finance"
+Jerry,Male,1993-08-09,15:42:00,138705,9.34,1,"Finance"
+Larry,Male,1993-08-10,16:42:00,101004,1.389,1,"Client Services"
