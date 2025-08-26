@@ -62,7 +62,7 @@ class MenuObj:
         pygame.mixer.music.play(-1)
         i=80
         for B in self.ds_options:
-            btn = Button(250, i, r'DSA_Visualizer\B_Pink.png', B, 30, 220, 110)
+            btn = Button(250, i, r'DSA_Visualizer\B_Pink.', B, 30, 220, 110)
             self.ds_Btns.append(btn)
             i += 80
 
