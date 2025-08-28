@@ -71,7 +71,7 @@ class MenuObj:
         self.algo_Btns = []
         i=100
         for B in self.algo_options:
-            btn = Button(170, i, r'DSA_Visualizer\B_Red.png', B, 48, 510, 255)
+            btn = Button(170, i, r'DSA_Visualizer\B_Red.', B, 48, 510, 255)
             self.algo_Btns.append(btn)
             btn.display(self.screen)
             i += 200
