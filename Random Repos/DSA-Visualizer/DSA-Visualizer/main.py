@@ -6,7 +6,7 @@ from UIProperties import *
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
 clock  = pygame.time.Clock()
-Icon= pygame.image.load(r"DSA_Visualizer\ICON.jpg")
+Icon= pygame.image.load(r"DSA_Visualizer\ICON.")
 
 pygame.display.set_icon(Icon)
 Menu_Btns= []
