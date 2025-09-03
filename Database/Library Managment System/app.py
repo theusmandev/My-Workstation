@@ -4,13 +4,12 @@ import pyodbc
 app = Flask(__name__)
 
 def get_connection():
-    conn = pyodbc.connect(
-        "Driver={SQL Server};"
-        "Server=DESKTOP-1234\\SQLEXPRESS;"
+    return pyodbc.connect(
+        "Driver={ODBC Driver 17 for SQL Server};"
+        "Server=localhost;"   # agar express edition hai to localhost\\SQLEXPRESS likho
         "Database=BookStoreDB;"
         "Trusted_Connection=yes;"
     )
-    return conn
 
 @app.route("/")
 def home():
