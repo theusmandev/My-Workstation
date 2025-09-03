@@ -4,10 +4,15 @@
     <title>Book Store</title>
 </head>
 <body>
-    <h1>Book Store</h1>
+    <h1>📚 Book Store</h1>
+    <a href="{{ url_for('add_book') }}">➕ Add New Book</a>
     <ul>
-        {% for b in books %}
-            <li>{{ b.Title }} by {{ b.Author }} - ${{ b.Price }}</li>
+        {% for book in books %}
+            <li>
+                {{ book.Title }} by {{ book.Author }} - ${{ book.Price }}
+                | <a href="{{ url_for('edit_book', book_id=book.BookID) }}">✏️ Edit</a>
+                | <a href="{{ url_for('delete_book', book_id=book.BookID) }}">🗑️ Delete</a>
+            </li>
         {% endfor %}
     </ul>
 </body>
