@@ -3,7 +3,7 @@ import pyodbc
 
 app = Flask(__name__)
 
-# ✅ Database Connection (Windows Authentication)
+
 def get_connection():
     return pyodbc.connect(
         "Driver={ODBC Driver 17 for SQL Server};"
