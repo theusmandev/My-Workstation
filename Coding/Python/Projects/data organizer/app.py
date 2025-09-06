@@ -309,7 +309,6 @@ def organize_files_by_extension(input_folder, output_base, exclude_extensions=No
         print(f"❌ Error creating output folder '{output_base}': {e}")
         return False
 
-    # Default empty set for excluded extensions
     exclude_extensions = set(ext.lower() for ext in (exclude_extensions or []))
 
     # Collect all files upfront for progress bar
