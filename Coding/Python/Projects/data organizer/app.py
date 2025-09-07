@@ -289,7 +289,7 @@ def organize_files_by_extension(input_folder, output_base, exclude_extensions=No
     skipped_files = 0
     errors = 0
 
-    # Convert to Path objects for efficiency
+   
     input_folder = Path(input_folder).resolve()
     output_base = Path(output_base).resolve()
     print(f"🚀 Starting organization: Input = {input_folder}, Output = {output_base}")
