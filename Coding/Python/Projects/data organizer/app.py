@@ -284,7 +284,7 @@ def organize_files_by_extension(input_folder, output_base, exclude_extensions=No
     Organize files from input_folder into subfolders in output_base based on file extensions.
     Optimized for speed with progress bar and enhanced error handling for corrupted files.
     """
-    # Initialize counters
+    
     copied_files = 0
     skipped_files = 0
     errors = 0
