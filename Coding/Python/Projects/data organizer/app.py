@@ -294,7 +294,6 @@ def organize_files_by_extension(input_folder, output_base, exclude_extensions=No
     output_base = Path(output_base).resolve()
     print(f"🚀 Starting organization: Input = {input_folder}, Output = {output_base}")
 
-    # Validate input folder
     if not input_folder.exists():
         print(f"❌ Error: Input folder '{input_folder}' does not exist!")
         return False
