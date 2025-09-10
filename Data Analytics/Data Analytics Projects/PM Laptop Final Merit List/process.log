@@ -1,0 +1,32 @@
+2025-09-10 19:11:05,652 - INFO - Script started
+2025-09-10 19:11:08,290 - INFO - Starting to read sheets
+2025-09-10 19:11:09,626 - INFO - Script started
+2025-09-10 19:11:09,636 - INFO - Script started
+2025-09-10 19:11:09,637 - INFO - Script started
+2025-09-10 19:11:09,644 - INFO - Script started
+2025-09-10 19:11:11,991 - INFO - Starting to read sheets
+2025-09-10 19:11:12,048 - INFO - Starting to read sheets
+2025-09-10 19:11:12,063 - INFO - Starting to read sheets
+2025-09-10 19:11:12,128 - INFO - Starting to read sheets
+2025-09-10 19:11:29,650 - INFO - Script started
+2025-09-10 19:11:31,540 - INFO - Starting to read sheets
+2025-09-10 19:11:32,707 - INFO - Script started
+2025-09-10 19:11:32,717 - INFO - Script started
+2025-09-10 19:11:32,735 - INFO - Script started
+2025-09-10 19:11:32,748 - INFO - Script started
+2025-09-10 19:11:34,925 - INFO - Starting to read sheets
+2025-09-10 19:11:35,004 - INFO - Starting to read sheets
+2025-09-10 19:11:35,090 - INFO - Starting to read sheets
+2025-09-10 19:11:35,091 - INFO - Starting to read sheets
+2025-09-10 19:12:49,035 - INFO - Script started
+2025-09-10 19:12:51,066 - INFO - Starting to read sheets
+2025-09-10 19:12:52,244 - INFO - Script started
+2025-09-10 19:12:52,253 - INFO - Script started
+2025-09-10 19:12:52,253 - INFO - Script started
+2025-09-10 19:12:52,256 - INFO - Script started
+2025-09-10 19:12:55,025 - INFO - Total sheets read: 4, Empty sheets: 0, Total rows: 10922, Blank rows: 0
+2025-09-10 19:12:55,026 - INFO - Combining all sheets
+2025-09-10 19:12:55,070 - INFO - Duplicate rows found: 0, Final rows after drop: 10922
+2025-09-10 19:12:55,070 - INFO - Saving final data
+2025-09-10 19:12:57,287 - INFO - Data saved to Excel: E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\Combined_Output.xlsx
+2025-09-10 19:12:57,288 - INFO - Script completed successfully
