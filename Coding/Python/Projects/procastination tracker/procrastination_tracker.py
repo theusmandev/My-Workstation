@@ -8,7 +8,7 @@ import datetime
 import os
 import json
 
-# Configuration
+
 TARGET_APP = "Code"  # Name of the target app (e.g., "Code" for VS Code)
 IDLE_THRESHOLD = 60  # Seconds of no input to consider idle
 DISTRACTION_THRESHOLD = 600  # Seconds (10 minutes) to trigger notification
