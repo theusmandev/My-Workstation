@@ -117,7 +117,7 @@ def process_sheets():
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
     logging.info(f"Duplicate rows found: {duplicate_rows}, Final rows after drop: {combined_df.shape[0]}")
 
-    # -------------------------------
+  
     # Smart Output Decision
     # -------------------------------
     EXCEL_ROW_LIMIT = 1_048_576

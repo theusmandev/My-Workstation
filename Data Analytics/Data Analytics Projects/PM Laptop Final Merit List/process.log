@@ -30,3 +30,65 @@
 2025-09-10 19:12:55,070 - INFO - Saving final data
 2025-09-10 19:12:57,287 - INFO - Data saved to Excel: E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\Combined_Output.xlsx
 2025-09-10 19:12:57,288 - INFO - Script completed successfully
+2025-09-10 19:28:21,441 - INFO - Script started
+2025-09-10 19:28:23,828 - INFO - Starting to read sheets
+2025-09-10 19:28:25,002 - INFO - Script started
+2025-09-10 19:28:25,005 - ERROR - Error reading sheet Table 1: read_excel() got an unexpected keyword argument 'chunksize'
+2025-09-10 19:28:25,005 - ERROR - Error reading sheet Table 2: read_excel() got an unexpected keyword argument 'chunksize'
+2025-09-10 19:28:25,006 - ERROR - Error reading sheet Table 3: read_excel() got an unexpected keyword argument 'chunksize'
+2025-09-10 19:28:25,006 - ERROR - Error reading sheet Table 4: read_excel() got an unexpected keyword argument 'chunksize'
+2025-09-10 19:28:25,019 - INFO - Script started
+2025-09-10 19:28:25,019 - INFO - Script started
+2025-09-10 19:28:25,031 - INFO - Script started
+2025-09-10 19:28:25,200 - WARNING - Skipped empty or invalid sheet: Table 1
+2025-09-10 19:28:25,200 - WARNING - Skipped empty or invalid sheet: Table 2
+2025-09-10 19:28:25,201 - WARNING - Skipped empty or invalid sheet: Table 3
+2025-09-10 19:28:25,201 - WARNING - Skipped empty or invalid sheet: Table 4
+2025-09-10 19:28:25,202 - INFO - Total sheets read: 4, Empty sheets: 4, Total rows: 0, Blank rows: 0
+2025-09-10 19:28:25,202 - INFO - Combining all sheets
+2025-09-10 19:29:53,339 - INFO - Script started
+2025-09-10 19:29:55,442 - INFO - Starting to read sheets
+2025-09-10 19:29:56,746 - INFO - Script started
+2025-09-10 19:29:56,749 - ERROR - Error reading sheet Table 1: read_excel() got an unexpected keyword argument 'chunksize'
+2025-09-10 19:29:56,749 - INFO - Script started
+2025-09-10 19:29:56,750 - ERROR - Error reading sheet Table 2: read_excel() got an unexpected keyword argument 'chunksize'
+2025-09-10 19:29:56,750 - ERROR - Error reading sheet Table 3: read_excel() got an unexpected keyword argument 'chunksize'
+2025-09-10 19:29:56,750 - ERROR - Error reading sheet Table 4: read_excel() got an unexpected keyword argument 'chunksize'
+2025-09-10 19:29:56,771 - INFO - Script started
+2025-09-10 19:29:56,774 - INFO - Script started
+2025-09-10 19:29:56,937 - WARNING - Skipped empty or invalid sheet: Table 1
+2025-09-10 19:29:56,937 - WARNING - Skipped empty or invalid sheet: Table 2
+2025-09-10 19:29:56,939 - WARNING - Skipped empty or invalid sheet: Table 3
+2025-09-10 19:29:56,939 - WARNING - Skipped empty or invalid sheet: Table 4
+2025-09-10 19:29:56,940 - INFO - Total sheets read: 4, Empty sheets: 4, Total rows: 0, Blank rows: 0
+2025-09-10 19:29:56,941 - INFO - Combining all sheets
+2025-09-10 19:29:56,941 - ERROR - No valid sheets to concatenate. All sheets were empty or invalid.
+2025-09-10 19:32:49,581 - INFO - Script started
+2025-09-10 19:32:51,718 - INFO - Starting to read sheets
+2025-09-10 19:32:52,992 - INFO - Script started
+2025-09-10 19:32:52,993 - INFO - Script started
+2025-09-10 19:32:52,995 - ERROR - Error reading sheet Table 1: openpyxl failed (read_excel() got an unexpected keyword argument 'chunksize'), xlrd failed (read_excel() got an unexpected keyword argument 'chunksize')
+2025-09-10 19:32:52,995 - ERROR - Error reading sheet Table 2: openpyxl failed (read_excel() got an unexpected keyword argument 'chunksize'), xlrd failed (read_excel() got an unexpected keyword argument 'chunksize')
+2025-09-10 19:32:52,996 - ERROR - Error reading sheet Table 3: openpyxl failed (read_excel() got an unexpected keyword argument 'chunksize'), xlrd failed (read_excel() got an unexpected keyword argument 'chunksize')
+2025-09-10 19:32:52,996 - ERROR - Error reading sheet Table 4: openpyxl failed (read_excel() got an unexpected keyword argument 'chunksize'), xlrd failed (read_excel() got an unexpected keyword argument 'chunksize')
+2025-09-10 19:32:53,015 - INFO - Script started
+2025-09-10 19:32:53,019 - INFO - Script started
+2025-09-10 19:32:53,185 - WARNING - Skipped empty or invalid sheet: Table 1
+2025-09-10 19:32:53,185 - WARNING - Skipped empty or invalid sheet: Table 2
+2025-09-10 19:32:53,186 - WARNING - Skipped empty or invalid sheet: Table 3
+2025-09-10 19:32:53,186 - WARNING - Skipped empty or invalid sheet: Table 4
+2025-09-10 19:32:53,187 - INFO - Total sheets read: 4, Empty sheets: 4, Total rows: 0, Blank rows: 0
+2025-09-10 19:32:53,187 - INFO - Combining all sheets
+2025-09-10 19:32:53,188 - ERROR - No valid sheets to concatenate. All sheets were empty or invalid.
+2025-09-10 19:33:33,262 - INFO - Script started
+2025-09-10 19:33:35,130 - INFO - Starting to read sheets
+2025-09-10 19:33:36,306 - INFO - Script started
+2025-09-10 19:33:36,308 - INFO - Script started
+2025-09-10 19:33:36,318 - INFO - Script started
+2025-09-10 19:33:36,333 - INFO - Script started
+2025-09-10 19:33:39,276 - INFO - Total sheets read: 4, Empty sheets: 0, Total rows: 10922, Blank rows: 0
+2025-09-10 19:33:39,276 - INFO - Combining all sheets
+2025-09-10 19:33:39,321 - INFO - Duplicate rows found: 0, Final rows after drop: 10922
+2025-09-10 19:33:39,321 - INFO - Saving final data
+2025-09-10 19:33:41,519 - INFO - Data saved to Excel: E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\Combined_Output.xlsx
+2025-09-10 19:33:41,519 - INFO - Script completed successfully
