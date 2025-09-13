@@ -41,7 +41,7 @@ excel_output = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Lap
 csv_output = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\Combined_Output.csv"
 sqlite_output = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\Combined_Data.db"
 
-# -------------------------------
+
 # Read All Sheets in Chunks
 # -------------------------------
 xls = pd.ExcelFile(input_file)
