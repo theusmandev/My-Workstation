@@ -43,7 +43,7 @@ sqlite_output = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM La
 
 
 # Read All Sheets in Chunks
-# -------------------------------
+
 xls = pd.ExcelFile(input_file)
 df_list = []
 total_rows = 0
