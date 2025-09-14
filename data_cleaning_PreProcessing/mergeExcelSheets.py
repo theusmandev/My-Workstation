@@ -33,7 +33,7 @@ import pandas as pd
 import sqlite3
 import os
 
-# -------------------------------
+
 # File Paths
 # -------------------------------
 input_file = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\VirtualUniversityofPakistan_Final_MeritList - Copy.xlsx"
