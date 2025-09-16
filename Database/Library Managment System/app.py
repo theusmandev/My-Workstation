@@ -12,7 +12,7 @@ def get_connection():
         "Trusted_Connection=yes;"
     )
 
-# ✅ Home (Read All Books)
+
 @app.route("/")
 def home(): 
     conn = get_connection()
