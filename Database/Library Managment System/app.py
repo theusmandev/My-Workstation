@@ -22,7 +22,7 @@ def home():
     conn.close()
     return render_template("index.html", books=books)
 
-# ✅ Add Book (Form Page)
+
 @app.route("/add", methods=["GET", "POST"])
 def add_book():
     if request.method == "POST":
