@@ -38,7 +38,7 @@ def add_book():
         return redirect(url_for("home"))
     return render_template("add_book.html")
 
-# ✅ Edit Book (Update)
+# ✅ E
 @app.route("/edit/<int:book_id>", methods=["GET", "POST"])
 def edit_book(book_id):
     conn = get_connection()
