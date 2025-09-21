@@ -7,7 +7,7 @@ app = Flask(__name__)
 def get_connection():
     return pyodbc.connect(
         "Driver={ODBC Driver 17 for SQL Server};"
-        "Server=localhost;"      # agar Express edition hai to localhost\\SQLEXPRESS
+        "Server=localhost;"      # Express edition hai to localhost\\SQLEXPRESS
         "Database=BookStoreDB;"
         "Trusted_Connection=yes;"
     )
