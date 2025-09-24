@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3
 import os
 
-# -------------------------------
+
 # File Paths
 # -------------------------------
 input_file = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\VirtualUniversityofPakistan_Final_MeritList - Copy.xlsx"
@@ -10,7 +10,7 @@ excel_output = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Lap
 csv_output = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\Combined_Output.csv"
 sqlite_output = r"E:\My-Workstation\Data Analytics\Data Analytics Projects\PM Laptop Final Merit List\Combined_Data.db"
 
-# -------------------------------
+
 # Read All Sheets
 # -------------------------------
 xls = pd.ExcelFile(input_file)

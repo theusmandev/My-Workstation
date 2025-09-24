@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load both Excel files
+
 file1 = r""
 file2 = r""
 
