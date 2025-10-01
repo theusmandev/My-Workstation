@@ -9,7 +9,7 @@ data = {
     "Count": [10, 5, 8, 12, 4, 16, 2, 43]
 }
 
-# Create DataFrame
+
 df = pd.DataFrame(data)
 
 # Add total students
