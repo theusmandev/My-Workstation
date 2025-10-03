@@ -1,0 +1,52 @@
+
+
+    <style>
+.novel-wrapper {
+    margin: 30px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    background: #fff;
+    display: inline-block; 
+}
+
+.novel-header {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-family: "Noto Nastaliq Urdu", serif, Arial, sans-serif;
+}
+
+/* iframe ka size post ke andar jo diya hai wahi rahega */
+.novel-wrapper iframe {
+    border: none;
+    display: block;
+}
+</style>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".post-body iframe").forEach(function(iframe) {
+    // wrapper create karo
+    let wrapper = document.createElement("div");
+    wrapper.className = "novel-wrapper";
+
+    // header add karo
+    let header = document.createElement("div");
+    header.className = "novel-header";
+    header.innerText = "📖 اردو ناول بینک";
+
+    // iframe ke parent me replace karo
+    iframe.parentNode.insertBefore(wrapper, iframe);
+    wrapper.appendChild(header);
+    wrapper.appendChild(iframe);
+  });
+});
+</script>   
