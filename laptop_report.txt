@@ -1,0 +1,135 @@
+Quick Buying Checklist:
+- Physical cores detected: 4
+- Logical processors / threads detected: 8
+- Battery info present.
+- GPU detected (check model in detailed report).
+- Save this report and compare with seller specs.
+
+Generated: 2025-10-10T16:23:25.278703
+Run on: Windows-11-10.0.26100-SP0
+
+======== SUMMARY ========
+
+
+======== Windows System Info ========
+
+Caption=Microsoft Windows 11 Pro
+
+OSArchitecture=64-bit
+
+Version=10.0.26100
+
+======== CPU ========
+
+MaxClockSpeed=1896
+
+Name=Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz
+
+NumberOfCores=4
+
+NumberOfLogicalProcessors=8
+
+======== BIOS / Serial ========
+
+Manufacturer=Dell Inc.
+
+ReleaseDate=20190704000000.000000+000
+
+SerialNumber=FGB02Z2
+
+SMBIOSBIOSVersion=1.4.2
+
+======== System / Baseboard ========
+
+Manufacturer=Dell Inc.
+
+Model=Latitude 5400
+Manufacturer=Dell Inc.
+
+Product=0PD9KD
+
+SerialNumber=/FGB02Z2/CNCMK009960549/
+
+======== Memory (RAM) ========
+
+Capacity=8589934592
+
+DeviceLocator=DIMM A
+
+Manufacturer=80AD000080AD
+
+Speed=2667
+
+
+
+
+
+Capacity=8589934592
+
+DeviceLocator=DIMM B
+
+Manufacturer=802C0000802C
+
+Speed=2133
+
+======== Disk Drives ========
+
+InterfaceType=IDE
+
+Model=SATA CVB-8D512
+
+Size=512105932800
+
+======== Video Controllers (GPU) ========
+
+AdapterRAM=
+
+DriverVersion=10.10.30.904
+
+Name=VirtualMonitor Device
+
+
+
+
+
+AdapterRAM=1073741824
+
+DriverVersion=31.0.101.2135
+
+Name=Intel(R) UHD Graphics 620
+
+======== Battery (if present) ========
+
+BatteryStatus=1
+
+EstimatedChargeRemaining=78
+
+Name=DELL XV8CJ98
+
+======== Network / MAC Addresses ========
+
+Connection Name:  Wi-Fi
+Network Adapter:  Qualcomm QCA61x4A 802.11ac Wireless Adapter
+Physical Address: C0-B5-D7-C1-4C-AB
+Transport Name:   \Device\Tcpip_{F844945D-123A-4D67-853A-2B0AC8D87DF9}
+
+Connection Name:  Ethernet
+Network Adapter:  Intel(R) Ethernet Connection (6) I219-LM
+Physical Address: 98-E7-43-5E-33-A3
+Transport Name:   Media disconnected
+
+Connection Name:  Ethernet 3
+Network Adapter:  VirtualBox Host-Only Ethernet Adapter
+Physical Address: 0A-00-27-00-00-07
+Transport Name:   \Device\Tcpip_{70D00507-24A9-49B9-861E-378C32E70068}
+
+======== Python ========
+
+Python 3.13.2
+
+======== Display Drivers (powershell) ========
+
+DeviceName                DriverVersion
+----------                -------------
+Intel(R) UHD Graphics 620 31.0.101.2135
+VirtualMonitor Device     10.10.30.904
