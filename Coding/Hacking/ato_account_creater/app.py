@@ -283,7 +283,6 @@
 #                 EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Continue')]"))
 #             )
 
-#             # Fill form
 #             phone_field.send_keys(str(row['Phone']))
 #             logging.debug(f"Entered phone: {row['Phone']}")
 #             password_field.send_keys(str(row['Password']))
