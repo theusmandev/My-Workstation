@@ -2,7 +2,7 @@ import psutil
 import time
 import winsound
 
-def battery_alert(threshold=86):
+def battery_alert(threshold=85):
     alerted = False
     while True:
         battery = psutil.sensors_battery()

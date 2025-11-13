@@ -10,8 +10,8 @@ CELL_HEIGHT = 100
 class Queue:
     def __init__(self):
 
-        self.Buttons=[Button(150, 150, r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Pink.png", " Array Based Queue", 42, 550, 250),
-                      Button(150, 350, r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Sk_Blu.png", "   Linked List Based Queue", 42, 550, 250)]
+        self.Buttons=[Button(150, 150, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", " Array Based Queue", 42, 550, 250),
+                      Button(150, 350, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Sk_Blu.png", "   Linked List Based Queue", 42, 550, 250)]
     def display(self, screen):
         txt="Choose an implementation approach."
         screen.blit(FONT_S2.render(txt, True, WHITE, PURPLE),(10, 50))
@@ -35,9 +35,9 @@ class Queue_Array_Based:
 
         # (use consistent path separators)
         self.array.interface_Btns = [
-            Button(150, 50,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Red.png", "Enqueue", 32, 200, 100),
-            Button(350, 50,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Red.png", "Dequeue", 32, 200, 100),
-            Button(550, 50,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Red.png", "Clear",   32, 200, 100),
+            Button(150, 50,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Enqueue", 32, 200, 100),
+            Button(350, 50,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Dequeue", 32, 200, 100),
+            Button(550, 50,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Clear",   32, 200, 100),
         ]
         self.array.top_Margin = 350
 
@@ -108,9 +108,9 @@ class Queue_LinkedList_Based(LinkedList):
         self.indx_Circle=None
         self.indx_Rad=50
         self.interface_Btns=[
-            Button(150, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Red.png", "Enqueue", 32, 200, 100),
-            Button(350, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Red.png", "Dequeue", 32, 200, 100),
-            Button(550, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Red.png", "Clear",32, 200, 100)
+            Button(150, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Enqueue", 32, 200, 100),
+            Button(350, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Dequeue", 32, 200, 100),
+            Button(550, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Clear",32, 200, 100)
         ]
         #1 boxes for  value 
         self.input_box= pygame.Rect(10, 10, 140, 80)

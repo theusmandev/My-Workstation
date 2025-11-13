@@ -10,9 +10,9 @@ random.seed(time.time()) #SEEEEDDD, NVM
 class Sorting_Algos:
     def __init__(self):
         self.algo_btns=[
-            Button(200, 150, r'DSA_Visualizer\B_Sk_Blu.png', "Bubble Sort", 36, 360, 180),
-            Button(200, 270, r'DSA_Visualizer\B_Pink.png', "Selection Sort", 36, 360, 180),
-            Button(200, 390, r"DSA_Visualizer\B_Purp.png", "Insertion Sort", 36, 360, 180)
+            Button(200, 150, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Sk_Blu.png", "Bubble Sort", 36, 360, 180),
+            Button(200, 270, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Selection Sort", 36, 360, 180),
+            Button(200, 390, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Insertion Sort", 36, 360, 180)
         ]
 
     def Draw(self, screen):
@@ -40,8 +40,8 @@ class Bubble_Sort:
 
         # small control buttons (bottom-left; away from Back at bottom-right)
         self.control_btns = [
-            Button(20, 520, r'DSA_Visualizer\B_Pink.png', " Stop/Start", 28,  160, 80),
-            Button(170, 520, r'DSA_Visualizer\B_Pink.png', " Restart",     28, 160, 80),
+            Button(20, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", " Stop/Start", 28,  160, 80),
+            Button(170, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", " Restart",     28, 160, 80),
         ]
 
         # banner message state
@@ -192,8 +192,8 @@ class Selection_Sort:
 
         
         self.control_btns = [
-            Button(20, 520, r'DSA_Visualizer\B_Pink.png', " Stop/Start", 28,  160, 80),
-            Button(170, 520, r'DSA_Visualizer\B_Pink.png', " Restart",     28, 160, 80),
+            Button(20, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", " Stop/Start", 28,  160, 80),
+            Button(170, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", " Restart",     28, 160, 80),
         ]
         self.banner_text = ""
         self.banner_until = 0
@@ -370,8 +370,8 @@ class Insertion_Sort:
 
         # UI controls (bottom-left; won’t cover Back button)
         self.control_btns = [
-            Button(20, 520,  r'DSA_Visualizer\B_Pink.png', " Stop/Start", 28, 160, 80),
-            Button(190, 520, r'DSA_Visualizer\B_Pink.png', " Restart",     28, 160, 80),
+            Button(20, 520,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", " Stop/Start", 28, 160, 80),
+            Button(190, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", " Restart",     28, 160, 80),
         ]
         self.banner_text = ""
         self.banner_until = 0
@@ -574,8 +574,8 @@ class Searching_Algos:
 
     def __init__(self):
             self.algo_btns=[
-            Button(170, 100, r"DSA_Visualizer\B_Purp.png", "Linear Search",48, 510, 255),
-            Button(170, 300, r'DSA_Visualizer\B_Pink.png', "Binary Search", 48, 510, 255)
+            Button(170, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Linear Search",48, 510, 255),
+            Button(170, 300, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Binary Search", 48, 510, 255)
         ]
 
     def Draw(self, screen):
@@ -605,8 +605,8 @@ class Binary_Search:
         self.target = None
 
         self.control_btns = [
-            Button(20, 520,  r'DSA_Visualizer\B_Pink.png', "Start",   28, 160, 80),
-            Button(190, 520, r'DSA_Visualizer\B_Pink.png', "Restart", 28, 160, 80),
+            Button(20, 520,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Start",   28, 160, 80),
+            Button(190, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Restart", 28, 160, 80),
         ]
 
         self.banner_text  = ""
@@ -809,8 +809,8 @@ class Linear_Search:
 
         # controls + target box (same placement as Binary Search for consistency)
         self.control_btns = [
-            Button(20, 520,  r'DSA_Visualizer\B_Pink.png', "Start",   28, 160, 80),
-            Button(190, 520, r'DSA_Visualizer\B_Pink.png', "Restart", 28, 160, 80),
+            Button(20, 520,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Start",   28, 160, 80),
+            Button(190, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Restart", 28, 160, 80),
         ]
         self.tgt_box = pygame.Rect(SCREEN_WIDTH - 180, 12, 140, 40)
         self.tgt_active = False

@@ -10,11 +10,11 @@ class Button:
         self.rect  = self.image.get_rect(topleft=(x, y))
         self.text = text
         # create a font at the right size
-        self.font = pygame.font.Font(r'DSA_Visualizer\BlockBlueprint.ttf', font_size)
+        self.font = pygame.font.Font(r"E:\My-Workstation\Random Repos\DSA-Visualizer\BlockBlueprint.ttf", font_size)
         self.text_surface = self.font.render(text, True, WHITE)
         self.text_rect   = self.text_surface.get_rect(center=self.rect.center)
         self.amClicked = False
-        self.Click_Sound= pygame.mixer.Sound(r"DSA_Visualizer\mixkit-game-click-1114.wav")
+        self.Click_Sound= pygame.mixer.Sound(r"E:\My-Workstation\Random Repos\DSA-Visualizer\mixkit-game-click-1114.wav")
         self.Click_Sound.set_volume(0.5)
         
     def is_hovered(self, event):

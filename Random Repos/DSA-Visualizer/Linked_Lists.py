@@ -43,9 +43,9 @@ class LinkedList:
         self.in_Search=False
 
         self.interface_Btns = [
-            Button(5, 0, r'DSA_Visualizer\B_Red.png', "Insert", 28, 160, 80),
-            Button(5, 60, r'DSA_Visualizer\B_Red.png', "Delete", 28, 160, 80),
-            Button(5, 120, r'DSA_Visualizer\B_Red.png', "Search", 28, 160, 80)
+            Button(5, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png" ,"Insert", 28, 160, 80),
+            Button(5, 60, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Delete", 28, 160, 80),
+            Button(5, 120, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Search", 28, 160, 80)
         ]
 
         
@@ -54,14 +54,14 @@ class LinkedList:
                              "String": str,
                              "Char": str}
         self.dataType_Btns = [
-            Button(50, 100, r'DSA_Visualizer\B_Pink.png', "Integer", 64, 300, 150),
-            Button(400, 100, r'DSA_Visualizer\B_Purp.png', "Float", 64, 300, 150),
-            Button(50, 250, r'DSA_Visualizer\B_DedBlu.png', "String", 64, 300, 150),
-            Button(400, 250, r'DSA_Visualizer\B_Green.png', "Char", 64, 300, 150)
+            Button(50, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink_Sq.png", "Integer", 64, 300, 150),
+            Button(400, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Float", 64, 300, 150),
+            Button(50, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_DedBlu.png", "String", 64, 300, 150),
+            Button(400, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Char", 64, 300, 150)
         ]
-        self.Where_To_Buttons = [Button(150, 10, r'DSA_Visualizer\B_Ded_G_Sq.png', "At Head", 28,200, 70),
-                                 Button(300, 10, r'DSA_Visualizer\B_Ded_G_Sq.png', "At Tail", 28, 200, 70),
-                                 Button(450, 10, r'DSA_Visualizer\B_Ded_G_Sq.png', "At Index", 28, 200, 70)]
+        self.Where_To_Buttons = [Button(150, 10, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Ded_G_Sq.png", "At Head", 28,200, 70),
+                                 Button(300, 10, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Ded_G_Sq.png", "At Tail", 28, 200, 70),
+                                 Button(450, 10, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Ded_G_Sq.png", "At Index", 28, 200, 70)]
 
     def Calculate_Node_Positions(self):
         """Update positions and values without destroying node objects/colors."""

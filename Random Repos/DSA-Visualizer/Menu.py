@@ -11,7 +11,7 @@ from Heaps import *
 from Queue import *
 from Settings import Setting_Object
 pygame.init()
-temp= pygame.image.load(r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\HomeScreen_Bg.png")
+temp= pygame.image.load(r"E:\My-Workstation\Random Repos\DSA-Visualizer\HomeScreen_Bg.png")
 Bg_Start= pygame.transform.smoothscale(temp, (800, 600))
 Bg_Rect= Bg_Start.get_rect(center=(400, 300))
 
@@ -26,7 +26,7 @@ class MenuObj:
         self.state = "main"    
         self.ds_options=['Arrays', 'Linked Lists', 'Stacks', 'Trees', 'Queues', 'Heaps']
         self.ds_Btns = []
-        self.BACK_Button= Button(620, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\B_Sk_Blu.png", " BACK", 48, 160, 80)
+        self.BACK_Button= Button(620, 520, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Sk_Blu.png", " BACK", 48, 160, 80)
         self.settings= Setting_Object()
         self.array = Array()
         self.linked_list = LinkedList()
@@ -57,12 +57,12 @@ class MenuObj:
 
         self.DarkMode= False
         self.ShowGrid=False
-        self.Bg_Music = pygame.mixer.music.load(r"E:\My-Workstation\Random Repos\DSA-Visualizer\DSA-Visualizer\roblox-minecraft-fortnite-video-game-music-358426 (1).mp3")
+        self.Bg_Music = pygame.mixer.music.load(r"E:\My-Workstation\Random Repos\DSA-Visualizer\roblox-minecraft-fortnite-video-game-music-358426 (1).mp3")
         pygame.mixer.music.set_volume(0.5)
         pygame.mixer.music.play(-1)
         i=80
         for B in self.ds_options:
-            btn = Button(250, i, r'DSA_Visualizer\B_Pink.', B, 30, 220, 110)
+            btn = Button(250, i, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", B, 30, 220, 110)
             self.ds_Btns.append(btn)
             i += 80
 
@@ -71,7 +71,7 @@ class MenuObj:
         self.algo_Btns = []
         i=100
         for B in self.algo_options:
-            btn = Button(170, i, r'DSA_Visualizer\B_Red.', B, 48, 510, 255)
+            btn = Button(170, i, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", B, 48, 510, 255)
             self.algo_Btns.append(btn)
             btn.display(self.screen)
             i += 200

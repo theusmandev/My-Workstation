@@ -6,16 +6,16 @@ from UIProperties import *
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
 clock  = pygame.time.Clock()
-Icon= pygame.image.load(r"DSA_Visualizer\ICON.")
+Icon= pygame.image.load(r"E:\My-Workstation\Random Repos\DSA-Visualizer\ICON.jpg")
 
 pygame.display.set_icon(Icon)
 Menu_Btns= []
 Sel_Btns=[]
-menu_b1 = Button(230, 150, r'DSA_Visualizer\B_Pink.png', "START", 48,320, 160)
-menu_b2 = Button(230, 270, r'DSA_Visualizer\B_DedBlu.png', "SETTINGS", 48,320, 160)
-menu_b3 = Button(230, 390, r'DSA_Visualizer\B_Purp.png', "QUIT", 48,320, 160)
-menu_b4 = Button(120, 150, r'DSA_Visualizer\B_Green.png', "Data Structures", 48,480, 240)
-menu_b5 = Button(120, 350, r'DSA_Visualizer\B_Maroon.png', "Algorithms", 48,480, 240)
+menu_b1 = Button(230, 150, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "START", 48,320, 160)
+menu_b2 = Button(230, 270, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_DedBlu.png", "SETTINGS", 48,320, 160)
+menu_b3 = Button(230, 390, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "QUIT", 48,320, 160)
+menu_b4 = Button(120, 150, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Data Structures", 48,480, 240)
+menu_b5 = Button(120, 350, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Maroon.png", "Algorithms", 48,480, 240)
 Menu_Btns.append(menu_b1)
 Menu_Btns.append(menu_b2)
 Menu_Btns.append(menu_b3)

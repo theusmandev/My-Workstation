@@ -17,8 +17,8 @@ def Show_Grid(screen):
 class Heap:
     def __init__(self):
 
-        self.Buttons=[Button(150, 150, r'DSA_Visualizer\B_Pink.png', "Min Heap", 54, 500, 250),
-                      Button(150, 350, r'DSA_Visualizer\B_Sk_Blu.png', "Max Heap", 54, 500, 250)]
+        self.Buttons=[Button(150, 150, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Min Heap", 54, 500, 250),
+                      Button(150, 350, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Sk_Blu.png", "Max Heap", 54, 500, 250)]
     def display(self, screen):
         txt="Choose a type of heap to visualize."
         screen.blit(FONT_S2.render(txt, True, WHITE, PURPLE),(10, 50))
@@ -186,19 +186,19 @@ class Visual_Min_Heap:
          self.visited_indices = set()     # everything we’ve already looked at
 
          self.interface_Btns = [
-            Button(155, 0, r'DSA_Visualizer\B_Maroon.png', "Insert", 32, 200, 100),
-            Button(355, 0, r'DSA_Visualizer\B_Maroon.png', "  Extract Root",32, 210, 100),
-            Button(555, 0, r'DSA_Visualizer\B_Maroon.png', "Search", 32, 200, 100)
+            Button(155, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Maroon.png", "Insert", 32, 200, 100),
+            Button(355, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Maroon.png", "  Extract Root",32, 210, 100),
+            Button(555, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Maroon.png", "Search", 32, 200, 100)
         ]
          self.data_Type_dict = {"Integer": int,
                              "Float": float,
                              "String": str,
                              "Char": str}
          self.dataType_Btns = [
-            Button(50, 100, r'DSA_Visualizer\B_Pink.png', "Integer", 64, 300, 150),
-            Button(400, 100, r'DSA_Visualizer\B_Purp.png', "Float", 64, 300, 150),
-            Button(50, 250, r'DSA_Visualizer\B_DedBlu.png', "String", 64, 300, 150),
-            Button(400, 250, r'DSA_Visualizer\B_Green.png', "Char", 64, 300, 150)
+            Button(50, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Integer", 64, 300, 150),
+            Button(400, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Float", 64, 300, 150),
+            Button(50, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_DedBlu.png", "String", 64, 300, 150),
+            Button(400, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Char", 64, 300, 150)
         ]
     def AskUser(self, screen) -> None:
         txt="Please select a data type:"
@@ -528,18 +528,18 @@ class Visual_Max_Heap:
 
         # buttons (same sizing as your min heap)
         self.interface_Btns = [
-            Button(155, 0, r'DSA_Visualizer\B_Maroon.png', "Insert", 32, 200, 100),
-            Button(355, 0, r'DSA_Visualizer\B_Maroon.png', "  Extract Root", 32, 210, 100),
-            Button(555, 0, r'DSA_Visualizer\B_Maroon.png', "Search", 32, 200, 100),
+            Button(155, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Maroon.png", "Insert", 32, 200, 100),
+            Button(355, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Maroon.png", "  Extract Root", 32, 210, 100),
+            Button(555, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Maroon.png", "Search", 32, 200, 100),
         ]
 
        
         self.data_Type_dict = {"Integer": int, "Float": float, "String": str, "Char": str}
         self.dataType_Btns = [
-            Button(50, 100,  r'DSA_Visualizer\B_Pink.png',   "Integer", 64, 300, 150),
-            Button(400, 100, r'DSA_Visualizer\B_Purp.png',   "Float",   64, 300, 150),
-            Button(50, 250,  r'DSA_Visualizer\B_DedBlu.png', "String",  64, 300, 150),
-            Button(400, 250, r'DSA_Visualizer\B_Green.png',  "Char",    64, 300, 150),
+            Button(50, 100,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png",   "Integer", 64, 300, 150),
+            Button(400, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png",   "Float",   64, 300, 150),
+            Button(50, 250,  r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_DedBlu.png", "String",  64, 300, 150),
+            Button(400, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png",  "Char",    64, 300, 150),
         ]
 
     

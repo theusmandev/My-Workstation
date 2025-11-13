@@ -11,10 +11,10 @@ class Array (DataStructure):
         super().__init__()
         self.values = []
         self.dataType_Btns = [
-            Button(50, 200, r'DSA_Visualizer\B_Pink.png', "Integer", 32, 200, 100),
-            Button(300, 200, r'DSA_Visualizer\B_Purp.png', "Float", 32, 200, 100),
-            Button(50, 300, r'DSA_Visualizer\B_DedBlu.png', "String", 32, 200, 100),
-            Button(300, 300, r'DSA_Visualizer\B_Green.png', "Char", 32, 200, 100)
+            Button(50, 200, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Integer", 32, 200, 100),
+            Button(300, 200, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Float", 32, 200, 100),
+            Button(50, 300, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_DedBlu.png", "String", 32, 200, 100),
+            Button(300, 300, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Char", 32, 200, 100)
         ]
         self.dataType = None
         self.input_box_element= pygame.Rect(20, 80, 140, 40)
@@ -39,9 +39,9 @@ class Array (DataStructure):
         #values rects
         self.rects = []
         self.id_rects=[]
-        self.interface_Btns = [ Button(150, 50, r'DSA_Visualizer/B_Red.png', "Insert", 32, 200, 100),
-                                Button(350, 50, r'DSA_Visualizer/B_Red.png', "Delete", 32, 200, 100),
-                                Button(550, 50, r'DSA_Visualizer/B_Red.png',"Clear", 32, 200, 100) 
+        self.interface_Btns = [ Button(150, 50, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Insert", 32, 200, 100),
+                                Button(350, 50, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png", "Delete", 32, 200, 100),
+                                Button(550, 50, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Red.png","Clear", 32, 200, 100) 
 
         ]
         # linear-search state

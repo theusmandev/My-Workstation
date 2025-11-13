@@ -11,9 +11,9 @@ def subtree_size(node):
 class Trees:
     def __init__(self):
 
-        self.Buttons=[Button(200, 150, r'DSA_Visualizer\B_Sk_Blu.png', "  Binary Search Tree", 36, 360, 180),
-                      Button(200, 270, r'DSA_Visualizer\B_Pink.png', "AVL Tree", 36, 360, 180),
-                      Button(200, 390, r"DSA_Visualizer\B_Purp.png", "Red Black Tree",36, 360, 180)
+        self.Buttons=[Button(200, 150, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Sk_Blu.png", "  Binary Search Tree", 36, 360, 180),
+                      Button(200, 270, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "AVL Tree", 36, 360, 180),
+                      Button(200, 390, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Red Black Tree",36, 360, 180)
                       ]
     def display(self, screen):
         txt="Choose a type of tree."
@@ -137,19 +137,19 @@ class Animated_BST:
          self.val = None
          self.dataType = None
          self.interface_Btns = [
-            Button(155, 0, r'DSA_Visualizer\B_Pink.png', "Insert", 32, 200, 100),
-            Button(355, 0, r'DSA_Visualizer\B_Pink.png', "Delete",32, 200, 100),
-            Button(555, 0, r'DSA_Visualizer\B_Pink.png', "Search", 32, 200, 100)
+            Button(155, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Insert", 32, 200, 100),
+            Button(355, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Delete",32, 200, 100),
+            Button(555, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Search", 32, 200, 100)
         ]
          self.data_Type_dict = {"Integer": int,
                              "Float": float,
                              "String": str,
                              "Char": str}
          self.dataType_Btns = [
-            Button(50, 100, r'DSA_Visualizer\B_Pink.png', "Integer", 64, 300, 150),
-            Button(400, 100, r'DSA_Visualizer\B_Purp.png', "Float", 64, 300, 150),
-            Button(50, 250, r'DSA_Visualizer\B_DedBlu.png', "String", 64, 300, 150),
-            Button(400, 250, r'DSA_Visualizer\B_Green.png', "Char", 64, 300, 150)
+            Button(50, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Integer", 64, 300, 150),
+            Button(400, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Float", 64, 300, 150),
+            Button(50, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_DedBlu.png", "String", 64, 300, 150),
+            Button(400, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Char", 64, 300, 150)
         ]
     
     def Calculate_Node_Positions_Recursive(self):
@@ -598,19 +598,19 @@ class Animated_AVL_Tree:
          self.val = None
          self.dataType = None
          self.interface_Btns = [
-            Button(155, 0, r'DSA_Visualizer\B_Pink.png', "Insert", 32, 200, 100),
-            Button(355, 0, r'DSA_Visualizer\B_Pink.png', "Delete",32, 200, 100),
-            Button(555, 0, r'DSA_Visualizer\B_Pink.png', "Search", 32, 200, 100)
+            Button(155, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Insert", 32, 200, 100),
+            Button(355, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Delete",32, 200, 100),
+            Button(555, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Search", 32, 200, 100)
         ]
          self.data_Type_dict = {"Integer": int,
                              "Float": float,
                              "String": str,
                              "Char": str}
          self.dataType_Btns = [
-            Button(50, 100, r'DSA_Visualizer\B_Pink.png', "Integer", 64, 300, 150),
-            Button(400, 100, r'DSA_Visualizer\B_Purp.png', "Float", 64, 300, 150),
-            Button(50, 250, r'DSA_Visualizer\B_DedBlu.png', "String", 64, 300, 150),
-            Button(400, 250, r'DSA_Visualizer\B_Green.png', "Char", 64, 300, 150)
+            Button(50, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Integer", 64, 300, 150),
+            Button(400, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Float", 64, 300, 150),
+            Button(50, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_DedBlu.png", "String", 64, 300, 150),
+            Button(400, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Char", 64, 300, 150)
         ]
     def AskUser(self, screen) -> None:
         txt="Please select a data type:"
@@ -1305,19 +1305,19 @@ class Animated_Red_Black_Tree:
          self.val = None
          self.dataType = None
          self.interface_Btns = [
-            Button(155, 0, r'DSA_Visualizer\B_Green.png', "Insert", 32, 200, 100),
-            Button(355, 0, r'DSA_Visualizer\B_Green.png', "Delete",32, 200, 100),
-            Button(555, 0, r'DSA_Visualizer\B_Green.png', "Search", 32, 200, 100)
+            Button(155, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Insert", 32, 200, 100),
+            Button(355, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Delete",32, 200, 100),
+            Button(555, 0, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Search", 32, 200, 100)
         ]
          self.data_Type_dict = {"Integer": int,
                              "Float": float,
                              "String": str,
                              "Char": str}
          self.dataType_Btns = [
-            Button(50, 100, r'DSA_Visualizer\B_Pink.png', "Integer", 64, 300, 150),
-            Button(400, 100, r'DSA_Visualizer\B_Purp.png', "Float", 64, 300, 150),
-            Button(50, 250, r'DSA_Visualizer\B_DedBlu.png', "String", 64, 300, 150),
-            Button(400, 250, r'DSA_Visualizer\B_Green.png', "Char", 64, 300, 150)
+            Button(50, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Pink.png", "Integer", 64, 300, 150),
+            Button(400, 100, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Purp.png", "Float", 64, 300, 150),
+            Button(50, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_DedBlu.png", "String", 64, 300, 150),
+            Button(400, 250, r"E:\My-Workstation\Random Repos\DSA-Visualizer\B_Green.png", "Char", 64, 300, 150)
         ]
     def AskUser(self, screen) -> None:
         txt="Please select a data type:"
