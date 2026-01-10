@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Urdu to Urdu Converter</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; display: flex; flex-direction: column; align-items: center; padding: 50px; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100%; max-width: 600px; }
+        h2 { color: #333; text-align: center; }
+        textarea { width: 100%; height: 150px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 18px; box-sizing: border-box; resize: vertical; }
+        .output-label { margin-top: 20px; font-weight: bold; color: #555; }
+        #urduOutput { margin-top: 10px; padding: 15px; background: #e9f5ff; border-radius: 5px; font-size: 24px; text-align: right; min-height: 50px; direction: rtl; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Roman Urdu to Urdu Tool</h2>
+    <p>English mein likhen (e.g., "mera naam ali hai"):</p>
+    <textarea id="englishInput" placeholder="Yahan type karein..."></textarea>
+
+    <div class="output-label">Urdu Script:</div>
+    <div id="urduOutput"></div>
+</div>
+
+<script>
+    // Ye aik basic mapping table hai. Aap ismein mazeed alfaz add kar sakte hain.
+    const urduMapping = {
+        "a": "ا", "b": "ب", "p": "پ", "t": "ت", "tt": "ٹ", "s": "س", "j": "ج", "ch": "چ", "h": "ح", "kh": "خ",
+        "d": "د", "dd": "ڈ", "z": "ز", "r": "ر", "rr": "ڑ", "zh": "ژ", "sh": "ش", "f": "ف", "q": "ق", "k": "ک",
+        "g": "گ", "l": "ل", "m": "م", "n": "ن", "v": "و", "w": "و", "i": "ی", "y": "ی", "e": "ے", "ai": "ے",
+        "aa": "آ", "o": "و", "u": "و", "h": "ہ", "n": "ں", "hai": "ہے", " " : " "
+    };
+
+    const inputArea = document.getElementById('englishInput');
+    const outputDiv = document.getElementById('urduOutput');
+
+    inputArea.addEventListener('input', () => {
+        const text = inputArea.value.toLowerCase();
+        let urduText = "";
+        
+        // Aik simple logic jo alfaz ko convert karti hai
+        // Note: Behtar results ke liye advanced library (jesay 'UrduEditor') use ki ja sakti hai
+        let words = text.split(" ");
+        let convertedWords = words.map(word => {
+            if(word === "hai") return "ہے";
+            if(word === "hun") return "ہوں";
+            if(word === "ka") return "کا";
+            if(word === "ki") return "کی";
+            if(word === "naam") return "نام";
+            
+            // Character by character mapping (simple logic)
+            return word.split('').map(char => urduMapping[char] || char).join('');
+        });
+
+        outputDiv.innerText = convertedWords.join(' ');
+    });
+</script>
+
+</body>
+</html>
