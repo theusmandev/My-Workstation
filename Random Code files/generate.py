@@ -1,22 +1,31 @@
 import pandas as pd
 import json
+import os
 
-# 1. اپنی CSV فائل کا نام یہاں لکھیں
-csv_file_path = r"C:\Users\PCS\Downloads\urdunovelbanks_image_urls.csv"
+# --- 1. INPUT FILE PATH ---
+# آپ کا دیا ہوا ایڈریس (Raw string 'r' کے ساتھ)
+input_csv_path = r"C:\Users\PCS\Downloads\urdunovelbanks_image_urls.csv"
 
-# 2. CSV فائل لوڈ کرنا
+# --- 2. OUTPUT FILE PATH ---
+# یہ کوڈ خودکار طریقے سے آپ کے Downloads فولڈر میں فائل محفوظ کرے گا
+downloads_folder = os.path.join(os.path.expanduser("~"), "Downloads")
+output_txt_path = os.path.join(downloads_folder, "blogger_final_code.txt")
+
+print(f"Reading file from: {input_csv_path}")
+
+# --- 3. READING CSV (Fixed Encoding) ---
 try:
-    df = pd.read_csv(csv_file_path)
-    print("CSV file loaded successfully.")
-except Exception as e:
-    print(f"Error loading CSV: {e}")
+    # 'cp1252' ونڈوز کی فائلوں کے لیے بہتر ہے
+    df = pd.read_csv(input_csv_path, encoding='cp1252')
+except UnicodeDecodeError:
+    # اگر وہ بھی نہ چلے تو 'latin1' ٹرائی کریں
+    df = pd.read_csv(input_csv_path, encoding='latin1')
+except FileNotFoundError:
+    print("Error: File not found. Please check the path.")
     exit()
 
-# 3. ڈیٹا کو صحیح فارمیٹ میں لانا
+# --- 4. PREPARING DATA ---
 novels_list = []
-
-# یہ بات یقینی بنائیں کہ آپ کی CSV کے کالم کے نام یہی ہوں: 'Title', 'Post URL', 'Image URL'
-# اگر نام مختلف ہوں تو نیچے ان کو تبدیل کر لیں۔
 for index, row in df.iterrows():
     novel = {
         "title": str(row['Title']).strip(),
@@ -25,12 +34,10 @@ for index, row in df.iterrows():
     }
     novels_list.append(novel)
 
-# JSON String بنانا (جو JavaScript میں استعمال ہوگا)
 json_data = json.dumps(novels_list, ensure_ascii=False, indent=2)
 
-# 4. HTML ٹیمپلیٹ
-# (یہ وہی کوڈ ہے جو آپ نے مانگا تھا، بس اس میں __DATA_HERE__ کی جگہ ہم ڈیٹا ڈالیں گے)
-html_template = """<style>
+# --- 5. HTML TEMPLATE (Fixed Syntax Warning using r"") ---
+html_template = r"""<style>
 /* --- CONTAINER --- */
 .novels-box { 
     margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px; 
@@ -94,18 +101,14 @@ html_template = """<style>
 </div>
 
 <script>
-// --- STATIC DATA GENERATED FROM CSV ---
+// STATIC DATA
 var staticNovels = __DATA_HERE__;
 
-// --- CONFIGURATION ---
 var renderedCount = 0;
 var batchSize = 30; 
 
-// 1. INITIALIZATION
 function initStaticLibrary() {
     var grid = document.getElementById("libGrid");
-    
-    // Clear skeletons
     grid.innerHTML = "";
     
     // Sort A-Z
@@ -118,7 +121,6 @@ function initStaticLibrary() {
     renderNextBatch();
 }
 
-// 2. RENDER BATCH
 function renderNextBatch() {
     var grid = document.getElementById("libGrid");
     var html = "";
@@ -129,7 +131,6 @@ function renderNextBatch() {
     for (var i = renderedCount; i < limit; i++) {
         var post = staticNovels[i];
         
-        // Optimize Image URL logic
         var imgUrl = post.img;
         if(imgUrl.includes('/s1600/') || imgUrl.includes('/s1200/') || imgUrl.includes('/s1000/')) {
              imgUrl = imgUrl.replace(/\/s[0-9]+.*?\//, "/w300-h450-c/");
@@ -146,7 +147,6 @@ function renderNextBatch() {
         html += '</a>';
     }
 
-    // Append HTML efficiently
     var div = document.createElement('div');
     div.innerHTML = html;
     while (div.firstChild) {
@@ -155,7 +155,6 @@ function renderNextBatch() {
 
     renderedCount = limit;
     
-    // Toggle Button Logic
     var btn = document.getElementById("libBtnArea");
     var msg = document.getElementById("libEndMsg");
     
@@ -168,17 +167,14 @@ function renderNextBatch() {
     }
 }
 
-// Start
 initStaticLibrary();
 </script>
 """
 
-# 5. ڈیٹا کو ٹیمپلیٹ میں ضم کرنا
+# --- 6. MERGING AND SAVING ---
 final_html = html_template.replace('__DATA_HERE__', json_data)
 
-# 6. فائل محفوظ کرنا
-output_filename = 'generated_novels_page.html'
-with open(output_filename, 'w', encoding='utf-8') as f:
+with open(output_txt_path, 'w', encoding='utf-8') as f:
     f.write(final_html)
 
-print(f"Success! '{output_filename}' has been created.")
+print(f"Success! Output saved to: {output_txt_path}")
