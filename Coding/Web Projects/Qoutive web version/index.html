@@ -6,47 +6,211 @@
     <title>Document</title>
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-<div id="quotive-container" style="max-width: 800px; margin: 20px auto; font-family: sans-serif; text-align: center; border: 1px solid #eee; padding: 25px; border-radius: 15px; background: #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-    <h2 style="color: #333; margin-bottom: 20px;">QUOTIVE — Professional Edition</h2>
-    
-    <div style="margin-bottom: 15px;">
-        <textarea id="quoteInput" placeholder="Yahan apni quote likhein... (Nayi line ke liye Shift+Enter dabayein)" style="width: 100%; height: 100px; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; resize: vertical;"></textarea>
-    </div>
-    
-    <div style="margin-bottom: 15px;">
-        <input type="text" id="authorInput" placeholder="Author ka naam (Optional) - Enter to Generate" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px;">
+<style>
+    :root {
+        --primary: #6366f1;
+        --bg-studio: #f8fafc;
+        --card-bg: #ffffff;
+    }
+
+    #quotive-app {
+        max-width: 1100px;
+        margin: 20px auto;
+        font-family: 'Inter', sans-serif;
+        background: var(--bg-studio);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Left Side: Controls */
+    .controls-panel {
+        flex: 1;
+        min-width: 320px;
+        padding: 30px;
+        background: var(--card-bg);
+        border-right: 1px solid #e2e8f0;
+    }
+
+    .controls-panel h2 {
+        margin: 0 0 20px 0;
+        font-size: 22px;
+        color: #1e293b;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .input-group label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #64748b;
+        margin-bottom: 8px;
+    }
+
+    .input-group textarea, .input-group input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #f1f5f9;
+        border-radius: 10px;
+        font-size: 15px;
+        transition: all 0.3s;
+        box-sizing: border-box;
+    }
+
+    .input-group textarea:focus, .input-group input:focus {
+        border-color: var(--primary);
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        flex: 1;
+        padding: 14px;
+        border: none;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.2s, opacity 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-shuffle { background: #f1f5f9; color: #1e293b; }
+    .btn-download { background: var(--primary); color: white; }
+    .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+
+    /* Right Side: Preview */
+    .preview-panel {
+        flex: 1.5;
+        background: #f1f5f9;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 350px;
+    }
+
+    .canvas-container {
+        width: 100%;
+        max-width: 600px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .badge {
+        background: #e0e7ff;
+        color: #4338ca;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        #quotive-app { flex-direction: column; }
+        .controls-panel { border-right: none; border-bottom: 1px solid #e2e8f0; }
+    }
+</style>
+
+<div id="quotive-app">
+    <div class="controls-panel">
+        <h2>✨ Quotive Studio</h2>
+        
+        <div class="input-group">
+            <label>The Quote</label>
+            <textarea id="quoteText" placeholder="Start typing your motivation..." oninput="drawRealTime()">Make your health your first priority — everything else in life works better when you are well.</textarea>
+        </div>
+
+        <div class="input-group">
+            <label>Author Name</label>
+            <input type="text" id="authorName" placeholder="e.g. Usman Dev" oninput="drawRealTime()" value="Usman">
+        </div>
+
+        <div class="input-group">
+            <label>Background Theme</label>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="colorPresets"></div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-shuffle" onclick="randomizeTheme()">🎲 Random Color</button>
+            <button class="btn btn-download" onclick="downloadImage()">📥 Download PNG</button>
+        </div>
     </div>
 
-    <div style="margin-bottom: 20px;">
-        <button id="generateBtn" onclick="generateQuote()" style="background: #1a1a1a; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 16px; transition: 0.3s;">Generate Perfect Quote</button>
-        <button onclick="downloadImage()" id="downloadBtn" style="background: #3498db; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 16px; display:none; margin-left: 10px;">Download PNG</button>
-    </div>
-
-    <div style="overflow-x: auto; background: #f0f0f0; padding: 10px; border-radius: 10px;">
-        <canvas id="quoteCanvas" width="1080" height="720" style="max-width: 100%; height: auto; border-radius: 5px; display: block; margin: 0 auto;"></canvas>
+    <div class="preview-panel">
+        <span class="badge">LIVE PREVIEW</span>
+        <div class="canvas-container">
+            <canvas id="mainCanvas" width="1080" height="720"></canvas>
+        </div>
+        <p style="color: #94a3b8; font-size: 12px; margin-top: 15px;">Resolution: 1080x720 (High Quality)</p>
     </div>
 </div>
 
 <script>
+const canvas = document.getElementById('mainCanvas');
+const ctx = canvas.getContext('2d');
+
 const COLORS = [
-    "#1E1E1E", "#283C78", "#3C643C", "#643250",
-    "#C86428", "#146496", "#2D5096", "#3CB371",
-    "#7B68EE", "#CD5C5C", "#483D8B", "#6495ED",
-    "#8B008B", "#FF69B4", "#4682B4", "#228B22", "#800080"
+    "#1E1E1E", "#4F46E5", "#059669", "#DC2626", 
+    "#D97706", "#7C3AED", "#DB2777", "#2563EB",
+    "#0891B2", "#4b5563", "#800000", "#5b21b6"
 ];
 
-// Text wrapping logic
-function wrapText(context, text, maxWidth) {
+let currentBg = COLORS[1];
+
+// Initialize UI
+function init() {
+    const presetContainer = document.getElementById('colorPresets');
+    COLORS.forEach(color => {
+        let div = document.createElement('div');
+        div.style.width = '30px';
+        div.style.height = '30px';
+        div.style.borderRadius = '6px';
+        div.style.background = color;
+        div.style.cursor = 'pointer';
+        div.onclick = () => { currentBg = color; drawRealTime(); };
+        presetContainer.appendChild(div);
+    });
+    drawRealTime();
+}
+
+function wrapText(text, maxWidth) {
     let words = text.split(' ');
     let line = '';
     let lines = [];
-
     for(let n = 0; n < words.length; n++) {
         let testLine = line + words[n] + ' ';
-        let metrics = context.measureText(testLine);
-        if (metrics.width > maxWidth && n > 0) {
+        if (ctx.measureText(testLine).width > maxWidth && n > 0) {
             lines.push(line);
             line = words[n] + ' ';
         } else {
@@ -57,106 +221,65 @@ function wrapText(context, text, maxWidth) {
     return lines;
 }
 
-async function generateQuote() {
-    // Wait for font to load
+async function drawRealTime() {
     await document.fonts.ready;
-
-    const canvas = document.getElementById('quoteCanvas');
-    const ctx = canvas.getContext('2d');
-    const quote = document.getElementById('quoteInput').value.trim();
-    const author = document.getElementById('authorInput').value.trim();
-
-    if (!quote) {
-        alert("Pehle quote toh likho bhai!");
-        return;
-    }
+    const quote = document.getElementById('quoteText').value || "Your quote here...";
+    const author = document.getElementById('authorName').value;
 
     // 1. Background
-    const bgColor = COLORS[Math.floor(Math.random() * COLORS.length)];
-    ctx.fillStyle = bgColor;
+    ctx.fillStyle = currentBg;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    const paddingH = 120;
-    const paddingV = 140;
-    const usableW = canvas.width - (2 * paddingH);
-    
-    // 2. Dynamic Font Size
-    let fontSize = 68;
-    if (quote.length > 300) fontSize = 48;
-    else if (quote.length > 200) fontSize = 56;
-    else if (quote.length > 120) fontSize = 62;
+    const padding = 120;
+    const usableW = canvas.width - (padding * 2);
 
+    // 2. Date
+    ctx.font = "32px 'Agbalumo'";
+    ctx.fillStyle = "rgba(255,255,255,0.5)";
+    ctx.textAlign = "left";
+    const dateStr = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+    ctx.fillText(dateStr, padding - 20, 80);
+
+    // 3. Quote Styling
+    let fontSize = quote.length > 200 ? 50 : 68;
     ctx.font = fontSize + "px 'Agbalumo'";
     ctx.fillStyle = "white";
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-
-    // 3. Draw Date
-    ctx.save();
-    ctx.font = "32px 'Agbalumo'";
-    ctx.fillStyle = "rgba(255, 255, 255, 0.6)";
-    const today = new Date();
-    const dateStr = today.getDate() + ' ' + today.toLocaleString('default', { month: 'short' }) + ' ' + today.getFullYear();
-    ctx.textAlign = 'left';
-    ctx.fillText(dateStr, paddingH - 20, 70);
-    ctx.restore();
-
-    // 4. Wrap & Draw Quote
-    const lines = wrapText(ctx, quote, usableW);
+    ctx.textAlign = "center";
+    
+    const lines = wrapText(quote, usableW);
     const lineHeight = fontSize * 1.2;
-    const totalTextHeight = lines.length * lineHeight;
-    let startY = (canvas.height / 2) - (totalTextHeight / 2) - 20;
+    let y = (canvas.height / 2) - ((lines.length * lineHeight) / 2);
 
-    lines.forEach((line, index) => {
-        ctx.fillText(line.trim(), canvas.width / 2, startY + (index * lineHeight));
+    lines.forEach((line, i) => {
+        ctx.fillText(line.trim(), canvas.width / 2, y + (i * lineHeight));
     });
 
-    // 5. Draw Author (FIXED: Using Unicode for em-dash)
+    // 4. Author
     if (author) {
-        ctx.font = "35px 'Agbalumo'";
-        ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
-        // \u2014 is the safe JavaScript code for the em-dash (—)
-        ctx.fillText("\u2014 " + author, canvas.width / 2, startY + totalTextHeight + 50);
+        ctx.font = "38px 'Agbalumo'";
+        ctx.fillStyle = "rgba(255,255,255,0.9)";
+        ctx.fillText("— " + author, canvas.width / 2, y + (lines.length * lineHeight) + 60);
     }
 
-    // 6. Footer Link
-    ctx.font = "30px 'Agbalumo'";
-    ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
-    ctx.fillText("https://github.com/theusmandev", canvas.width / 2, canvas.height - 80);
+    // 5. Branding
+    ctx.font = "28px 'Agbalumo'";
+    ctx.fillStyle = "rgba(255,255,255,0.4)";
+    ctx.fillText("https://github.com/theusmandev", canvas.width / 2, canvas.height - 60);
+}
 
-    document.getElementById('downloadBtn').style.display = 'inline-block';
+function randomizeTheme() {
+    currentBg = COLORS[Math.floor(Math.random() * COLORS.length)];
+    drawRealTime();
 }
 
 function downloadImage() {
-    const canvas = document.getElementById('quoteCanvas');
     const link = document.createElement('a');
-    link.download = 'Quotive_' + new Date().getTime() + '.png';
-    link.href = canvas.toDataURL('image/png');
+    link.download = `Quotive_${Date.now()}.png`;
+    link.href = canvas.toDataURL('image/png', 1.0);
     link.click();
 }
 
-// =========================================
-// KEYBOARD NAVIGATION SETUP
-// =========================================
-const quoteField = document.getElementById('quoteInput');
-const authorField = document.getElementById('authorInput');
-
-// Quote Box: Enter = Generate, Shift+Enter = New Line
-quoteField.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter' && !event.shiftKey) {
-        event.preventDefault(); 
-        generateQuote();
-    }
-});
-
-// Author Box: Enter = Generate
-authorField.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault();
-        generateQuote();
-    }
-});
-
+window.onload = init;
 </script>
 </body>
 </html>
