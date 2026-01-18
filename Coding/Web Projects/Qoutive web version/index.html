@@ -13,6 +13,7 @@
         --primary: #6366f1;
         --bg-studio: #f8fafc;
         --card-bg: #ffffff;
+        --border-color: #e2e8f0;
     }
 
     #quotive-app {
@@ -31,19 +32,18 @@
     /* Left Side: Controls */
     .controls-panel {
         flex: 1;
-        min-width: 320px;
-        padding: 30px;
+        min-width: 360px; /* Enhanced for button stability */
+        padding: 25px;
         background: var(--card-bg);
-        border-right: 1px solid #e2e8f0;
+        border-right: 1px solid var(--border-color);
+        box-sizing: border-box;
     }
 
     .controls-panel h2 {
         margin: 0 0 20px 0;
         font-size: 22px;
         color: #1e293b;
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        letter-spacing: -0.5px;
     }
 
     .input-group {
@@ -53,51 +53,67 @@
 
     .input-group label {
         display: block;
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: 700;
         color: #64748b;
         margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     .input-group textarea, .input-group input {
         width: 100%;
+        max-width: 100%;
         padding: 12px;
         border: 2px solid #f1f5f9;
-        border-radius: 10px;
+        border-radius: 12px;
         font-size: 15px;
-        transition: all 0.3s;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         box-sizing: border-box;
+        display: block;
+    }
+
+    .input-group textarea {
+        min-height: 100px;
+        resize: vertical;
+        line-height: 1.5;
     }
 
     .input-group textarea:focus, .input-group input:focus {
         border-color: var(--primary);
         outline: none;
         box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+        background: #fff;
     }
 
     .action-buttons {
         display: flex;
-        gap: 10px;
+        gap: 12px;
         margin-top: 20px;
+        width: 100%;
     }
 
     .btn {
         flex: 1;
-        padding: 14px;
+        padding: 14px 10px;
         border: none;
         border-radius: 12px;
-        font-weight: bold;
+        font-weight: 600;
+        font-size: 14px;
         cursor: pointer;
-        transition: transform 0.2s, opacity 0.2s;
+        transition: all 0.2s;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 8px;
+        white-space: nowrap;
+        box-sizing: border-box;
     }
 
-    .btn-shuffle { background: #f1f5f9; color: #1e293b; }
-    .btn-download { background: var(--primary); color: white; }
-    .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+    .btn-shuffle { background: #f1f5f9; color: #1e293b; border: 1px solid #e2e8f0; }
+    .btn-download { background: var(--primary); color: white; box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3); }
+    .btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
+    .btn:active { transform: translateY(0); }
 
     /* Right Side: Preview */
     .preview-panel {
@@ -109,15 +125,16 @@
         align-items: center;
         justify-content: center;
         min-width: 350px;
+        box-sizing: border-box;
     }
 
     .canvas-container {
         width: 100%;
         max-width: 600px;
         box-shadow: 0 30px 60px rgba(0,0,0,0.15);
-        border-radius: 10px;
+        border-radius: 16px;
         overflow: hidden;
-        transition: transform 0.3s;
+        background: #fff;
     }
 
     canvas {
@@ -129,18 +146,26 @@
     .badge {
         background: #e0e7ff;
         color: #4338ca;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        margin-bottom: 15px;
-        font-weight: bold;
+        padding: 6px 16px;
+        border-radius: 30px;
+        font-size: 11px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
     }
 
-    @media (max-width: 768px) {
+    /* Force font load hidden element */
+    #font-loader { font-family: 'Agbalumo'; position: absolute; visibility: hidden; pointer-events: none; }
+
+    @media (max-width: 850px) {
         #quotive-app { flex-direction: column; }
-        .controls-panel { border-right: none; border-bottom: 1px solid #e2e8f0; }
+        .controls-panel { border-right: none; border-bottom: 1px solid var(--border-color); width: 100%; }
+        .preview-panel { padding: 25px; }
     }
 </style>
+
+<div id="font-loader">Force Load Agbalumo</div>
 
 <div id="quotive-app">
     <div class="controls-panel">
@@ -148,60 +173,74 @@
         
         <div class="input-group">
             <label>The Quote</label>
-            <textarea id="quoteText" placeholder="Start typing your motivation..." oninput="drawRealTime()">Make your health your first priority — everything else in life works better when you are well.</textarea>
+            <textarea id="quoteText" 
+                      placeholder="Type your motivation..." 
+                      oninput="autoHeight(this); drawRealTime()">Focus on the journey, not just the destination. Joy is found in the doing, not just the finishing.</textarea>
         </div>
 
         <div class="input-group">
-            <label>Author Name</label>
-            <input type="text" id="authorName" placeholder="e.g. Usman Dev" oninput="drawRealTime()" value="Usman">
+            <label>Author</label>
+            <input type="text" id="authorName" placeholder="Author name..." oninput="drawRealTime()" value="Usman">
         </div>
 
         <div class="input-group">
-            <label>Background Theme</label>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="colorPresets"></div>
+            <label>Themes</label>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;" id="colorPresets"></div>
         </div>
 
         <div class="action-buttons">
-            <button class="btn btn-shuffle" onclick="randomizeTheme()">🎲 Random Color</button>
+            <button class="btn btn-shuffle" onclick="randomizeTheme()">🎲 Randomize</button>
             <button class="btn btn-download" onclick="downloadImage()">📥 Download PNG</button>
         </div>
     </div>
 
     <div class="preview-panel">
-        <span class="badge">LIVE PREVIEW</span>
+        <span class="badge">Live Studio Preview</span>
         <div class="canvas-container">
             <canvas id="mainCanvas" width="1080" height="720"></canvas>
         </div>
-        <p style="color: #94a3b8; font-size: 12px; margin-top: 15px;">Resolution: 1080x720 (High Quality)</p>
+        <p style="color: #94a3b8; font-size: 12px; margin-top: 15px; font-weight: 500;">High Definition Rendering • 1080 x 720 px</p>
     </div>
 </div>
 
 <script>
 const canvas = document.getElementById('mainCanvas');
 const ctx = canvas.getContext('2d');
-
 const COLORS = [
     "#1E1E1E", "#4F46E5", "#059669", "#DC2626", 
     "#D97706", "#7C3AED", "#DB2777", "#2563EB",
     "#0891B2", "#4b5563", "#800000", "#5b21b6"
 ];
-
 let currentBg = COLORS[1];
 
-// Initialize UI
+// Auto-Swapping Font Logic
 function init() {
     const presetContainer = document.getElementById('colorPresets');
     COLORS.forEach(color => {
         let div = document.createElement('div');
+        div.className = 'color-swatch';
         div.style.width = '30px';
         div.style.height = '30px';
-        div.style.borderRadius = '6px';
+        div.style.borderRadius = '8px';
         div.style.background = color;
         div.style.cursor = 'pointer';
+        div.style.border = '2px solid transparent';
+        div.style.transition = 'all 0.2s';
         div.onclick = () => { currentBg = color; drawRealTime(); };
+        div.onmouseover = () => { div.style.transform = 'scale(1.1)'; div.style.borderColor = '#cbd5e1'; };
+        div.onmouseout = () => { div.style.transform = 'scale(1)'; div.style.borderColor = 'transparent'; };
         presetContainer.appendChild(div);
     });
-    drawRealTime();
+
+    // Auto-swap font whenever it finishes loading
+    document.fonts.ready.then(() => {
+        drawRealTime();
+    });
+}
+
+function autoHeight(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight) + "px";
 }
 
 function wrapText(text, maxWidth) {
@@ -222,49 +261,52 @@ function wrapText(text, maxWidth) {
 }
 
 async function drawRealTime() {
+    // Ensure fonts are ready before painting
     await document.fonts.ready;
-    const quote = document.getElementById('quoteText').value || "Your quote here...";
+    
+    const quote = document.getElementById('quoteText').value || " ";
     const author = document.getElementById('authorName').value;
 
-    // 1. Background
+    // Background
     ctx.fillStyle = currentBg;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     const padding = 120;
     const usableW = canvas.width - (padding * 2);
 
-    // 2. Date
+    // Date Branding
     ctx.font = "32px 'Agbalumo'";
-    ctx.fillStyle = "rgba(255,255,255,0.5)";
+    ctx.fillStyle = "rgba(255,255,255,0.4)";
     ctx.textAlign = "left";
     const dateStr = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
     ctx.fillText(dateStr, padding - 20, 80);
 
-    // 3. Quote Styling
+    // Quote Styling
     let fontSize = quote.length > 200 ? 50 : 68;
     ctx.font = fontSize + "px 'Agbalumo'";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
     
     const lines = wrapText(quote, usableW);
-    const lineHeight = fontSize * 1.2;
+    const lineHeight = fontSize * 1.25;
     let y = (canvas.height / 2) - ((lines.length * lineHeight) / 2);
 
     lines.forEach((line, i) => {
         ctx.fillText(line.trim(), canvas.width / 2, y + (i * lineHeight));
     });
 
-    // 4. Author
+    // Author
     if (author) {
         ctx.font = "38px 'Agbalumo'";
-        ctx.fillStyle = "rgba(255,255,255,0.9)";
-        ctx.fillText("— " + author, canvas.width / 2, y + (lines.length * lineHeight) + 60);
+        ctx.fillStyle = "rgba(255,255,255,0.85)";
+        ctx.fillText("\u2014 " + author, canvas.width / 2, y + (lines.length * lineHeight) + 60);
     }
 
-    // 5. Branding
-    ctx.font = "28px 'Agbalumo'";
-    ctx.fillStyle = "rgba(255,255,255,0.4)";
-    ctx.fillText("https://github.com/theusmandev", canvas.width / 2, canvas.height - 60);
+    // Bottom Branding
+    ctx.font = "26px 'Agbalumo'";
+    ctx.fillStyle = "rgba(255,255,255,0.3)";
+    ctx.fillText("https://github.com/theusmandev", canvas.width / 2, canvas.height - 65);
 }
 
 function randomizeTheme() {
@@ -274,12 +316,23 @@ function randomizeTheme() {
 
 function downloadImage() {
     const link = document.createElement('a');
-    link.download = `Quotive_${Date.now()}.png`;
+    link.download = `Quotive_Studio_${Date.now()}.png`;
     link.href = canvas.toDataURL('image/png', 1.0);
     link.click();
 }
 
-window.onload = init;
+// Global Keyboard Navigation
+document.addEventListener('keypress', (e) => {
+    // Enter on Author Name generates download
+    if (e.key === 'Enter' && e.target.id === 'authorName') {
+        downloadImage();
+    }
+});
+
+window.onload = () => {
+    init();
+    autoHeight(document.getElementById('quoteText'));
+};
 </script>
 </body>
 </html>
