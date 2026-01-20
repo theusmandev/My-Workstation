@@ -1,65 +1,124 @@
-
 import fitz  # PyMuPDF
 import cv2
 import numpy as np
 import io
 
-def clean_scanned_pdf(input_path, output_path):
+def remove_watermark_red_channel(input_path, output_path):
     try:
-        # 1. Original PDF open karein
         pdf_doc = fitz.open(input_path)
-        # 2. Aik khali PDF document banayein
         output_docs = fitz.open()
 
         print(f"Processing: {input_path}")
-        print("Please wait, cleaning pages...")
+        print("Using Red-Channel extraction for crystal clear text...")
 
         for page_num in range(len(pdf_doc)):
-            # Page load karein
             page = pdf_doc.load_page(page_num)
-            
-            # Page ko image mein badlein (Resolution 2x rakhi hai clarity ke liye)
             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
             
-            # Image data ko OpenCV format mein layein
-            img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape((pix.h, pix.w, 3))
+            # 1. Image ko OpenCV format mein layein (RGB)
+            img = np.frombuffer(pix.samples, dtype=np.uint8).reshape((pix.h, pix.w, 3))
             
-            # Grayscale (B&W) mein badlein
-            gray = cv2.cvtColor(img_array, cv2.COLOR_RGB2GRAY)
-            
-            # Thresholding: 150 se halkay colors ko white kar do (Watermark removal)
-            _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
+            # 2. Sirf Red Channel ko alag karein (Index 0 for Red)
+            # Scanned red watermark is mein white/gray ho jaye ga
+            red_channel = img[:, :, 0]
 
-            # Clean image ko PNG format mein convert karein
-            is_success, buffer = cv2.imencode(".png", thresh)
+            # 3. Contrast barhayein takay bacha-kucha watermark bilkul saaf ho jaye
+            # Ye black text ko mazeed gehra (dark) kar dega
+            _, clean_img = cv2.threshold(red_channel, 200, 255, cv2.THRESH_BINARY)
+
+            # 4. Save to PDF
+            is_success, buffer = cv2.imencode(".png", clean_img)
             if is_success:
                 img_bytes = buffer.tobytes()
-                
-                # Naye PDF mein page add karein (Original size ke mutabiq)
-                # pix.w aur pix.h ko Matrix(2,2) ki wajah se adjust karna hoga
                 new_page = output_docs.new_page(width=page.rect.width, 
                                                height=page.rect.height)
-                
-                # Saaf shuda image ko page par lagayein
                 new_page.insert_image(new_page.rect, stream=img_bytes)
             
-            print(f"Done: Page {page_num + 1}")
+            print(f"Page {page_num + 1} cleaned.")
 
-        # Final file save karein
         output_docs.save(output_path)
         output_docs.close()
         pdf_doc.close()
-        print(f"\nSuccess! Cleaned PDF saved at:\n{output_path}")
+        print(f"\nSuccess! New file saved: {output_path}")
 
     except Exception as e:
-        print(f"\nAn error occurred: {e}")
+        print(f"\nError: {e}")
 
-# Aapke Paths
+# Paths
 input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
 output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
 
 if __name__ == "__main__":
-    clean_scanned_pdf(input_file, output_file)
+    remove_watermark_red_channel(input_file, output_file)
+
+
+
+
+
+
+#use this good best 
+
+# import fitz  # PyMuPDF
+# import cv2
+# import numpy as np
+# import io
+
+# def clean_scanned_pdf(input_path, output_path):
+#     try:
+#         # 1. Original PDF open karein
+#         pdf_doc = fitz.open(input_path)
+#         # 2. Aik khali PDF document banayein
+#         output_docs = fitz.open()
+
+#         print(f"Processing: {input_path}")
+#         print("Please wait, cleaning pages...")
+
+#         for page_num in range(len(pdf_doc)):
+#             # Page load karein
+#             page = pdf_doc.load_page(page_num)
+            
+#             # Page ko image mein badlein (Resolution 2x rakhi hai clarity ke liye)
+#             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+            
+#             # Image data ko OpenCV format mein layein
+#             img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape((pix.h, pix.w, 3))
+            
+#             # Grayscale (B&W) mein badlein
+#             gray = cv2.cvtColor(img_array, cv2.COLOR_RGB2GRAY)
+            
+#             # Thresholding: 150 se halkay colors ko white kar do (Watermark removal)
+#             _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
+
+#             # Clean image ko PNG format mein convert karein
+#             is_success, buffer = cv2.imencode(".png", thresh)
+#             if is_success:
+#                 img_bytes = buffer.tobytes()
+                
+#                 # Naye PDF mein page add karein (Original size ke mutabiq)
+#                 # pix.w aur pix.h ko Matrix(2,2) ki wajah se adjust karna hoga
+#                 new_page = output_docs.new_page(width=page.rect.width, 
+#                                                height=page.rect.height)
+                
+#                 # Saaf shuda image ko page par lagayein
+#                 new_page.insert_image(new_page.rect, stream=img_bytes)
+            
+#             print(f"Done: Page {page_num + 1}")
+
+#         # Final file save karein
+#         output_docs.save(output_path)
+#         output_docs.close()
+#         pdf_doc.close()
+#         print(f"\nSuccess! Cleaned PDF saved at:\n{output_path}")
+
+#     except Exception as e:
+#         print(f"\nAn error occurred: {e}")
+
+# # Aapke Paths
+# input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
+# output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
+
+# if __name__ == "__main__":
+#     clean_scanned_pdf(input_file, output_file)
 
 
 
