@@ -1,62 +1,133 @@
-import fitz  # PyMuPDF
-import cv2
-import numpy as np
-import io
 
-def remove_watermark_red_channel(input_path, output_path):
-    try:
-        pdf_doc = fitz.open(input_path)
-        output_docs = fitz.open()
 
-        print(f"Processing: {input_path}")
-        print("Using Red-Channel extraction for crystal clear text...")
 
-        for page_num in range(len(pdf_doc)):
-            page = pdf_doc.load_page(page_num)
-            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+#v3
+
+
+# import fitz  # PyMuPDF
+# import cv2
+# import numpy as np
+# import io
+
+# def professional_clean_pdf(input_path, output_path):
+#     try:
+#         pdf_doc = fitz.open(input_path)
+#         output_docs = fitz.open()
+
+#         print(f"Cleaning: {input_path}")
+
+#         for page_num in range(len(pdf_doc)):
+#             page = pdf_doc.load_page(page_num)
+#             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
             
-            # 1. Image ko OpenCV format mein layein (RGB)
-            img = np.frombuffer(pix.samples, dtype=np.uint8).reshape((pix.h, pix.w, 3))
+#             # 1. Image ko RGB mein convert karein
+#             img = np.frombuffer(pix.samples, dtype=np.uint8).reshape((pix.h, pix.w, 3))
             
-            # 2. Sirf Red Channel ko alag karein (Index 0 for Red)
-            # Scanned red watermark is mein white/gray ho jaye ga
-            red_channel = img[:, :, 0]
+#             # 2. Sirf Red Channel lein (Yahan watermark white ho jata hai)
+#             red_channel = img[:, :, 0]
 
-            # 3. Contrast barhayein takay bacha-kucha watermark bilkul saaf ho jaye
-            # Ye black text ko mazeed gehra (dark) kar dega
-            _, clean_img = cv2.threshold(red_channel, 200, 255, cv2.THRESH_BINARY)
+#             # 3. BACKGROUND NORMALIZATION (The Magic Step)
+#             # Paper ke grey rang ko khatam karke pure white karne ke liye
+#             dilated_img = cv2.dilate(red_channel, np.ones((7,7), np.uint8))
+#             bg_img = cv2.medianBlur(dilated_img, 21)
+#             diff_img = 255 - cv2.absdiff(red_channel, bg_img)
+#             norm_img = cv2.normalize(diff_img, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_8UC1)
 
-            # 4. Save to PDF
-            is_success, buffer = cv2.imencode(".png", clean_img)
-            if is_success:
-                img_bytes = buffer.tobytes()
-                new_page = output_docs.new_page(width=page.rect.width, 
-                                               height=page.rect.height)
-                new_page.insert_image(new_page.rect, stream=img_bytes)
+#             # 4. FINAL CLEANUP
+#             # Jo cheez 230 se zyada light hai usay pure white (255) kar do
+#             _, final_img = cv2.threshold(norm_img, 230, 255, cv2.THRESH_BINARY)
+
+#             # 5. Save to PDF
+#             is_success, buffer = cv2.imencode(".png", final_img)
+#             if is_success:
+#                 img_bytes = buffer.tobytes()
+#                 new_page = output_docs.new_page(width=page.rect.width, height=page.rect.height)
+#                 new_page.insert_image(new_page.rect, stream=img_bytes)
             
-            print(f"Page {page_num + 1} cleaned.")
+#             print(f"Page {page_num + 1} processed.")
 
-        output_docs.save(output_path)
-        output_docs.close()
-        pdf_doc.close()
-        print(f"\nSuccess! New file saved: {output_path}")
+#         output_docs.save(output_path)
+#         output_docs.close()
+#         pdf_doc.close()
+#         print(f"\nSuccess! Mubarak ho, result check karein:\n{output_path}")
 
-    except Exception as e:
-        print(f"\nError: {e}")
+#     except Exception as e:
+#         print(f"\nError: {e}")
 
-# Paths
-input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
-output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
+# # Paths
+# input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
+# output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
 
-if __name__ == "__main__":
-    remove_watermark_red_channel(input_file, output_file)
-
-
+# if __name__ == "__main__":
+#     professional_clean_pdf(input_file, output_file)
 
 
 
 
-#use this good best 
+
+
+#good with bold text color good excellent   v2
+
+
+# import fitz  # PyMuPDF
+# import cv2
+# import numpy as np
+# import io
+
+# def remove_watermark_red_channel(input_path, output_path):
+#     try:
+#         pdf_doc = fitz.open(input_path)
+#         output_docs = fitz.open()
+
+#         print(f"Processing: {input_path}")
+#         print("Using Red-Channel extraction for crystal clear text...")
+
+#         for page_num in range(len(pdf_doc)):
+#             page = pdf_doc.load_page(page_num)
+#             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+            
+#             # 1. Image ko OpenCV format mein layein (RGB)
+#             img = np.frombuffer(pix.samples, dtype=np.uint8).reshape((pix.h, pix.w, 3))
+            
+#             # 2. Sirf Red Channel ko alag karein (Index 0 for Red)
+#             # Scanned red watermark is mein white/gray ho jaye ga
+#             red_channel = img[:, :, 0]
+
+#             # 3. Contrast barhayein takay bacha-kucha watermark bilkul saaf ho jaye
+#             # Ye black text ko mazeed gehra (dark) kar dega
+#             _, clean_img = cv2.threshold(red_channel, 200, 255, cv2.THRESH_BINARY)
+
+#             # 4. Save to PDF
+#             is_success, buffer = cv2.imencode(".png", clean_img)
+#             if is_success:
+#                 img_bytes = buffer.tobytes()
+#                 new_page = output_docs.new_page(width=page.rect.width, 
+#                                                height=page.rect.height)
+#                 new_page.insert_image(new_page.rect, stream=img_bytes)
+            
+#             print(f"Page {page_num + 1} cleaned.")
+
+#         output_docs.save(output_path)
+#         output_docs.close()
+#         pdf_doc.close()
+#         print(f"\nSuccess! New file saved: {output_path}")
+
+#     except Exception as e:
+#         print(f"\nError: {e}")
+
+# # Paths
+# input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
+# output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
+
+# if __name__ == "__main__":
+#     remove_watermark_red_channel(input_file, output_file)
+
+
+
+
+
+
+#use this good best        v1
 
 # import fitz  # PyMuPDF
 # import cv2
