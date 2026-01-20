@@ -134,35 +134,35 @@ process_and_upscale_pdf(input_path, output_path, "#FFEFD5", upscale_factor=3)
 
 #image color changed
 
-# import cv2
-# import numpy as np
+import cv2
+import numpy as np
 
-# def change_image_background(input_path, output_path, hex_color="#FFEFD5"):
-#     # 1. Convert hex color to BGR (OpenCV uses BGR format)
-#     hex_color = hex_color.lstrip('#')
-#     rgb = tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
-#     target_color_bgr = np.array([rgb[2], rgb[1], rgb[0]], dtype=np.float32)
+def change_image_background(input_path, output_path, hex_color="#FFEFD5"):
+    # 1. Convert hex color to BGR (OpenCV uses BGR format)
+    hex_color = hex_color.lstrip('#')
+    rgb = tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+    target_color_bgr = np.array([rgb[2], rgb[1], rgb[0]], dtype=np.float32)
 
-#     # 2. Load the image
-#     img = cv2.imread(input_path)
-#     if img is None:
-#         print("Error: Could not load image.")
-#         return
+    # 2. Load the image
+    img = cv2.imread(input_path)
+    if img is None:
+        print("Error: Could not load image.")
+        return
 
-#     # 3. Process the image
-#     # We treat the image as a mask. 
-#     # White areas (255) will become the target color.
-#     # Black areas (0) will remain black.
-#     # This formula handles anti-aliasing (gray edges) smoothly.
-#     img_float = img.astype(np.float32) / 255.0
-#     result = img_float * target_color_bgr
+    # 3. Process the image
+    # We treat the image as a mask. 
+    # White areas (255) will become the target color.
+    # Black areas (0) will remain black.
+    # This formula handles anti-aliasing (gray edges) smoothly.
+    img_float = img.astype(np.float32) / 255.0
+    result = img_float * target_color_bgr
 
-#     # 4. Convert back to standard image format (uint8)
-#     result = np.clip(result, 0, 255).astype(np.uint8)
+    # 4. Convert back to standard image format (uint8)
+    result = np.clip(result, 0, 255).astype(np.uint8)
 
-#     # 5. Save the result
-#     cv2.imwrite(output_path, result)
-#     print(f"Successfully saved to: {output_path}")
+    # 5. Save the result
+    cv2.imwrite(output_path, result)
+    print(f"Successfully saved to: {output_path}")
 
-# # Usage
-# change_image_background(r"C:\Users\PCS\Downloads\Gemini_Generated_Image_2qknvy2qknvy2qkn.png", r"C:\Users\PCS\Downloads\Gemini_Generated_Image_2qknvy2qkn000vy2qkn.png", '#FFEFD5')
+# Usage
+change_image_background(r"C:\Users\PCS\Downloads\Gemini_Generated_Image_2qknvy2qknvy2qkn.png", r"C:\Users\PCS\Downloads\Gemini_Generated_Image_2qknvy2qkn000vy2qkn.png", '#FFEFD5')
