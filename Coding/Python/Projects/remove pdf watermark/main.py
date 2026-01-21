@@ -127,69 +127,69 @@
 
 
 
-#use this good best        v1
+# use this good best        v1
 
-# import fitz  # PyMuPDF
-# import cv2
-# import numpy as np
-# import io
+import fitz  # PyMuPDF
+import cv2
+import numpy as np
+import io
 
-# def clean_scanned_pdf(input_path, output_path):
-#     try:
-#         # 1. Original PDF open karein
-#         pdf_doc = fitz.open(input_path)
-#         # 2. Aik khali PDF document banayein
-#         output_docs = fitz.open()
+def clean_scanned_pdf(input_path, output_path):
+    try:
+        # 1. Original PDF open karein
+        pdf_doc = fitz.open(input_path)
+        # 2. Aik khali PDF document banayein
+        output_docs = fitz.open()
 
-#         print(f"Processing: {input_path}")
-#         print("Please wait, cleaning pages...")
+        print(f"Processing: {input_path}")
+        print("Please wait, cleaning pages...")
 
-#         for page_num in range(len(pdf_doc)):
-#             # Page load karein
-#             page = pdf_doc.load_page(page_num)
+        for page_num in range(len(pdf_doc)):
+            # Page load karein
+            page = pdf_doc.load_page(page_num)
             
-#             # Page ko image mein badlein (Resolution 2x rakhi hai clarity ke liye)
-#             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+            # Page ko image mein badlein (Resolution 2x rakhi hai clarity ke liye)
+            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
             
-#             # Image data ko OpenCV format mein layein
-#             img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape((pix.h, pix.w, 3))
+            # Image data ko OpenCV format mein layein
+            img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape((pix.h, pix.w, 3))
             
-#             # Grayscale (B&W) mein badlein
-#             gray = cv2.cvtColor(img_array, cv2.COLOR_RGB2GRAY)
+            # Grayscale (B&W) mein badlein
+            gray = cv2.cvtColor(img_array, cv2.COLOR_RGB2GRAY)
             
-#             # Thresholding: 150 se halkay colors ko white kar do (Watermark removal)
-#             _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
+            # Thresholding: 150 se halkay colors ko white kar do (Watermark removal)
+            _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
 
-#             # Clean image ko PNG format mein convert karein
-#             is_success, buffer = cv2.imencode(".png", thresh)
-#             if is_success:
-#                 img_bytes = buffer.tobytes()
+            # Clean image ko PNG format mein convert karein
+            is_success, buffer = cv2.imencode(".png", thresh)
+            if is_success:
+                img_bytes = buffer.tobytes()
                 
-#                 # Naye PDF mein page add karein (Original size ke mutabiq)
-#                 # pix.w aur pix.h ko Matrix(2,2) ki wajah se adjust karna hoga
-#                 new_page = output_docs.new_page(width=page.rect.width, 
-#                                                height=page.rect.height)
+                # Naye PDF mein page add karein (Original size ke mutabiq)
+                # pix.w aur pix.h ko Matrix(2,2) ki wajah se adjust karna hoga
+                new_page = output_docs.new_page(width=page.rect.width, 
+                                               height=page.rect.height)
                 
-#                 # Saaf shuda image ko page par lagayein
-#                 new_page.insert_image(new_page.rect, stream=img_bytes)
+                # Saaf shuda image ko page par lagayein
+                new_page.insert_image(new_page.rect, stream=img_bytes)
             
-#             print(f"Done: Page {page_num + 1}")
+            print(f"Done: Page {page_num + 1}")
 
-#         # Final file save karein
-#         output_docs.save(output_path)
-#         output_docs.close()
-#         pdf_doc.close()
-#         print(f"\nSuccess! Cleaned PDF saved at:\n{output_path}")
+        # Final file save karein
+        output_docs.save(output_path)
+        output_docs.close()
+        pdf_doc.close()
+        print(f"\nSuccess! Cleaned PDF saved at:\n{output_path}")
 
-#     except Exception as e:
-#         print(f"\nAn error occurred: {e}")
+    except Exception as e:
+        print(f"\nAn error occurred: {e}")
 
-# # Aapke Paths
-# input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
-# output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
+# Aapke Paths
+input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
+output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
 
-# if __name__ == "__main__":
-#     clean_scanned_pdf(input_file, output_file)
+if __name__ == "__main__":
+    clean_scanned_pdf(input_file, output_file)
 
 
 
