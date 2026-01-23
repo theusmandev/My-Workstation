@@ -116,8 +116,8 @@
 #         print(f"\nError: {e}")
 
 # # Paths
-# input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
-# output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
+# input_file = r"C:\Users\PCS\Downloads\combined.pdf"
+# output_file = r"C:\Users\PCS\Downloads\combined_cleaned.pdf"
 
 # if __name__ == "__main__":
 #     remove_watermark_red_channel(input_file, output_file)
@@ -185,8 +185,8 @@ def clean_scanned_pdf(input_path, output_path):
         print(f"\nAn error occurred: {e}")
 
 # Aapke Paths
-input_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1.pdf"
-output_file = r"C:\Users\PCS\Downloads\Ibtihal epi_1ok.pdf"
+input_file = r"C:\Users\PCS\Downloads\combined.pdf"
+output_file = r"C:\Users\PCS\Downloads\combined_cleaned.pdf"
 
 if __name__ == "__main__":
     clean_scanned_pdf(input_file, output_file)
