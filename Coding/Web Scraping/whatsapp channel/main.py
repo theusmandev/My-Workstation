@@ -10,8 +10,8 @@ from selenium.common.exceptions import StaleElementReferenceException
 
 # --- CONFIGURATION ---
 FILE_PATH = r"E:\My-Workstation\Coding\Web Scraping\whatsapp channel/urdu_novel_posts.txt" 
-SCROLL_COUNT = 30  
-SCROLL_PAUSE_TIME = 2.5 # Thoda zyada time taake loading stable ho jaye
+SCROLL_COUNT = 10 
+SCROLL_PAUSE_TIME = 2.5 
 # ---------------------
 
 options = webdriver.ChromeOptions()
@@ -21,43 +21,46 @@ driver.get("https://web.whatsapp.com")
 print("Dost! QR Code scan karein aur Channel open karein.")
 input("Jab Channel open ho jaye, to 'Enter' dabayein...")
 
-def scrape_channel_with_scroll():
-    unique_messages = set()
-    
-    # Message area find karne ka koshish
+def scrape_ordered_channel():
+    # Set ki jagah List use karenge taake order save rahe
+    ordered_messages = []
+    seen_messages = set() # Sirf duplicates check karne ke liye
+
     try:
-        # WhatsApp web ka main scrollable area aksar badalta hai, body par fallback rakhte hain
         chat_window = driver.find_element(By.TAG_NAME, "body") 
     except:
         print("Chat window nahi mil saki.")
         return
 
-    print("Scraping shuru... Error handling active hai.")
+    print("Scraping shuru... Novel ki tarteeb maintain ki ja rahi hai.")
 
     for i in range(SCROLL_COUNT):
-        # Current screen ke messages find karein
-        messages = driver.find_elements(By.CSS_SELECTOR, ".copyable-text")
+        # Current screen ke messages (Upar se Neechay ki tarteeb mein milte hain)
+        current_screen_elements = driver.find_elements(By.CSS_SELECTOR, ".copyable-text")
         
-        for msg in messages:
+        # Is screen ki messages ko ek temporary list mein dalenge
+        temp_list = []
+        for msg in current_screen_elements:
             try:
                 text = msg.text.strip()
-                if text and len(text) > 15: # Sirf kaam ka content uthane ke liye
-                    unique_messages.add(text)
+                if text and len(text) > 15:
+                    if text not in seen_messages:
+                        temp_list.append(text)
+                        seen_messages.add(text)
             except StaleElementReferenceException:
-                # Agar element purana ho jaye to usay skip kar dein, agle loop mein cover ho jayega
-                continue
-            except Exception:
                 continue
 
-        # Upar ki taraf scroll karein
-        # Keys.CONTROL + Keys.HOME se behtar hai 'PageUp' use karna multiple times
+        # Kyunke hum upar scroll kar rahe hain, naye milne wale (purane) messages 
+        # list ke shuru (start) mein aane chahiyen
+        ordered_messages = temp_list + ordered_messages
+
+        # Scroll Up
         chat_window.send_keys(Keys.PAGE_UP)
         time.sleep(SCROLL_PAUSE_TIME)
         
-        print(f"Scroll {i+1}/{SCROLL_COUNT} | Unique Posts: {len(unique_messages)}")
+        print(f"Scroll {i+1}/{SCROLL_COUNT} | Ab tak {len(ordered_messages)} posts tarteeb se jama ho chukin.")
 
-    # Save to File
-    save_data(unique_messages)
+    save_data(ordered_messages)
 
 def save_data(data):
     try:
@@ -66,16 +69,109 @@ def save_data(data):
             os.makedirs(folder)
 
         with open(FILE_PATH, "w", encoding="utf-8") as f:
+            # Ab data pehle se hi chronological order mein hoga
             for post in data:
                 f.write(post + "\n" + "-"*30 + "\n")
         
-        print(f"\nMubarak ho! {len(data)} posts save ho gayi hain.")
-        print(f"File Path: {FILE_PATH}")
+        print(f"\nDone! Novel ki {len(data)} posts sequence mein save ho gayi hain.")
     except Exception as e:
-        print(f"File save karne mein masla aya: {e}")
+        print(f"File error: {e}")
 
-scrape_channel_with_scroll()
+scrape_ordered_channel()
 driver.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#good with scrolling excellent but without tarteeb
+# import time
+# import os
+# from selenium import webdriver
+# from selenium.webdriver.chrome.service import Service
+# from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.common.keys import Keys
+# from selenium.common.exceptions import StaleElementReferenceException
+
+# # --- CONFIGURATION ---
+# FILE_PATH = r"E:\My-Workstation\Coding\Web Scraping\whatsapp channel/urdu_novel_posts.txt" 
+# SCROLL_COUNT = 30  
+# SCROLL_PAUSE_TIME = 2.5 # Thoda zyada time taake loading stable ho jaye
+# # ---------------------
+
+# options = webdriver.ChromeOptions()
+# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+# driver.get("https://web.whatsapp.com")
+
+# print("Dost! QR Code scan karein aur Channel open karein.")
+# input("Jab Channel open ho jaye, to 'Enter' dabayein...")
+
+# def scrape_channel_with_scroll():
+#     unique_messages = set()
+    
+#     # Message area find karne ka koshish
+#     try:
+#         # WhatsApp web ka main scrollable area aksar badalta hai, body par fallback rakhte hain
+#         chat_window = driver.find_element(By.TAG_NAME, "body") 
+#     except:
+#         print("Chat window nahi mil saki.")
+#         return
+
+#     print("Scraping shuru... Error handling active hai.")
+
+#     for i in range(SCROLL_COUNT):
+#         # Current screen ke messages find karein
+#         messages = driver.find_elements(By.CSS_SELECTOR, ".copyable-text")
+        
+#         for msg in messages:
+#             try:
+#                 text = msg.text.strip()
+#                 if text and len(text) > 15: # Sirf kaam ka content uthane ke liye
+#                     unique_messages.add(text)
+#             except StaleElementReferenceException:
+#                 # Agar element purana ho jaye to usay skip kar dein, agle loop mein cover ho jayega
+#                 continue
+#             except Exception:
+#                 continue
+
+#         # Upar ki taraf scroll karein
+#         # Keys.CONTROL + Keys.HOME se behtar hai 'PageUp' use karna multiple times
+#         chat_window.send_keys(Keys.PAGE_UP)
+#         time.sleep(SCROLL_PAUSE_TIME)
+        
+#         print(f"Scroll {i+1}/{SCROLL_COUNT} | Unique Posts: {len(unique_messages)}")
+
+#     # Save to File
+#     save_data(unique_messages)
+
+# def save_data(data):
+#     try:
+#         folder = os.path.dirname(FILE_PATH)
+#         if folder and not os.path.exists(folder):
+#             os.makedirs(folder)
+
+#         with open(FILE_PATH, "w", encoding="utf-8") as f:
+#             for post in data:
+#                 f.write(post + "\n" + "-"*30 + "\n")
+        
+#         print(f"\nMubarak ho! {len(data)} posts save ho gayi hain.")
+#         print(f"File Path: {FILE_PATH}")
+#     except Exception as e:
+#         print(f"File save karne mein masla aya: {e}")
+
+# scrape_channel_with_scroll()
+# driver.quit()
 
 #good version with scrolling 
 # import time
