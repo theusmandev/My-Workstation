@@ -1,54 +1,198 @@
+
 import time
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
-# --- CONFIGURATION (Aapka hard-coded path) ---
-FILE_PATH = r"E:\My-Workstation\Coding\Web Scraping\whatsapp channel\urdu_novel_posts.txt" 
-# ----------------------------------------------
+# --- CONFIGURATION ---
+FILE_PATH = r"E:\My-Workstation\Coding\Web Scraping\whatsapp channel/urdu_novel_posts.txt" 
+SCROLL_COUNT = 20  # Kitni baar upar scroll karna hai
+SCROLL_PAUSE_TIME = 2  # Scroll ke baad loading ka intezar (seconds)
+# ---------------------
 
 options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 driver.get("https://web.whatsapp.com")
 
-print("Dost! Pehle QR Code scan karein aur Channel open karein.")
-input("Jab Channel open ho jaye, to 'Enter' dabayein...")
+print("Dost! Pehle QR Code scan karein aur phir wo Channel open karein.")
+input("Jab Channel open ho jaye aur messages load ho jayein, to 'Enter' dabayein...")
 
-def scrape_channel():
-    # Behtar Selector: Sirf message text ko target karne ke liye
-    messages = driver.find_elements(By.CSS_SELECTOR, "span.selectable-text.copyable-text")
+def scrape_channel_with_scroll():
+    # Duplicates se bachne ke liye Set use karenge
+    unique_messages = set()
     
-    content_list = []
-    seen_texts = set() # Duplicates ko filter karne ke liye
-
-    for msg in messages:
-        text = msg.text.strip()
-        
-        # Check: Duplicate filter logic
-        if text and text not in seen_texts:
-            content_list.append(text)
-            seen_texts.add(text)
-    
-    # File Save Logic
+    # WhatsApp ka main message container dhundna
+    # Ye aksar badalta rehta hai, lekin 'main' area ko target karna behtar hai
     try:
-        # Path check: Agar folders nahi bane hue to create karega
+        # Pura message area select karna
+        chat_window = driver.find_element(By.XPATH, "//div[@role='application']//div[@id='main']//div[contains(@class, '_5-9m')]")
+    except:
+        # Agar specific class na mile to body par scroll try karein
+        chat_window = driver.find_element(By.TAG_NAME, "body")
+
+    print("Scraping aur Scrolling shuru ho rahi hai...")
+
+    for i in range(SCROLL_COUNT):
+        # 1. Current screen ke messages nikaalna
+        messages = driver.find_elements(By.CSS_SELECTOR, ".copyable-text")
+        for msg in messages:
+            text = msg.text.strip()
+            if text and len(text) > 10: # Choti moti info (like time) filter karne ke liye
+                unique_messages.add(text)
+
+        # 2. Upar ki taraf scroll karna
+        # Hum 'Home' key ya JS scroll use kar sakte hain
+        driver.execute_script("arguments[0].scrollTop = 0", chat_window) 
+        # Ya phir ye method:
+        chat_window.send_keys(Keys.CONTROL + Keys.HOME)
+        
+        print(f"Scroll {i+1}/{SCROLL_COUNT} mukammal... Ab tak {len(unique_messages)} unique posts mili.")
+        time.sleep(SCROLL_PAUSE_TIME)
+
+    # 4. Save to File
+    try:
         folder = os.path.dirname(FILE_PATH)
         if folder and not os.path.exists(folder):
             os.makedirs(folder)
 
         with open(FILE_PATH, "w", encoding="utf-8") as f:
-            for line in content_list:
-                f.write(line + "\n" + "-"*30 + "\n")
+            for post in unique_messages:
+                f.write(post + "\n" + "-"*30 + "\n")
         
-        print(f"\nBehtareen! Total {len(content_list)} unique posts save ho gayi hain.")
-        print(f"File Path: {FILE_PATH}")
+        print(f"\nSuccess! Total {len(unique_messages)} unique posts save ho gayi hain.")
+        print(f"Location: {FILE_PATH}")
         
     except Exception as e:
-        print(f"Error: Path access karne mein masla aa raha hai. Details: {e}")
+        print(f"Error saving file: {e}")
 
-scrape_channel()
+scrape_channel_with_scroll()
+driver.quit()
+
+
+
+
+
+
+
+
+
+
+# import time
+# import os
+# from selenium import webdriver
+# from selenium.webdriver.chrome.service import Service
+# from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.common.by import By
+
+# # --- CONFIGURATION (Aapka Path) ---
+# FILE_PATH = r"E:\My-Workstation\Coding\Web Scraping\whatsapp channel\urdu_novel_posts.txt" 
+# # ----------------------------------
+
+# options = webdriver.ChromeOptions()
+# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+# driver.get("https://web.whatsapp.com")
+
+# print("Dost! Pehle QR Code scan karein aur Channel open karein.")
+# input("Jab Channel open ho jaye, to 'Enter' dabayein...")
+
+# def scrape_channel():
+#     # Wapis wahi purana selector jo aapke paas kaam kar raha tha
+#     messages = driver.find_elements(By.CSS_SELECTOR, ".copyable-text")
+    
+#     content_list = []
+#     seen_texts = set() # Ye duplicate posts ko rokne ke liye hai
+
+#     for msg in messages:
+#         text = msg.text.strip()
+        
+#         # Check: Agar text khali nahi hai aur pehle list mein nahi aaya
+#         if text and text not in seen_texts:
+#             content_list.append(text)
+#             seen_texts.add(text) # Is text ko yaad rakho
+    
+#     # File Save Logic
+#     try:
+#         folder = os.path.dirname(FILE_PATH)
+#         if folder and not os.path.exists(folder):
+#             os.makedirs(folder)
+
+#         # "w" se har baar nayi file banegi, "a" se purani mein add hoga
+#         with open(FILE_PATH, "w", encoding="utf-8") as f:
+#             for line in content_list:
+#                 f.write(line + "\n" + "-"*30 + "\n")
+        
+#         print(f"\nDone! Total {len(content_list)} posts save ho gayi hain.")
+#         print(f"File Path: {FILE_PATH}")
+        
+#     except Exception as e:
+#         print(f"Error: {e}")
+
+# scrape_channel()
+
+
+
+
+
+
+
+
+
+
+
+# import time
+# import os
+# from selenium import webdriver
+# from selenium.webdriver.chrome.service import Service
+# from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.common.by import By
+
+# # --- CONFIGURATION (Aapka hard-coded path) ---
+# FILE_PATH = r"E:\My-Workstation\Coding\Web Scraping\whatsapp channel\urdu_novel_posts.txt" 
+# # ----------------------------------------------
+
+# options = webdriver.ChromeOptions()
+# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+# driver.get("https://web.whatsapp.com")
+
+# print("Dost! Pehle QR Code scan karein aur Channel open karein.")
+# input("Jab Channel open ho jaye, to 'Enter' dabayein...")
+
+# def scrape_channel():
+#     # Behtar Selector: Sirf message text ko target karne ke liye
+#     messages = driver.find_elements(By.CSS_SELECTOR, "span.selectable-text.copyable-text")
+    
+#     content_list = []
+#     seen_texts = set() # Duplicates ko filter karne ke liye
+
+#     for msg in messages:
+#         text = msg.text.strip()
+        
+#         # Check: Duplicate filter logic
+#         if text and text not in seen_texts:
+#             content_list.append(text)
+#             seen_texts.add(text)
+    
+#     # File Save Logic
+#     try:
+#         # Path check: Agar folders nahi bane hue to create karega
+#         folder = os.path.dirname(FILE_PATH)
+#         if folder and not os.path.exists(folder):
+#             os.makedirs(folder)
+
+#         with open(FILE_PATH, "w", encoding="utf-8") as f:
+#             for line in content_list:
+#                 f.write(line + "\n" + "-"*30 + "\n")
+        
+#         print(f"\nBehtareen! Total {len(content_list)} unique posts save ho gayi hain.")
+#         print(f"File Path: {FILE_PATH}")
+        
+#     except Exception as e:
+#         print(f"Error: Path access karne mein masla aa raha hai. Details: {e}")
+
+# scrape_channel()
 # driver.quit()
 
 
@@ -107,4 +251,5 @@ scrape_channel()
 #         print(f"Error: Path galat hai ya access nahi mil raha. Details: {e}")
 
 # scrape_channel()
-# # driver.quit()
+# driver.quit()
+
