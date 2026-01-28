@@ -1,0 +1,172 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Novel Search</title>
+</head>
+
+<style>
+    h2 { color: #007bff; text-align: center; }
+    input { width: 70%; padding: 8px; margin: 5px; }
+    button { background: #007bff; color: white; padding: 8px 12px; border: none; cursor: pointer; }
+    ul { list-style-type: none; padding: 0; }
+    li { padding: 5px; border-bottom: 1px solid #ddd; }
+</style>
+
+<body>
+    <h1>Urdu Novel Search</h1>
+    <input type="text" id="searchQuery" placeholder="Enter novel name">
+    <button onclick="searchNovel()">Search</button>
+    <ul id="results"></ul>
+
+    <script>
+        function searchNovel() {
+            let query = document.getElementById("searchQuery").value;
+            if (!query) {
+                alert("Please enter a novel name.");
+                return;
+            }
+
+            fetch(`/search?query=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    let resultList = document.getElementById("results");
+                    resultList.innerHTML = "";
+
+                    if (data.message) {
+                        resultList.innerHTML = `<li>${data.message}</li>`;
+                        return;
+                    }
+
+                    data.forEach(novel => {
+                        let li = document.createElement("li");
+                        li.innerHTML = `<b>${novel.title}</b> - <a href="${novel.link}" target="_blank">Download</a>`;
+                        resultList.appendChild(li);
+                    });
+                })
+                .catch(error => console.error("Error fetching data:", error));
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Novel Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        input {
+            width: 70%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #8ea15e;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 500px;
+            margin: 80px auto;
+        }
+        li {
+            padding: 29px;
+            border-bottom: 1px solid #ddd;
+        }
+        li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Urdu Novel Search</h1>
+    <input type="text" id="searchQuery" placeholder="Enter novel name" onkeypress="handleKeyPress(event)">
+    <button id="searchBtn" onclick="searchNovel()">Search</button>
+    <ul id="results"></ul>
+
+    <script>
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                searchNovel();
+            }
+        }
+
+        function searchNovel() {
+            let query = document.getElementById("searchQuery").value.trim();
+            let searchBtn = document.getElementById("searchBtn");
+            let resultList = document.getElementById("results");
+
+            if (!query) {
+                alert("Please enter a novel name.");
+                return;
+            }
+
+            searchBtn.disabled = true; // Disable button while fetching
+            searchBtn.textContent = "Searching...";
+
+            fetch(`/search?query=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(data => {
+                    resultList.innerHTML = "";
+                    searchBtn.disabled = false;
+                    searchBtn.textContent = "Search";
+
+                    if (data.message) {
+                        resultList.innerHTML = `<li>${data.message}</li>`;
+                        return;
+                    }
+
+                    if (data.length === 0) {
+                        resultList.innerHTML = `<li>No results found</li>`;
+                        return;
+                    }
+
+                    data.forEach(novel => {
+                        let li = document.createElement("li");
+                        li.innerHTML = `<b>${novel.title}</b> - <a href="${novel.link}" target="_blank">Download</a>`;
+                        resultList.appendChild(li);
+                    });
+                })
+                .catch(error => {
+                    console.error("Error fetching data:", error);
+                    resultList.innerHTML = `<li>Error fetching results. Try again later.</li>`;
+                    searchBtn.disabled = false;
+                    searchBtn.textContent = "Search";
+                });
+        }
+    </script>
+</body>
+</html>
