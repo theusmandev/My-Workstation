@@ -1,0 +1,150 @@
+
+<style>
+    .novel-list-container {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    ul.novel-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Row Layout */
+    li.novel-item {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        padding: 12px 5px;
+        display: flex;
+        align-items: center; /* Vertically Center */
+        gap: 12px;
+    }
+    
+    li.novel-item:last-child {
+        border-bottom: none;
+    }
+
+    /* 1. Numbering */
+    .novel-number {
+        font-size: 14px;
+        font-weight: bold;
+        color: #999;
+        min-width: 25px;
+    }
+
+    /* 2. Title (Center) */
+    h3.novel-title {
+        flex-grow: 1;
+        font-size: 14px;
+        color: #333;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.4;
+        
+        /* Max 2 lines */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* 3. Button with Icon (Right) */
+    .download-btn {
+        background-color: #007bff;
+        color: white !important;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none !important;
+        
+        /* Flexbox for Icon Alignment */
+        display: inline-flex;
+        align-items: center;
+        gap: 5px; /* Space between Text and Icon */
+        
+        transition: background-color 0.2s;
+        white-space: nowrap;
+    }
+
+    .download-btn:hover {
+        background-color: #0056b3;
+    }
+    
+    /* SVG Icon Style */
+    .btn-icon {
+        width: 12px;
+        height: 12px;
+        fill: currentColor; /* Inherits white color */
+    }
+
+</style>
+
+<div class="novel-list-container">
+    <ul class="novel-list">
+
+        <li class="novel-item">
+            <span class="novel-number">1.</span>
+            <h3 class="novel-title">Maan Toota Novel By Deeba Tabassum</h3>
+            <a href="https://drive.google.com/uc?export=download&id=1llf4RJ6zpuzVTyLgVnxgoHOLLhvi_0mp" class="download-btn" target="_blank" rel="nofollow" title="Download Maan Toota Novel By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">2.</span>
+            <h3 class="novel-title">Neelam Ka Markat Novel By Deeba Tabassum</h3>
+            <a href="https://www.mediafire.com/file/t6uvhfujc3xfo4k/Neelam+ka+markat+by+deeba+tabassum.pdf/file" class="download-btn" target="_blank" rel="nofollow" title="Download Neelam Ka Markat Novel By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">3.</span>
+            <h3 class="novel-title">Apny Aisy Naseeb Kahan By Deeba Tabassum</h3>
+            <a href="https://drive.google.com/uc?export=download&id=1Z9zfIdGJRmC4CaQeiIUWUPEU8dmlXzeZ" class="download-btn" target="_blank" rel="nofollow" title="Download Apny Aisy Naseeb Kahan By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">4.</span>
+            <h3 class="novel-title">Neelam Ka Markat By Deeba Tabassum</h3>
+            <a href="https://drive.google.com/uc?export=download&id=1pLMLMTRY8xhInZlfov6j-VTtcSX1wIUZ" class="download-btn" target="_blank" rel="nofollow" title="Download Neelam Ka Markat By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">5.</span>
+            <h3 class="novel-title">Of Koi Charagar Ho By Deeba Tabassum</h3>
+            <a href="https://drive.google.com/uc?export=download&id=1_AUEdFTBz8EBDYN9pGUejilD3YiaSfqB" class="download-btn" target="_blank" rel="nofollow" title="Download Of Koi Charagar Ho By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">6.</span>
+            <h3 class="novel-title">Bill Gates Chahiye By Deeba Tabassum</h3>
+            <a href="https://drive.google.com/uc?export=download&id=1nJ5VXZ0RDyIcA_cMZdoRZejJilkL407X" class="download-btn" target="_blank" rel="nofollow" title="Download Bill Gates Chahiye By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">7.</span>
+            <h3 class="novel-title">Haram Ishq By Deeba Tabassum</h3>
+            <a href="https://drive.google.com/uc?export=download&id=1XoDdgYsrwexEUgjkYXMt_VdeYqReRjMY" class="download-btn" target="_blank" rel="nofollow" title="Download Haram Ishq By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">8.</span>
+            <h3 class="novel-title">Violin Or Mahi By Deeba Tabassum ​</h3>
+            <a href="https://drive.google.com/uc?export=download&id=1SHKX-5jDUFZ_wYoiuyX0ir2pWzlzLqk0" class="download-btn" target="_blank" rel="nofollow" title="Download Violin Or Mahi By Deeba Tabassum ​">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">9.</span>
+            <h3 class="novel-title">Koi Charagar Ho By Deeba Tabassum</h3>
+            <a href="https://www.mediafire.com/file/80xtdyr3am6ghkl/Koi+Charagar+Ho+by+Deeba+Tabassum.pdf/file" class="download-btn" target="_blank" rel="nofollow" title="Download Koi Charagar Ho By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">10.</span>
+            <h3 class="novel-title">Maan Toota Novel By Deeba Tabassum</h3>
+            <a href="https://www.mediafire.com/file/mvu2jkychvjy516/Maan+Tota+By+Deeba+Tabasum.pdf/file" class="download-btn" target="_blank" rel="nofollow" title="Download Maan Toota Novel By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">11.</span>
+            <h3 class="novel-title">Maan Toota Novel By Deeba Tabassum</h3>
+            <a href="https://drive.google.com/open?id=1Si6-xqQ8gVtA1otKQpB2SHzm30FFCOmo" class="download-btn" target="_blank" rel="nofollow" title="Download Maan Toota Novel By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">12.</span>
+            <h3 class="novel-title">Apny Aisy Naseeb Kahan By Deeba Tabassum</h3>
+            <a href="https://www.mediafire.com/file/5a2tw30abq2s9jv/Apny_Aisy_Naseeb_Kahan_By_Deeba_Tabassum.pdf/file" class="download-btn" target="_blank" rel="nofollow" title="Download Apny Aisy Naseeb Kahan By Deeba Tabassum">PDF <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+        </li>
+    </ul>
+</div>

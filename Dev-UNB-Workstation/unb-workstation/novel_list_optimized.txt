@@ -1,0 +1,373 @@
+
+<style>
+    :root {
+        --primary-color: #007bff; /* Professional Blue */
+        --hover-color: #0056b3;
+        --bg-color: #f8f9fa;
+        --text-color: #333;
+        --card-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        --card-hover-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Container */
+    .novel-list-container {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        max-width: 800px; /* Better readability width */
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    ul.novel-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Modern Card Item */
+    li.novel-item {
+        background-color: #fff;
+        border: 1px solid #eef0f2;
+        border-radius: 8px; /* Rounded corners */
+        padding: 15px 20px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+        box-shadow: var(--card-shadow);
+    }
+
+    li.novel-item:hover {
+        transform: translateY(-2px); /* Subtle lift effect */
+        box-shadow: var(--card-hover-shadow);
+        border-color: #dce0e5;
+    }
+
+    /* Counter Styling */
+    .novel-number {
+        font-weight: 700;
+        color: #adb5bd;
+        font-size: 16px;
+        min-width: 35px;
+    }
+
+    /* Semantic Title for SEO (H3) */
+    h3.novel-title {
+        flex-grow: 1;
+        font-size: 16px;
+        color: var(--text-color);
+        font-weight: 600;
+        margin: 0 15px 0 0; /* Reset margins */
+        line-height: 1.5;
+    }
+
+    /* Status Note */
+    .note-badge {
+        font-size: 11px;
+        background-color: #fff3cd;
+        color: #856404;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 8px;
+        font-weight: normal;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    /* Modern Button with Icon Support */
+    .download-btn {
+        background-color: var(--primary-color);
+        color: white !important;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 50px; /* Pill shape */
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px; /* Space between icon and text */
+        transition: background-color 0.2s;
+        border: none;
+        white-space: nowrap;
+    }
+
+    .download-btn:hover {
+        background-color: var(--hover-color);
+        text-decoration: none;
+    }
+    
+    .download-btn svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+        li.novel-item {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 15px;
+        }
+        
+        h3.novel-title {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .download-btn {
+            width: 100%; /* Full width on mobile */
+            justify-content: center;
+        }
+        
+        .novel-number {
+            display: none; /* Hide number on small screens for cleaner look */
+        }
+    }
+</style>
+
+<div class="novel-list-container">
+    <ul class="novel-list">
+
+        <li class="novel-item">
+            <span class="novel-number">1.</span>
+            <h3 class="novel-title">
+                Maan Toota Novel By Deeba Tabassum
+                
+            </h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1llf4RJ6zpuzVTyLgVnxgoHOLLhvi_0mp" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Maan Toota Novel By Deeba Tabassum PDF Free"
+           aria-label="Download PDF for Maan Toota Novel By Deeba Tabassum">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">2.</span>
+            <h3 class="novel-title">
+                Neelam Ka Markat Novel By Deeba Tabassum
+                
+            </h3>
+            
+        <a href="https://www.mediafire.com/file/t6uvhfujc3xfo4k/Neelam+ka+markat+by+deeba+tabassum.pdf/file" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Neelam Ka Markat Novel By Deeba Tabassum PDF Free"
+           aria-label="Download PDF for Neelam Ka Markat Novel By Deeba Tabassum">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">3.</span>
+            <h3 class="novel-title">
+                Apny Aisy Naseeb Kahan By Deeba Tabassum
+                
+            </h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1Z9zfIdGJRmC4CaQeiIUWUPEU8dmlXzeZ" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Apny Aisy Naseeb Kahan By Deeba Tabassum PDF Free"
+           aria-label="Download PDF for Apny Aisy Naseeb Kahan By Deeba Tabassum">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">4.</span>
+            <h3 class="novel-title">
+                Neelam Ka Markat By Deeba Tabassum
+                
+            </h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1pLMLMTRY8xhInZlfov6j-VTtcSX1wIUZ" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Neelam Ka Markat By Deeba Tabassum PDF Free"
+           aria-label="Download PDF for Neelam Ka Markat By Deeba Tabassum">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">5.</span>
+            <h3 class="novel-title">
+                Download Complete Pdf File Of Koi Charagar Ho By Deeba Tabassum
+                
+            </h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1_AUEdFTBz8EBDYN9pGUejilD3YiaSfqB" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Download Complete Pdf File Of Koi Charagar Ho By Deeba Tabassum PDF Free"
+           aria-label="Download PDF for Download Complete Pdf File Of Koi Charagar Ho By Deeba Tabassum">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">6.</span>
+            <h3 class="novel-title">
+                Bill Gates Chahiye Urdu Novel By Deeba Tabassum Complete Pdf
+                
+            </h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1nJ5VXZ0RDyIcA_cMZdoRZejJilkL407X" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Bill Gates Chahiye Urdu Novel By Deeba Tabassum Complete Pdf PDF Free"
+           aria-label="Download PDF for Bill Gates Chahiye Urdu Novel By Deeba Tabassum Complete Pdf">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">7.</span>
+            <h3 class="novel-title">
+                Haram Ishq Urdu Novel By Deeba Tabassum Complete Pdf
+                
+            </h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1XoDdgYsrwexEUgjkYXMt_VdeYqReRjMY" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Haram Ishq Urdu Novel By Deeba Tabassum Complete Pdf PDF Free"
+           aria-label="Download PDF for Haram Ishq Urdu Novel By Deeba Tabassum Complete Pdf">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">8.</span>
+            <h3 class="novel-title">
+                Violin Or Mahi By Deeba Tabassum Complete Urdu Novel Pdf​
+                
+            </h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1SHKX-5jDUFZ_wYoiuyX0ir2pWzlzLqk0" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Violin Or Mahi By Deeba Tabassum Complete Urdu Novel Pdf​ PDF Free"
+           aria-label="Download PDF for Violin Or Mahi By Deeba Tabassum Complete Urdu Novel Pdf​">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">9.</span>
+            <h3 class="novel-title">
+                Koi Charagar Ho By Deeba Tabassum
+                
+            </h3>
+            
+        <a href="https://www.mediafire.com/file/80xtdyr3am6ghkl/Koi+Charagar+Ho+by+Deeba+Tabassum.pdf/file" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Koi Charagar Ho By Deeba Tabassum PDF Free"
+           aria-label="Download PDF for Koi Charagar Ho By Deeba Tabassum">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">10.</span>
+            <h3 class="novel-title">
+                Maan Toota Novel By Deeba Tabassum
+                
+            </h3>
+            
+        <a href="https://www.mediafire.com/file/mvu2jkychvjy516/Maan+Tota+By+Deeba+Tabasum.pdf/file" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Maan Toota Novel By Deeba Tabassum PDF Free"
+           aria-label="Download PDF for Maan Toota Novel By Deeba Tabassum">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">11.</span>
+            <h3 class="novel-title">
+                Maan Toota Novel By Deeba Tabassum Complete
+                
+            </h3>
+            
+        <a href="https://drive.google.com/open?id=1Si6-xqQ8gVtA1otKQpB2SHzm30FFCOmo" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Maan Toota Novel By Deeba Tabassum Complete PDF Free"
+           aria-label="Download PDF for Maan Toota Novel By Deeba Tabassum Complete">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+        <li class="novel-item">
+            <span class="novel-number">12.</span>
+            <h3 class="novel-title">
+                Apny Aisy Naseeb Kahan By Deeba Tabassum
+                
+            </h3>
+            
+        <a href="https://www.mediafire.com/file/5a2tw30abq2s9jv/Apny_Aisy_Naseeb_Kahan_By_Deeba_Tabassum.pdf/file" 
+           class="download-btn" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           title="Download Apny Aisy Naseeb Kahan By Deeba Tabassum PDF Free"
+           aria-label="Download PDF for Apny Aisy Naseeb Kahan By Deeba Tabassum">
+           <span>Download</span>
+           
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+
+        </a>
+        
+        </li>
+    </ul>
+</div>

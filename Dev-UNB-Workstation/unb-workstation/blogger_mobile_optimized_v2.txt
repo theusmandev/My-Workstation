@@ -1,0 +1,165 @@
+
+<style>
+    /* Global Reset */
+    .novel-list-container * {
+        box-sizing: border-box;
+    }
+
+    .novel-list-container {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        /* Desktop par bhi mobile jaisa patla dikhane ke liye max-width lagayi hai */
+        max-width: 600px; 
+        margin: 0 auto;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    ul.novel-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        /* Hamesha 1 column rahega (No Media Query) */
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    /* Card Style */
+    li.novel-item {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        border: 1px solid #e1e4e8;
+        display: flex;
+        flex-direction: column; /* Hamesha vertical stack */
+        justify-content: space-between;
+    }
+
+    /* Title Style */
+    h3.novel-title {
+        font-size: 16px;
+        color: #2c3e50;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        line-height: 1.4;
+        text-transform: capitalize;
+    }
+
+    .writer-tag {
+        font-size: 12px;
+        color: #7f8c8d;
+        display: block;
+        margin-top: 3px;
+        font-weight: normal;
+    }
+
+    /* Button Style */
+    .download-btn {
+        background: #007bff;
+        color: white !important;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none !important;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+        margin-top: auto; /* Push to bottom if needed */
+    }
+
+    .download-btn:hover {
+        background: #0056b3;
+    }
+</style>
+
+<div class="novel-list-container">
+    <ul class="novel-list">
+
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Maan toota novel
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://drive.google.com/uc?export=download&id=1llf4RJ6zpuzVTyLgVnxgoHOLLhvi_0mp" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Neelam Ka Markat Novel
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://www.mediafire.com/file/t6uvhfujc3xfo4k/Neelam+ka+markat+by+deeba+tabassum.pdf/file" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Apny Aisy Naseeb Kahan
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://drive.google.com/uc?export=download&id=1Z9zfIdGJRmC4CaQeiIUWUPEU8dmlXzeZ" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Neelam Ka Markat
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://drive.google.com/uc?export=download&id=1pLMLMTRY8xhInZlfov6j-VTtcSX1wIUZ" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                of Koi Charagar Ho
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://drive.google.com/uc?export=download&id=1_AUEdFTBz8EBDYN9pGUejilD3YiaSfqB" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Bill Gates Chahiye
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://drive.google.com/uc?export=download&id=1nJ5VXZ0RDyIcA_cMZdoRZejJilkL407X" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Haram Ishq
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://drive.google.com/uc?export=download&id=1XoDdgYsrwexEUgjkYXMt_VdeYqReRjMY" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Violin Or Mahi
+                <span class="writer-tag">By Deeba Tabassum ​</span>
+            </h3>
+            <a href="https://drive.google.com/uc?export=download&id=1SHKX-5jDUFZ_wYoiuyX0ir2pWzlzLqk0" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Koi Charagar Ho
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://www.mediafire.com/file/80xtdyr3am6ghkl/Koi+Charagar+Ho+by+Deeba+Tabassum.pdf/file" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Maan Toota Novel
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://www.mediafire.com/file/mvu2jkychvjy516/Maan+Tota+By+Deeba+Tabasum.pdf/file" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Maan toota novel
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://drive.google.com/open?id=1Si6-xqQ8gVtA1otKQpB2SHzm30FFCOmo" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+        <li class="novel-item">
+            <h3 class="novel-title">
+                Apny Aisy Naseeb Kahan
+                <span class="writer-tag">By Deeba Tabassum</span>
+            </h3>
+            <a href="https://www.mediafire.com/file/5a2tw30abq2s9jv/Apny_Aisy_Naseeb_Kahan_By_Deeba_Tabassum.pdf/file" class="download-btn" target="_blank" rel="nofollow">Download PDF ⬇</a>
+        </li>
+    </ul>
+</div>

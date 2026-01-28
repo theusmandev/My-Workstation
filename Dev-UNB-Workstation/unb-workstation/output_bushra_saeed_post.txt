@@ -1,0 +1,524 @@
+
+<style>
+    /* Intro Section */
+    .unb-intro-section { margin-bottom: 30px; font-family: inherit; line-height: 1.6; color: #333; }
+
+    /* Wrapper */
+    .unb-main-wrapper { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 100%; margin: 0 auto; padding: 10px; box-sizing: border-box; }
+
+    /* List Styles */
+    .unb-ul-list { list-style: none !important; padding: 0 !important; margin: 0 !important; }
+    .unb-list-row { background-color: #fff; border-bottom: 1px solid #eee; padding: 12px 5px; display: flex; align-items: center; gap: 12px; line-height: normal; }
+    .unb-list-row:last-child { border-bottom: none; }
+
+    /* Elements */
+    .unb-num-badge { font-size: 14px; font-weight: bold; color: #999; min-width: 25px; }
+    h3.unb-novel-heading { flex-grow: 1; font-size: 14px !important; color: #333 !important; font-weight: 600 !important; margin: 0 !important; padding: 0 !important; line-height: 1.4 !important; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; border: none; }
+    
+    /* Download Button (Blue) */
+    a.unb-dl-btn { background-color: #007bff !important; color: white !important; padding: 6px 10px !important; border-radius: 4px !important; font-size: 12px !important; font-weight: bold !important; text-decoration: none !important; border: none !important; display: inline-flex; align-items: center; gap: 5px; transition: background-color 0.2s ease; white-space: nowrap; height: auto !important; }
+    a.unb-dl-btn:hover { background-color: #0056b3 !important; }
+    
+    /* Report Button (Red) */
+    a.unb-report-btn { background-color: #dc3545 !important; color: white !important; padding: 10px 20px !important; border-radius: 50px !important; font-size: 14px !important; font-weight: bold !important; text-decoration: none !important; border: none !important; display: inline-block; box-shadow: 0 4px 6px rgba(220, 53, 69, 0.2); transition: transform 0.2s; }
+    a.unb-report-btn:hover { background-color: #c82333 !important; transform: translateY(-2px); }
+
+    /* Icon */
+    .unb-svg-icon { width: 12px; height: 12px; fill: currentColor; pointer-events: none; }
+</style>
+
+<svg style="display: none;">
+    <symbol id="unb-arrow-icon" viewBox="0 0 24 24">
+        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    </symbol>
+</svg>
+
+<div class="unb-main-wrapper">
+
+<div class="unb-intro-section">
+    <p><strong><span style="font-family: inherit;"><br /></span></strong></p>
+    <h2 style="text-align: center;"><strong><span style="font-family: inherit;">Bushra Saeed's Novels Collection</span></strong></h2>
+    <p><span><span style="font-family: inherit;">Explore the rich world of <b>Urdu literature </b>with our<b> carefully curated</b> collection of <b>Bushra Saeed’s best novels.</b></span></span></p>
+    <p><span style="font-family: inherit;"><b><br /></b>Bushra Saeed is widely admired for their captivating writing style, emotionally powerful characters, and deeply engaging storylines that leave a lasting impact on readers.</span></p>
+    <p><span style="font-family: inherit;"><br /></span></p>
+    <p><span style="font-family: inherit;">On this page, you can easily <strong>find and download PDF versions of Bushra Saeed’s most popular </strong><span>and</span><strong> top-rated Urdu novels</strong>. Each download link is carefully checked and regularly updated to ensure a <strong>smooth, safe, and hassle-free reading experience</strong>.</span></p>
+    <p><span style="font-family: inherit;"><br /></span></p>
+    <p><span style="font-family: inherit;">Whether you are a long-time fan or discovering the author's work for the first time, this collection offers a complete gateway to enjoy <strong>high-quality Urdu novels online</strong> — anytime, anywhere.</span></p>
+</div>
+<ul class="unb-ul-list">
+        <li class="unb-list-row">
+            <span class="unb-num-badge">1.</span>
+            <h3 class="unb-novel-heading">Main Tara Tara Jagon Tery Naam By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1Ucc-J3BryRAqzGU1UbezaqSb2TUXHCDe" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Main Tara Tara Jagon Tery Naam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">2.</span>
+            <h3 class="unb-novel-heading">Main Tara Tara Jagon Tery Naam By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1Ucc-J3BryRAqzGU1UbezaqSb2TUXHCDe" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Main Tara Tara Jagon Tery Naam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">3.</span>
+            <h3 class="unb-novel-heading">Juzaam By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1t95YB_pbpVl6gFHPkZmH0LV9JC57nHfZ" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Juzaam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">4.</span>
+            <h3 class="unb-novel-heading">Sach Ki Jeet By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=184Z_xZvz-oTsF_8lPsiAigHZ1g6p2LDy" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Sach Ki Jeet By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">5.</span>
+            <h3 class="unb-novel-heading">Hun Badal Waar Baras We Dhola By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1iYVoAd2F7BAEJUTEdk9fKh4X9aTVGwkg" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Hun Badal Waar Baras We Dhola By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">6.</span>
+            <h3 class="unb-novel-heading">Safal Gar By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1KWWYIlUSvuHzljmI78jNcvhAcogMnBjh" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safal Gar By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">7.</span>
+            <h3 class="unb-novel-heading">Amawas Ka Chand By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1UT9XSlRJ26ARNNE96cwQ4GFGfZDYUZQl" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Amawas Ka Chand By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">8.</span>
+            <h3 class="unb-novel-heading">Sifalgar By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1ei_PB-jW-mztHfa3zcKaldrYeRDgJJK5" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Sifalgar By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">9.</span>
+            <h3 class="unb-novel-heading">Raqs E Junoon By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1rcwZsozI9Sup_S7CfOc6_edY-0qIcgc8" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Raqs E Junoon By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">10.</span>
+            <h3 class="unb-novel-heading">Jazzam By Bushra Saeed</h3>
+            
+        <a href="https://www.mediafire.com/download/negunnylggz/Jazzam+by+Bushra+Saeed.pdf" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Jazzam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">11.</span>
+            <h3 class="unb-novel-heading">Safal Gar Novel By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/file/d/1QsapJkJ9eEjJd2IABaLnKrPEWEBwkbcU/edit" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safal Gar Novel By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">12.</span>
+            <h3 class="unb-novel-heading">Raqse E Junoon Novel By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/file/d/1rn2jTWPK4Hj58KDOK2bDf1QMMGlCHgDe/view" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Raqse E Junoon Novel By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">13.</span>
+            <h3 class="unb-novel-heading">Amawas Ka Chand Novel By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1J1bivs4sqLVcUn7Z2YzMnoG2CCc11eek" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Amawas Ka Chand Novel By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">14.</span>
+            <h3 class="unb-novel-heading">Safal Gar Novel By Bushra Saeed Free</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1hgQAapY1pwLmPbhwf1-5eOg1ReO5QhvC" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safal Gar Novel By Bushra Saeed Free">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">15.</span>
+            <h3 class="unb-novel-heading">Jazzam Novel By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1qPCMOTLOwQu_Fpp8ZzAAnUgJcdSKxodi" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Jazzam Novel By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">16.</span>
+            <h3 class="unb-novel-heading">Hun Badal Waar Baras Dhola By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1eFdPdOXV_fSBm8Dm37RavRZi5_yu8IfS" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Hun Badal Waar Baras Dhola By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">17.</span>
+            <h3 class="unb-novel-heading">Main Tara Tara Jagoon Tere Naam By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1hwj_EnuD9WB6ZzvoEIxnv9oEOXKPKeCS" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Main Tara Tara Jagoon Tere Naam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">18.</span>
+            <h3 class="unb-novel-heading">Raqs E Junoon Novel By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1huO0QFp1I0wg_C0adjUE3E987wh_PGHF" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Raqs E Junoon Novel By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">19.</span>
+            <h3 class="unb-novel-heading">Raqs E Junoon Novel By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/file/d/1E0eOd758mot0eXfm6iATtDHCl_2xUICE/view?usp=drivesdk" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Raqs E Junoon Novel By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">20.</span>
+            <h3 class="unb-novel-heading">Safal Gar Novel By Bushra Saeed –</h3>
+            
+        <a href="https://drive.google.com/file/d/1QsapJkJ9eEjJd2IABaLnKrPEWEBwkbcU/edit" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safal Gar Novel By Bushra Saeed –">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">21.</span>
+            <h3 class="unb-novel-heading">Safal Gar By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/file/d/17o6tuyI-veovqOUsKNFdUPCVxc8qswoi/view?usp=drive_link" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safal Gar By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">22.</span>
+            <h3 class="unb-novel-heading">Hun Badal Waar Baras Dhola By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/file/d/17ZpwoQhGOIeu9HgvOgsXF24-tklh2aJb/view?usp=drive_link" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Hun Badal Waar Baras Dhola By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">23.</span>
+            <h3 class="unb-novel-heading">Mein Tara Tara Jagun Tere Naam By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/file/d/1AU_O9xJv5AtShlnYr8kNwWCAHk5XG9ah/view?usp=drive_link" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Mein Tara Tara Jagun Tere Naam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">24.</span>
+            <h3 class="unb-novel-heading">Amawas Ka Chand By Bushra Saeed</h3>
+            
+        <a href="http://www.mediafire.com/download/4k3t92s3whw2bkp/Amawas+Ka+Chand+By+Bushra+Saeed+urdunovelist.blogspot.com.pdf" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Amawas Ka Chand By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">25.</span>
+            <h3 class="unb-novel-heading">Jazam(Raqs E Junoon) By Bushra Saeed</h3>
+            
+        <a href="http://www.mediafire.com/download/to251a64w2drr69/Jazam%28Raqs+e+junoon%29+by+Bushra+Saeed.pdf" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Jazam(Raqs E Junoon) By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">26.</span>
+            <h3 class="unb-novel-heading">Jazzam By Bushra Saeed</h3>
+            
+        <a href="http://www.mediafire.com/?8xcm4l2jy1409pr" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Jazzam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">27.</span>
+            <h3 class="unb-novel-heading">Amawas Ka Chand By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1bIdLBAwBSJvqB3oqiw4BWAvoYFEy4R0c" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Amawas Ka Chand By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">28.</span>
+            <h3 class="unb-novel-heading">Hun Badal Waar Baras Dhola By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1JKvPyu0XiNSFSrmLDdI9oxxrXLHaAIQZ" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Hun Badal Waar Baras Dhola By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">29.</span>
+            <h3 class="unb-novel-heading">Mein Tara Tara Jagon Tere Naam By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1ijVTlqz0lFN1x9thKKCLlC8OLhIpz-Mz" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Mein Tara Tara Jagon Tere Naam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">30.</span>
+            <h3 class="unb-novel-heading">Nayi Rutain Naye Khawab By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1jXTnoMLzxKjMBxnlevQiBKUni25QmjuQ" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Nayi Rutain Naye Khawab By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">31.</span>
+            <h3 class="unb-novel-heading">Raqse E Junoon By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1Nb17zra7QeQE0Kqsak8y2hAxNwCI9ujQ" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Raqse E Junoon By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">32.</span>
+            <h3 class="unb-novel-heading">Safalgar By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1QsapJkJ9eEjJd2IABaLnKrPEWEBwkbcU" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safalgar By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">33.</span>
+            <h3 class="unb-novel-heading">Safalgar By Bushra Saeed Free</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1QsapJkJ9eEjJd2IABaLnKrPEWEBwkbcU" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safalgar By Bushra Saeed Free">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">34.</span>
+            <h3 class="unb-novel-heading">Safalgar By Bushra Saeed Free</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1QsapJkJ9eEjJd2IABaLnKrPEWEBwkbcU" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safalgar By Bushra Saeed Free">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">35.</span>
+            <h3 class="unb-novel-heading">Raqs-E-Junoon By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/file/d/1U-iqtCQlrXwgEOn2TLFUOyqcWMiVtNlo/view?usp=drivesdk" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Raqs-E-Junoon By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">36.</span>
+            <h3 class="unb-novel-heading">Hun Badal Waar Baras We Dhola By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1iYVoAd2F7BAEJUTEdk9fKh4X9aTVGwkg" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Hun Badal Waar Baras We Dhola By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">37.</span>
+            <h3 class="unb-novel-heading">Sifalgar By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1ei_PB-jW-mztHfa3zcKaldrYeRDgJJK5" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Sifalgar By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">38.</span>
+            <h3 class="unb-novel-heading">Hun Badal Waar Baras Dhola By Bushra Saeed</h3>
+            
+        <a href="https://www.mediafire.com/file/05f0hva7y9rebz5/Hun+Badal+War+Baras+Dhola+By+Bushra+Saeed+theurdunovel.com.pdf/file" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Hun Badal Waar Baras Dhola By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">39.</span>
+            <h3 class="unb-novel-heading">Main Tara Tara Jagoon By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=0B3TfYCh4eRMdbkJ2bHlzQWdIZHM" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Main Tara Tara Jagoon By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">40.</span>
+            <h3 class="unb-novel-heading">Safal Gar By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1KWWYIlUSvuHzljmI78jNcvhAcogMnBjh" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safal Gar By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">41.</span>
+            <h3 class="unb-novel-heading">Juzaam By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1t95YB_pbpVl6gFHPkZmH0LV9JC57nHfZ" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Juzaam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">42.</span>
+            <h3 class="unb-novel-heading">Sach Ki Jeet By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=184Z_xZvz-oTsF_8lPsiAigHZ1g6p2LDy" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Sach Ki Jeet By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">43.</span>
+            <h3 class="unb-novel-heading">Amawas Ka Chand By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1UT9XSlRJ26ARNNE96cwQ4GFGfZDYUZQl" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Amawas Ka Chand By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">44.</span>
+            <h3 class="unb-novel-heading">Raqs E Junoon By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1rcwZsozI9Sup_S7CfOc6_edY-0qIcgc8" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Raqs E Junoon By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">45.</span>
+            <h3 class="unb-novel-heading">Main Tara Tara Jagon Tery Naam By Bushra Saeed</h3>
+            
+        <a href="https://drive.google.com/uc?export=download&id=1Ucc-J3BryRAqzGU1UbezaqSb2TUXHCDe" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Main Tara Tara Jagon Tery Naam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">46.</span>
+            <h3 class="unb-novel-heading">Main Tara Tara Jagoon Tere Naam By Bushra Saeed</h3>
+            
+        <a href="http://www.mediafire.com/file/2dhyicdgsipg5sw/MTTJ_By_BS.pdf" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Main Tara Tara Jagoon Tere Naam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">47.</span>
+            <h3 class="unb-novel-heading">Hun Badal War Baras Dhola By Bushra Saeed</h3>
+            
+        <a href="https://www.mediafire.com/?z9qc112r27lnb29" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Hun Badal War Baras Dhola By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">48.</span>
+            <h3 class="unb-novel-heading">Safal Gar By Bushra Saeed</h3>
+            
+        <a href="https://www.mediafire.com/file/24mgdl7lorvpu49/Sifal+Gar+By+Bushra+Saeed.pdf/file" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Safal Gar By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">49.</span>
+            <h3 class="unb-novel-heading">Raqs E Junoon By Bushra Saeed</h3>
+            
+        <a href="https://www.mediafire.com/?wsiqy0rpius75bb" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Raqs E Junoon By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">50.</span>
+            <h3 class="unb-novel-heading">Amawas Ka Chand By Bushra Saeed</h3>
+            
+        <a href="http://www.mediafire.com/download/zp5tlbrbhbsiqbb/AKC.pdf" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Amawas Ka Chand By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li>
+        <li class="unb-list-row">
+            <span class="unb-num-badge">51.</span>
+            <h3 class="unb-novel-heading">Jazzam By Bushra Saeed</h3>
+            
+        <a href="https://www.mediafire.com/download/negunnylggz/Jazzam+by+Bushra+Saeed.pdf" class="unb-dl-btn" target="_blank" rel="nofollow" title="Download Jazzam By Bushra Saeed">
+            PDF 
+            <svg class="unb-svg-icon"><use href="#unb-arrow-icon"></use></svg>
+        </a>
+        </li></ul>
+<div class="unb-footer-section">
+    <div dir="rtl" style="text-align: right; margin-top: 40px; background: #fdfdfd; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+        <div style="text-align: center;">
+            <b><span style="font-size: large; color: #dc3545;">نوٹ :</span></b>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <span style="font-size: medium; line-height: 1.8;">اگر کسی ناول کا ڈاؤن لوڈ لنک کام نہ کرے تو براہِ کرم نیچے دیے گئے فارم کے ذریعے ہمیں اطلاع دیں، تاکہ ہم جلد از جلد اسے درست کر سکیں۔ آپ کے تعاون کا شکریہ۔</span>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 25px; margin-bottom: 20px;">
+        <a href="https://forms.gle/K3spbeeu6c7QM61u9" target="_blank" class="unb-report-btn">
+            Report Dead Link ⚠️
+        </a>
+    </div>
+</div>
+</div>
