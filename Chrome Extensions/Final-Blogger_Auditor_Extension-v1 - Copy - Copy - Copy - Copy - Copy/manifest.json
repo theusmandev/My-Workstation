@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Blogger Link Auditor Pro",
+  "version": "1.1",
+  "permissions": ["activeTab"],
+  "action": { "default_title": "Audit Links" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.blogger.com/*"], 
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["https://drive.google.com/*"]
+}

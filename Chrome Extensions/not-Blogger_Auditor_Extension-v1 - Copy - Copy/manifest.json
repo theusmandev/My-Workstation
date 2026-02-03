@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Blogger Link Auditor Pro",
+  "version": "1.3",
+  "description": "Instant Link Auditor for Blogger Editor",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.blogger.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": [
+    "https://drive.google.com/*"
+  ]
+}
