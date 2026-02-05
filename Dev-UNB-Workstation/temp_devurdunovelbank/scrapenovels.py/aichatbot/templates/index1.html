@@ -1,0 +1,169 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Novel Search</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #007bff; text-align: center; }
+        input { width: 70%; padding: 8px; margin: 5px; }
+        button { background: #007bff; color: white; padding: 8px 12px; border: none; cursor: pointer; }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 10px; border-bottom: 1px solid #ddd; display: flex; align-items: center; }
+        img { width: 50px; height: 50px; margin-right: 10px; border-radius: 5px; }
+        .autocomplete { border: 1px solid #ccc; background: white; position: absolute; width: 70%; }
+        .autocomplete div { padding: 8px; cursor: pointer; }
+        .autocomplete div:hover { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>Urdu Novel Search</h1>
+    <input type="text" id="searchQuery" placeholder="Enter novel name">
+    <div id="suggestions" class="autocomplete"></div>
+    <button onclick="searchNovel()">Search</button>
+    <ul id="results"></ul>
+
+    <script>
+        function searchNovel() {
+            let query = document.getElementById("searchQuery").value.trim();
+            if (!query) {
+                alert("Please enter a novel name.");
+                return;
+            }
+
+            fetch(`/search?query=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    let resultList = document.getElementById("results");
+                    resultList.innerHTML = "";
+
+                    if (data.length === 0) {
+                        resultList.innerHTML = `<li>No matching results found.</li>`;
+                        return;
+                    }
+
+                    data.forEach(novel => {
+                        let li = document.createElement("li");
+                        li.innerHTML = `
+                            <img src="${novel.image}" alt="Cover">
+                            <div>
+                                <b>${novel.title}</b> <br>
+                                ${novel.summary} <br>
+                                <a href="${novel.link}" target="_blank">Download</a>
+                            </div>
+                        `;
+                        resultList.appendChild(li);
+                    });
+                })
+                .catch(error => console.error("Error fetching data:", error));
+        }
+
+        document.getElementById("searchQuery").addEventListener("input", function() {
+            let query = this.value.trim();
+            if (query.length < 2) return;
+
+            fetch(`/autocomplete?query=${query}`)
+                .then(response => response.json())
+                .then(suggestions => {
+                    let suggestionBox = document.getElementById("suggestions");
+                    suggestionBox.innerHTML = "";
+                    suggestions.forEach(suggestion => {
+                        let div = document.createElement("div");
+                        div.textContent = suggestion;
+                        div.onclick = function() {
+                            document.getElementById("searchQuery").value = suggestion;
+                            suggestionBox.innerHTML = "";
+                        };
+                        suggestionBox.appendChild(div);
+                    });
+                });
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Novel Search</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #007bff; text-align: center; }
+        input { width: 70%; padding: 8px; margin: 5px; }
+        button { background: #007bff; color: white; padding: 8px 12px; border: none; cursor: pointer; }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 10px; border-bottom: 1px solid #ddd; }
+        .autocomplete { border: 1px solid #ccc; background: white; position: absolute; width: 70%; }
+        .autocomplete div { padding: 8px; cursor: pointer; }
+        .autocomplete div:hover { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>Urdu Novel Search</h1>
+    <input type="text" id="searchQuery" placeholder="Enter novel name">
+    <div id="suggestions" class="autocomplete"></div>
+    <button onclick="searchNovel()">Search</button>
+    <ul id="results"></ul>
+
+    <script>
+        function searchNovel() {
+            let query = document.getElementById("searchQuery").value.trim();
+            if (!query) {
+                alert("Please enter a novel name.");
+                return;
+            }
+
+            fetch(`/search?query=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    let resultList = document.getElementById("results");
+                    resultList.innerHTML = "";
+
+                    if (data.length === 0) {
+                        resultList.innerHTML = `<li>No matching results found.</li>`;
+                        return;
+                    }
+
+                    data.forEach(novel => {
+                        let li = document.createElement("li");
+                        li.innerHTML = `
+                            <b>${novel.title}</b> <br>
+                            <a href="${novel.link}" target="_blank">Download</a>
+                        `;
+                        resultList.appendChild(li);
+                    });
+                })
+                .catch(error => console.error("Error fetching data:", error));
+        }
+
+        document.getElementById("searchQuery").addEventListener("input", function() {
+            let query = this.value.trim();
+            if (query.length < 2) return;
+
+            fetch(`/autocomplete?query=${query}`)
+                .then(response => response.json())
+                .then(suggestions => {
+                    let suggestionBox = document.getElementById("suggestions");
+                    suggestionBox.innerHTML = "";
+                    suggestions.forEach(suggestion => {
+                        let div = document.createElement("div");
+                        div.textContent = suggestion;
+                        div.onclick = function() {
+                            document.getElementById("searchQuery").value = suggestion;
+                            suggestionBox.innerHTML = "";
+                        };
+                        suggestionBox.appendChild(div);
+                    });
+                });
+        });
+    </script>
+</body>
+</html>

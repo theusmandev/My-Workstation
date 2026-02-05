@@ -1,0 +1,177 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urdu Novel Search</title>
+    <script>
+        async function searchNovels() {
+            let query = document.getElementById("searchInput").value.trim();
+            if (!query) return;
+            let response = await fetch(`/search?query=${encodeURIComponent(query)}`);
+            let results = await response.json();
+            let resultDiv = document.getElementById("results");
+            resultDiv.innerHTML = results.length ? "" : "No results found";
+            results.forEach(novel => {
+                let a = document.createElement("a");
+                a.href = novel.link;
+                a.textContent = novel.title;
+                a.target = "_blank";
+                resultDiv.appendChild(a);
+                resultDiv.appendChild(document.createElement("br"));
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Search Urdu Novels</h1>
+    <input type="text" id="searchInput" oninput="searchNovels()" placeholder="Enter novel title">
+    <div id="results"></div>
+</body>
+</html> -->
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urdu Novel Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
+        <h1 class="text-2xl font-bold text-blue-600 mb-4">Search Urdu Novels</h1>
+        
+        <input type="text" id="searchInput" 
+               class="w-full p-2 border rounded mb-2" 
+               oninput="searchNovels()" 
+               placeholder="Enter novel title">
+        
+        <div id="results" class="mt-3 text-left"></div>
+    </div>
+
+    <script>
+        async function searchNovels() {
+            let query = document.getElementById("searchInput").value.trim();
+            let resultDiv = document.getElementById("results");
+            resultDiv.innerHTML = "";
+            
+            if (!query) return;
+            
+            let response = await fetch(`/search?query=${encodeURIComponent(query)}`);
+            let results = await response.json();
+            
+            if (results.length === 0) {
+                resultDiv.innerHTML = '<p class="text-red-500">No results found</p>';
+                return;
+            }
+            
+            results.forEach(novel => {
+                let a = document.createElement("a");
+                a.href = novel.link;
+                a.textContent = novel.title;
+                a.target = "_blank";
+                a.className = "block p-2 border-b hover:bg-gray-200";
+                resultDiv.appendChild(a);
+            });
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urdu Novel Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
+        <h1 class="text-2xl font-bold text-blue-600 mb-4">Search Urdu Novels</h1>
+        
+        <input type="text" id="searchInput" 
+               class="w-full p-2 border rounded mb-2" 
+               placeholder="Enter novel title">
+        
+        <button onclick="searchNovels()" class="w-full bg-blue-600 text-white p-2 rounded mb-2">Search</button>
+        
+        <div id="results" class="mt-3 text-left"></div>
+        
+        <button id="loadMore" onclick="loadMore()" class="hidden w-full bg-green-500 text-white p-2 rounded mt-3">Load More</button>
+    </div>
+
+    <script>
+        let results = [];
+        let page = 0;
+        let perPage = 5;
+
+        async function searchNovels() {
+            let query = document.getElementById("searchInput").value.trim();
+            let resultDiv = document.getElementById("results");
+            resultDiv.innerHTML = "";
+            document.getElementById("loadMore").classList.add("hidden");
+            
+            if (!query) return;
+            
+            let response = await fetch(`/search?query=${encodeURIComponent(query)}`);
+            results = await response.json();
+            page = 0;
+            displayResults();
+        }
+
+        function displayResults() {
+            let resultDiv = document.getElementById("results");
+            resultDiv.innerHTML = "";
+            let slice = results.slice(0, perPage);
+            
+            if (slice.length === 0) {
+                resultDiv.innerHTML = '<p class="text-red-500">No results found</p>';
+                return;
+            }
+            
+            slice.forEach(novel => {
+                let a = document.createElement("a");
+                a.href = novel.link;
+                a.textContent = novel.title;
+                a.target = "_blank";
+                a.className = "block p-2 border-b hover:bg-gray-200";
+                resultDiv.appendChild(a);
+            });
+            
+            document.getElementById("loadMore").classList.toggle("hidden", results.length <= perPage);
+        }
+
+        function loadMore() {
+            page++;
+            let start = page * perPage;
+            let more = results.slice(start, start + perPage);
+            
+            if (more.length === 0) {
+                document.getElementById("loadMore").classList.add("hidden");
+                return;
+            }
+            
+            let resultDiv = document.getElementById("results");
+            more.forEach(novel => {
+                let a = document.createElement("a");
+                a.href = novel.link;
+                a.textContent = novel.title;
+                a.target = "_blank";
+                a.className = "block p-2 border-b hover:bg-gray-200";
+                resultDiv.appendChild(a);
+            });
+            
+            document.getElementById("loadMore").classList.toggle("hidden", start + perPage >= results.length);
+        }
+    </script>
+</body>
+</html>

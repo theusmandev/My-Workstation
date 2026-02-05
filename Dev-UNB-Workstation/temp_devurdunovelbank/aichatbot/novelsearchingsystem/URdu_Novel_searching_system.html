@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Search System</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Search Container */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        #searchBox {
+            flex: 1;
+            padding: 12px 15px;
+            font-size: 1rem;
+            border: 2px solid #dfe6e9;
+            border-radius: 8px 0 0 8px;
+            outline: none;
+            transition: border-color 0.3s;
+            min-width: 200px;
+        }
+        #searchBox:focus {
+            border-color: #007bff;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        .mic-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #ff4747;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .mic-btn:hover {
+            background-color: #e63939;
+        }
+        .clear-btn {
+            background-color: #dc3545;
+        }
+        .clear-btn:hover {
+            background-color: #c82333;
+        }
+
+        /* Search History Dropdown */
+        #searchHistory {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            border: 1px solid #dfe6e9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            display: none;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .history-item {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .history-item:hover {
+            background-color: #f8f9fa;
+        }
+        .history-item:last-child {
+            border-bottom: none;
+        }
+        #clearHistory {
+            padding: 10px 15px;
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 0 0 8px 8px;
+        }
+        #clearHistory:hover {
+            background-color: #c82333;
+        }
+
+        /* Results Per Page Dropdown */
+        .results-per-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 10px auto;
+            max-width: 800px;
+        }
+        #resultsPerPage {
+            padding: 8px;
+            font-size: 1rem;
+            border: 2px solid #dfe6e9;
+            border-radius: 6px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        /* Loader */
+        #loading {
+            display: none;
+            margin: 20px auto;
+        }
+        .loader {
+            border: 5px solid #dfe6e9;
+            border-top: 5px solid #007bff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 0.8s ease-in-out infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Results and Favorites */
+        #results, #favorites {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .novel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .novel span {
+            flex: 1;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .novel a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .novel a:hover {
+            text-decoration: underline;
+        }
+        .copy-btn, .share-btn, .favorite-btn {
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .copy-btn {
+            background-color: #007bff;
+        }
+        .copy-btn:hover {
+            background-color: #0056b3;
+        }
+        .share-btn {
+            background-color: #28a745;
+        }
+        .share-btn:hover {
+            background-color: #218838;
+        }
+        .favorite-btn {
+            background-color: #ffcc00;
+            color: #333;
+        }
+        .favorite-btn.favorited {
+            background-color: #ff4444;
+            color: white;
+        }
+        .favorite-btn:hover {
+            background-color: #ffaa00;
+        }
+        .favorite-btn.favorited:hover {
+            background-color: #ff6666;
+        }
+
+        /* Favorites Section */
+        #favoritesSection {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        #favoritesToggle {
+            display: block;
+            margin: 0 auto 10px;
+            background-color: #ffcc00;
+            color: #333;
+        }
+        #favoritesToggle:hover {
+            background-color: #ffaa00;
+        }
+        #favorites {
+            display: none;
+        }
+        #favorites.active {
+            display: block;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            flex-wrap: wrap;
+        }
+        .pagination button {
+            padding: 10px 15px;
+            background-color: #dfe6e9;
+            color: #333;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .pagination button.active {
+            background-color: #007bff;
+            color: white;
+            pointer-events: none;
+        }
+        .pagination button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .pagination .ellipsis {
+            padding: 10px 15px;
+            color: #333;
+            background: none;
+            pointer-events: none;
+        }
+
+        /* Messages */
+        .error-message, .success-message, .search-time {
+            max-width: 800px;
+            margin: 10px auto;
+            font-size: 0.9rem;
+        }
+        .error-message {
+            color: #dc3545;
+        }
+        .success-message {
+            color: #28a745;
+        }
+        .search-time {
+            color: #7f8c8d;
+        }
+        .highlight {
+            background-color: #ffeaa7;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .search-container {
+                flex-direction: column;
+            }
+            #searchBox {
+                border-radius: 8px;
+                width: 100%;
+            }
+            button {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .mic-btn {
+                width: 50px;
+                height: 50px;
+            }
+            .novel {
+                flex-direction: column;
+                text-align: center;
+            }
+            .novel span {
+                white-space: normal;
+            }
+            .pagination button {
+                padding: 8px 12px;
+            }
+            #searchHistory {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Search for Novels</h2>
+    <div class="search-container">
+        <input aria-label="Search novels" id="searchBox" placeholder="Type or speak novel name..." type="text" />
+        <button onclick="searchNovel()">Search</button>
+        <button aria-label="Voice search" class="mic-btn" onclick="startVoiceSearch()">🎤</button>
+        <button class="clear-btn" onclick="clearSearch()">❌ Clear</button>
+        <div id="searchHistory"></div>
+    </div>
+    <div class="results-per-page">
+        <label for="resultsPerPage">Results per page:</label>
+        <select id="resultsPerPage" onchange="changeResultsPerPage()">
+            <option value="5">5</option>
+            <option selected value="10">10</option>
+            <option value="20">20</option>
+        </select>
+    </div>
+    <div class="loader" id="loading"></div>
+    <p id="resultCount"></p>
+    <p class="search-time" id="searchTime"></p>
+    <div id="results"></div>
+    <div class="pagination" id="pagination"></div>
+    <div id="favoritesSection">
+        <button id="favoritesToggle" onclick="toggleFavorites()">Show Favorites</button>
+        <div id="favorites"></div>
+    </div>
+    <p class="error-message" id="errorMessage"></p>
+    <p class="success-message" id="successMessage"></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
+    <script>
+        let novels = [];
+        let jsonUrl = "https://raw.githubusercontent.com/novels-sracks/neeeew/refs/heads/main/neww"; // REPLACE WITH YOUR ACTUAL GITHUB JSON URL
+        let fuse;
+        let searchResults = [];
+        let currentPage = 1;
+        let resultsPerPage = 10;
+
+        // Replace with your actual Google Apps Script URL after deployment
+        const googleScriptURL = "https://script.google.com/macros/s/AKfycbz3R0RUaYLgj9D6lroV5M6FdkwqFROpUELYFzsJhuXRdAVGqEDEl7Ibn-_wLgV5mWrn/exec";
+
+        function isOnline() {
+            return navigator.onLine;
+        }
+
+        function loadNovelData(maxRetries = 3, retryDelay = 1000) {
+            if (!isOnline()) {
+                document.getElementById("errorMessage").textContent = "No internet connection. Please check your network.";
+                return;
+            }
+
+            let retries = 0;
+
+            function attemptFetch() {
+                fetch(jsonUrl)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status} ${response.statusText}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (!Array.isArray(data)) {
+                            throw new Error("Invalid JSON format: Expected an array of objects.");
+                        }
+                        // Validate each item has Titles and Links
+                        const invalidItems = data.filter(item => !item.Titles || !item.Links);
+                        if (invalidItems.length > 0) {
+                            throw new Error("Invalid JSON data: Some items are missing Titles or Links.");
+                        }
+                        novels = data;
+                        fuse = new Fuse(novels, { keys: ['Titles'], threshold: 0.2, includeScore: true });
+                        displayFavorites(); // Display favorites on page load if any
+                        document.getElementById("errorMessage").textContent = ""; // Clear any previous errors
+                    })
+                    .catch(error => {
+                        console.error("Error loading JSON:", error);
+                        retries++;
+                        if (retries < maxRetries) {
+                            console.log(`Retrying... Attempt ${retries + 1} of ${maxRetries}`);
+                            setTimeout(attemptFetch, retryDelay);
+                        } else {
+                            document.getElementById("errorMessage").textContent = `Failed to load novel data: ${error.message}. Please check the JSON URL or try again later.`;
+                        }
+                    });
+            }
+
+            attemptFetch();
+        }
+
+        loadNovelData();
+
+        // Search History Functions
+        function saveSearchToHistory(query) {
+            if (!query) return;
+            let history = JSON.parse(localStorage.getItem("searchHistory") || "[]");
+            if (!history.includes(query)) {
+                history.unshift(query);
+                history = history.slice(0, 5);
+                localStorage.setItem("searchHistory", JSON.stringify(history));
+            }
+        }
+
+        function showSearchHistory() {
+            const historyDiv = document.getElementById("searchHistory");
+            const history = JSON.parse(localStorage.getItem("searchHistory") || "[]");
+            historyDiv.innerHTML = "";
+
+            if (history.length === 0) {
+                historyDiv.style.display = "none";
+                return;
+            }
+
+            history.forEach(query => {
+                const item = document.createElement("div");
+                item.classList.add("history-item");
+                item.textContent = query;
+                item.onclick = () => {
+                    document.getElementById("searchBox").value = query;
+                    searchNovel();
+                    historyDiv.style.display = "none";
+                };
+                historyDiv.appendChild(item);
+            });
+
+            const clearButton = document.createElement("div");
+            clearButton.id = "clearHistory";
+            clearButton.textContent = "Clear History";
+            clearButton.onclick = () => {
+                localStorage.removeItem("searchHistory");
+                historyDiv.style.display = "none";
+            };
+            historyDiv.appendChild(clearButton);
+
+            historyDiv.style.display = "block";
+        }
+
+        function hideSearchHistory() {
+            document.getElementById("searchHistory").style.display = "none";
+        }
+
+        // Favorites Functions
+        function toggleFavorite(title, link) {
+            let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+            const index = favorites.findIndex(f => f.Titles === title);
+            if (index === -1) {
+                favorites.push({ Titles: title, Links: link });
+            } else {
+                favorites.splice(index, 1);
+            }
+            localStorage.setItem("favorites", JSON.stringify(favorites));
+            displayResults(document.getElementById("searchBox").value.trim().toLowerCase()); // Refresh results
+            displayFavorites(); // Update favorites section
+        }
+
+        function isFavorited(title) {
+            const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+            return favorites.some(f => f.Titles === title);
+        }
+
+        function displayFavorites() {
+            const favoritesDiv = document.getElementById("favorites");
+            const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+            favoritesDiv.innerHTML = "";
+
+            if (favorites.length === 0) {
+                favoritesDiv.innerHTML = "<p>No favorites added yet.</p>";
+                return;
+            }
+
+            favorites.forEach(favorite => {
+                const div = document.createElement("div");
+                div.classList.add("novel");
+                div.innerHTML = `
+                    <span>${favorite.Titles}</span>
+                    <a href="${favorite.Links}" target="_blank" onclick="handleDownload(event, '${favorite.Links}')">📥 Download</a>
+                    <button class="copy-btn" onclick="copyToClipboard('${favorite.Links}')">Copy Link</button>
+                    <button class="share-btn" onclick="shareNovel('${favorite.Titles}', '${favorite.Links}')">🔗 Share</button>
+                    <button class="favorite-btn favorited" onclick="toggleFavorite('${favorite.Titles}', '${favorite.Links}')">❤️ Remove</button>
+                `;
+                favoritesDiv.appendChild(div);
+            });
+        }
+
+        function toggleFavorites() {
+            const favoritesDiv = document.getElementById("favorites");
+            const toggleButton = document.getElementById("favoritesToggle");
+            favoritesDiv.classList.toggle("active");
+            toggleButton.textContent = favoritesDiv.classList.contains("active") ? "Hide Favorites" : "Show Favorites";
+            if (favoritesDiv.classList.contains("active")) {
+                displayFavorites();
+            }
+        }
+
+        // Search Function
+        function searchNovel() {
+            let query = document.getElementById("searchBox").value.trim().toLowerCase();
+            let resultsDiv = document.getElementById("results");
+            let loadingDiv = document.getElementById("loading");
+            let errorMessage = document.getElementById("errorMessage");
+            let successMessage = document.getElementById("successMessage");
+            let searchTimeElement = document.getElementById("searchTime");
+
+            errorMessage.textContent = "";
+            successMessage.textContent = "";
+            searchTimeElement.textContent = "";
+
+            if (query === "") {
+                errorMessage.textContent = "Please enter a novel name to search!";
+                resultsDiv.innerHTML = "";
+                document.getElementById("pagination").innerHTML = "";
+                return;
+            }
+
+            if (!isOnline()) {
+                errorMessage.textContent = "No internet connection. Please check your network.";
+                return;
+            }
+
+            if (!fuse) {
+                errorMessage.textContent = "Novel data not loaded yet. Please try again.";
+                return;
+            }
+
+            resultsDiv.innerHTML = "<p style='color: gray;'>Searching for novels...</p>";
+            loadingDiv.style.display = "block";
+            currentPage = 1;
+
+            const startTime = new Date().getTime();
+
+            setTimeout(() => {
+                if (query === "all" || query === "all novels" || query === "sab" || query === "sab novels") {
+                    searchResults = novels;
+                } else {
+                    searchResults = fuse.search(query).map(result => result.item);
+                }
+
+                loadingDiv.style.display = "none";
+                updateResultCount(searchResults.length);
+
+                const endTime = new Date().getTime();
+                const timeTaken = (endTime - startTime) / 1000;
+                searchTimeElement.textContent = `Search completed in ${timeTaken.toFixed(2)} seconds.`;
+
+                if (searchResults.length === 0) {
+                    resultsDiv.innerHTML = "<p style='color: #dc3545;'>No novels found!</p>";
+                    document.getElementById("pagination").innerHTML = "";
+                } else {
+                    resultsDiv.innerHTML = "";
+                    displayResults(query);
+                    renderPagination();
+                    successMessage.textContent = "Search completed successfully!";
+                    saveSearchToGoogleSheet(query); // Save the search term and additional data
+                }
+                saveSearchToHistory(query);
+                hideSearchHistory();
+            }, 500);
+        }
+
+        function updateResultCount(count) {
+            document.getElementById("resultCount").textContent = `Total Novels Found: ${count}`;
+        }
+
+        function displayResults(query) {
+            let resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            const startIndex = (currentPage - 1) * resultsPerPage;
+            const endIndex = startIndex + resultsPerPage;
+            let paginatedResults = searchResults.slice(startIndex, endIndex);
+
+            paginatedResults.forEach(novel => {
+                let div = document.createElement("div");
+                div.classList.add("novel");
+
+                let highlightedTitle = novel.Titles.replace(
+                    new RegExp(query, "gi"),
+                    (match) => `<span class="highlight">${match}</span>`
+                );
+                const favorited = isFavorited(novel.Titles);
+                div.innerHTML = `
+                    <span>${highlightedTitle}</span>
+                    <a href="${novel.Links}" target="_blank" onclick="handleDownload(event, '${novel.Links}')">📥 Download</a>
+                    <button class="copy-btn" onclick="copyToClipboard('${novel.Links}')">Copy Link</button>
+                    <button class="share-btn" onclick="shareNovel('${novel.Titles}', '${novel.Links}')">🔗 Share</button>
+                    <button class="favorite-btn ${favorited ? 'favorited' : ''}" onclick="toggleFavorite('${novel.Titles}', '${novel.Links}')">${favorited ? '❤️ Remove' : '☆ Add to Favorites'}</button>
+                `;
+                resultsDiv.appendChild(div);
+            });
+        }
+
+        function renderPagination() {
+            const paginationDiv = document.getElementById("pagination");
+            paginationDiv.innerHTML = "";
+
+            const totalPages = Math.ceil(searchResults.length / resultsPerPage);
+
+            if (totalPages <= 1) return;
+
+            const prevButton = document.createElement("button");
+            prevButton.textContent = "Prev";
+            prevButton.disabled = currentPage === 1;
+            prevButton.onclick = () => changePage(currentPage - 1);
+            paginationDiv.appendChild(prevButton);
+
+            const maxVisiblePages = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+            if (endPage - startPage + 1 < maxVisiblePages) {
+                startPage = Math.max(1, endPage - maxVisiblePages + 1);
+            }
+
+            if (startPage > 1) {
+                const firstPageButton = document.createElement("button");
+                firstPageButton.textContent = "1";
+                firstPageButton.onclick = () => changePage(1);
+                paginationDiv.appendChild(firstPageButton);
+
+                if (startPage > 2) {
+                    const ellipsis = document.createElement("span");
+                    ellipsis.textContent = "...";
+                    ellipsis.classList.add("ellipsis");
+                    paginationDiv.appendChild(ellipsis);
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                const pageButton = document.createElement("button");
+                pageButton.textContent = i;
+                if (i === currentPage) pageButton.classList.add("active");
+                pageButton.onclick = () => changePage(i);
+                paginationDiv.appendChild(pageButton);
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    const ellipsis = document.createElement("span");
+                    ellipsis.textContent = "...";
+                    ellipsis.classList.add("ellipsis");
+                    paginationDiv.appendChild(ellipsis);
+                }
+
+                const lastPageButton = document.createElement("button");
+                lastPageButton.textContent = totalPages;
+                lastPageButton.onclick = () => changePage(totalPages);
+                paginationDiv.appendChild(lastPageButton);
+            }
+
+            const nextButton = document.createElement("button");
+            nextButton.textContent = "Next";
+            nextButton.disabled = currentPage === totalPages;
+            nextButton.onclick = () => changePage(currentPage + 1);
+            paginationDiv.appendChild(nextButton);
+        }
+
+        function changePage(page) {
+            currentPage = page;
+            displayResults(document.getElementById("searchBox").value.trim().toLowerCase());
+            renderPagination();
+        }
+
+        function changeResultsPerPage() {
+            resultsPerPage = parseInt(document.getElementById("resultsPerPage").value);
+            currentPage = 1;
+            displayResults(document.getElementById("searchBox").value.trim().toLowerCase());
+            renderPagination();
+        }
+
+        function shareNovel(title, link) {
+            const shareText = `Check out this novel: ${title}\nDownload Link: ${link}\n\nCourtesy of Urdu Novel Bank`;
+            if (navigator.share) {
+                navigator.share({ title, text: shareText, url: link })
+                    .then(() => console.log("Shared successfully!"))
+                    .catch((error) => console.error("Error sharing:", error));
+            } else {
+                navigator.clipboard.writeText(shareText)
+                    .then(() => alert("Link copied to clipboard! You can now share it manually. 📋"))
+                    .catch((error) => console.error("Failed to copy link:", error));
+            }
+        }
+
+        function handleDownload(event, link) {
+            event.preventDefault();
+            if (!isOnline()) {
+                alert("No internet connection. Please check your network.");
+                return;
+            }
+            // Allow Google Drive and Mediafire links to open directly
+            if (link.startsWith("https://drive.google.com") || link.startsWith("https://www.mediafire.com")) {
+                window.open(link, "_blank");
+                return;
+            }
+            // For other links, perform a HEAD check
+            fetch(link, { 
+                method: 'HEAD',
+                redirect: 'follow' // Follow redirects
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Download link is not accessible. Status: ${response.status}`);
+                    }
+                    window.open(link, "_blank");
+                })
+                .catch(error => {
+                    console.error("Download error:", error);
+                    alert("Failed to download. The link may be broken or inaccessible. Please try opening it directly.");
+                });
+        }
+
+        function startVoiceSearch() {
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = "en-US";
+            recognition.start();
+
+            document.getElementById("searchBox").placeholder = "Listening...";
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                document.getElementById("searchBox").value = transcript;
+                searchNovel();
+                document.getElementById("searchBox").placeholder = "Type or speak novel name...";
+            };
+
+            recognition.onerror = (event) => {
+                console.error("Voice recognition error:", event.error);
+                alert("Error occurred during voice recognition. Please try again.");
+                document.getElementById("searchBox").placeholder = "Type or speak novel name...";
+            };
+
+            recognition.onend = () => {
+                document.getElementById("searchBox").placeholder = "Type or speak novel name...";
+            };
+        }
+
+        function saveSearchToGoogleSheet(query) {
+            const timestamp = new Date().toISOString(); // Timestamp
+            const deviceType = navigator.userAgent.includes("Mobile") ? "Mobile" : "Desktop"; // Device Type
+            const userId = localStorage.getItem("userId") || crypto.randomUUID(); // Unique User ID
+            localStorage.setItem("userId", userId); // Save User ID to localStorage
+
+            // Get User Location (asynchronous)
+            let location = "Unknown";
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        location = `${position.coords.latitude}, ${position.coords.longitude}`;
+                        sendDataToSheet(query, timestamp, deviceType, userId, location); // Send data after getting location
+                    },
+                    () => {
+                        location = "Permission Denied";
+                        sendDataToSheet(query, timestamp, deviceType, userId, location); // Send data if permission denied
+                    },
+                    { timeout: 5000 } // Timeout after 5 seconds
+                );
+            } else {
+                sendDataToSheet(query, timestamp, deviceType, userId, location); // Send data if geolocation not supported
+            }
+        }
+
+        function sendDataToSheet(query, timestamp, deviceType, userId, location) {
+            const data = `search=${encodeURIComponent(query)}×tamp=${encodeURIComponent(timestamp)}&device=${encodeURIComponent(deviceType)}&userId=${encodeURIComponent(userId)}&location=${encodeURIComponent(location)}`;
+
+            fetch(googleScriptURL, {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: data,
+            })
+            .then(response => {
+                if (!response.ok) throw new Error("Failed to save search data.");
+                console.log("Search data saved successfully: " + query);
+            })
+            .catch(error => {
+                console.error("Error saving search:", error);
+                document.getElementById("errorMessage").textContent = "Failed to save search data to Google Sheet.";
+            });
+        }
+
+        function clearSearch() {
+            document.getElementById("searchBox").value = "";
+            document.getElementById("results").innerHTML = "";
+            document.getElementById("pagination").innerHTML = "";
+            document.getElementById("resultCount").textContent = "";
+            document.getElementById("errorMessage").textContent = "";
+            document.getElementById("successMessage").textContent = "";
+            document.getElementById("searchTime").textContent = "";
+            hideSearchHistory();
+        }
+
+        function copyToClipboard(link) {
+            navigator.clipboard.writeText(link)
+                .then(() => alert("Link copied to clipboard! 📋"))
+                .catch(error => {
+                    console.error("Failed to copy link:", error);
+                    alert("Failed to copy link. Please try again.");
+                });
+        }
+
+        // Event Listeners for Search History
+        document.getElementById("searchBox").addEventListener("focus", showSearchHistory);
+        document.getElementById("searchBox").addEventListener("blur", () => {
+            setTimeout(hideSearchHistory, 200);
+        });
+        document.getElementById("searchBox").addEventListener("input", () => {
+            if (!document.getElementById("searchBox").value) showSearchHistory();
+            else hideSearchHistory();
+        });
+    </script>
+</body>
+</html>
