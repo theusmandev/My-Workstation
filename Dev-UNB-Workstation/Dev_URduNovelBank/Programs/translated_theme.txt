@@ -1,0 +1,17 @@
+s(this).siblings("ul").removeClass("open").slideToggle(150):s(this).siblings("ul").addClass("open").slideToggle(150)})} ,"multitoggle"===o.format?multiTg():e.addClass ("dropdown"),!0==o.sticky&&e.css("position","fixed")})}}(jQuery),function(s){s(document).ready(function(){s ("#cssmenu").menumaker({format:"multitoggle"})})}(jQuery);
+//]]>
+</script> 
+<script>
+//<![CDATA[
+jQuery(document).ready(function(){var i=jQuery(window).width();function e(){jQuery("#sidebar-sticky").stick_in_parent({parent:"#wrapper",offset_top:70})}i<768?jQuery("#sidebar-sticky").trigger("sticky_kit:det ach"):e(),jQuery(window).resize(function(){(i=jQuery(window).width())<768?jQuery("#sidebar-sticky").trigger("sticky_kit:detach "):e()})});
+//]]>
+</script> 
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+
+    <b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;index&quot;}'>
+	&lt;/div&gt;
+	</b:if> 
+
+  &lt;!--</body>--&gt;&lt;/body&gt;
+</html>
