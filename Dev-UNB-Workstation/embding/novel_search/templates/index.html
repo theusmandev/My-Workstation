@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Urdu Novel Search</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input[type="text"] { width: 300px; padding: 10px; font-size: 16px; }
+        button { padding: 10px 20px; font-size: 16px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; }
+        a { text-decoration: none; color: blue; }
+    </style>
+</head>
+<body>
+    <h1>📚 Urdu Novel Finder</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Enter novel name" value="{{ query }}">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+        <h2>🔗 Found Links:</h2>
+        <ul>
+        {% for link in results %}
+            <li><a href="{{ link }}" target="_blank">{{ link }}</a></li>
+        {% endfor %}
+        </ul>
+    {% elif query %}
+        <p>No links found for <strong>{{ query }}</strong>.</p>
+    {% endif %}
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Urdu Novel Finder</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input[type="text"] { width: 300px; padding: 10px; font-size: 16px; }
+        button { padding: 10px 20px; font-size: 16px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; }
+        a { text-decoration: none; color: blue; }
+    </style>
+</head>
+<body>
+    <h1>📚 Urdu Novel Finder</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Enter novel name" value="{{ query }}">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+        <h2>🔗 Found Links:</h2>
+        <ul>
+        {% for link in results %}
+            <li><a href="{{ link }}" target="_blank">{{ link }}</a></li>
+        {% endfor %}
+        </ul>
+    {% elif query %}
+        <p>No download links found for <strong>{{ query }}</strong>.</p>
+    {% endif %}
+</body>
+</html>
