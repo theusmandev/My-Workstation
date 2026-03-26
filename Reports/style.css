@@ -1,0 +1,9 @@
+
+                body { font-family: Arial; margin: 40px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+                h1, h2, h3 { color: #2c3e50; }
+                .table-responsive { width: 100%; border-collapse: collapse; margin-bottom: 20px; overflow-x: auto; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .responsive-iframe { width: 100%; height: 500px; border: none; margin-bottom: 20px; }
+                hr { border: 1px solid #ccc; margin: 40px 0; }
+            

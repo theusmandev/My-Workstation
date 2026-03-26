@@ -1,22 +1,3 @@
-# import pandas as pd
-
-# # Read the Excel file
-# input_file = r"D:\workstation\writers\Samra Bukhari.xlsx"# Replace with your input Excel file name
-# df = pd.read_excel(input_file)
-
-# # Sort the DataFrame by the 'Titles' column
-# df_sorted = df.sort_values(by='Titles', ascending=True)
-
-# # Save the sorted DataFrame to a new Excel file
-# output_file = r"D:\workstation\writers\wahiba fatima_unique_sorted.xlsx"# Name of the new sorted Excel file
-# df_sorted.to_excel(output_file, index=False)
-
-# print(f"Sorted Excel file saved as {output_file}")
-
-
-
-
-
 
 
 
@@ -25,7 +6,7 @@ import pandas as pd
 import os
 
 # Input file path
-input_file = r"D:\unb-workstation\writers\Tahir Javed Mughal.xlsx"
+input_file = r"E:\unb-workstation\Writers All Novels\Uploadings\General thelibrarypk Workstation\Excel files\Asia mirza.xlsx"
 df = pd.read_excel(input_file)
 
 # Sort the DataFrame by the 'Titles' column

@@ -2,8 +2,7 @@ import pandas as pd
 import os
 
 # Input JSON file path
-json_file_path = r"D:\unb-workstation\ready\readyready.json"
-
+json_file_path = r"E:\UNB-py-workstation\No upload github\readyready.json"
 # Input search name
 search_name = "aymal raza"  # Case-insensitive search term
 
@@ -18,7 +17,7 @@ try:
         print(f"No rows found containing '{search_name}'.")
     else:
         # Output Excel file path (using search name)
-        excel_output_path = fr"D:\unb-workstation\writers\{search_name}.xlsx"
+        excel_output_path = fr"E:\New folder\{search_name}.xlsx"
 
         # Check if output file already exists
         if os.path.exists(excel_output_path):
