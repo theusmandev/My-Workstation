@@ -1,5 +1,4 @@
 
-
 import qrcode
 import qrcode.image.svg
 from pathlib import Path
@@ -22,23 +21,23 @@ class UltimateQRGenerator:
             file_name = self.extract_name(link)
             
             # --- RESOLUTION SETTINGS ---
-            # box_size=40 ka matlab hai bohat high quality image.
-            # version=1 chote links (like yours) ke liye best aur readable hai.
+            # box_size=40 high quality 
+            # version=1 best for short links
             qr = qrcode.QRCode(
                 version=1,
                 error_correction=qrcode.constants.ERROR_CORRECT_H,
-                box_size=40,  # <--- YAHAN SE RESOLUTION CHANGE KAREIN
+                box_size=40,  # <--- change resolution here
                 border=4,
             )
             qr.add_data(link)
             qr.make(fit=True)
 
-            # 1. PNG Generate karna (High Resolution)
+            # 1. PNG Generater  (High Resolution)
             img_png = qr.make_image(fill_color="black", back_color="white")
             png_path = self.save_path / f"{file_name}.png"
             img_png.save(png_path)
 
-            # 2. SVG Generate karna (Professional Vector for Printing)
+            # 2. SVG Generater(Professional Vector for Printing)
             factory = qrcode.image.svg.SvgPathImage
             img_svg = qr.make_image(image_factory=factory)
             svg_path = self.save_path / f"{file_name}.svg"
@@ -52,21 +51,14 @@ class UltimateQRGenerator:
             print(f"Error: {e}")
 
 # --- CONFIGURATION ---
-# Apna folder path yahan dalein
+
 SAVE_DIR = r"E:\My-Workstation\Coding\Python\Projects\qr code generator\QR CODES"
-# Aapka link
-TARGET_LINK = "https://cutdentalcare.com/"
+# Put your link here
+TARGET_LINK = "https://maddentalcare.com/"
 
 if __name__ == "__main__":
     generator = UltimateQRGenerator(SAVE_DIR)
     generator.generate_dual(TARGET_LINK)
-
-
-
-
-
-
-
 
 
 
