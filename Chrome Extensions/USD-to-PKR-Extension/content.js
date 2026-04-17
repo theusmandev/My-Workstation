@@ -1,34 +1,47 @@
 const rate = 280; 
 
+// 1. PKR ke liye choti si CSS style add karna
+const style = document.createElement('style');
+style.innerHTML = `
+  .pkr-small {
+    font-size: 0.65em !important; /* Asli price se 35% chota */
+    font-weight: normal !important;
+    color: #e0e0e0; /* Thora halka rang (Greyish white) */
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+`;
+document.head.appendChild(style);
+
 function convertUSDtoPKR() {
-    // 1. Pehle observer ko rok den taake infinite loop na bane
     observer.disconnect();
 
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-    let node;
+    // AdSense ke un elements ko pakarna jahan prices hoti hain
+    const elements = document.querySelectorAll('div, span, p');
 
-    while (node = walker.nextNode()) {
-        let text = node.nodeValue;
-        
-        // Check: Agar "$" hai aur "Rs" pehle se maujood NAHI hai
-        if (text.includes('$') && !text.includes('Rs')) {
-            let newText = text.replace(/\$([\d,]+\.?\d*)/g, (match, p1) => {
+    elements.forEach(el => {
+        // Sirf un elements ko cherna jin mein $ ho aur PKR pehle se na ho
+        // Aur ye bhi check karna ke element ke andar mazeed tags na hon (taake design na tootay)
+        if (el.innerText.includes('$') && !el.innerHTML.includes('pkr-small') && el.children.length === 0) {
+            
+            let originalText = el.innerText;
+            let newHTML = originalText.replace(/\$([\d,]+\.?\d*)/g, (match, p1) => {
                 let usd = parseFloat(p1.replace(/,/g, ''));
                 if (!isNaN(usd)) {
                     let pkr = (usd * rate).toLocaleString('en-PK', { maximumFractionDigits: 0 });
-                    // Thora sa safai se dikhane ke liye format: $10 (Rs 2,800)
-                    return `${match} (Rs ${pkr})`;
+                    // Styled span return karna
+                    return `${match} <span class="pkr-small">(Rs ${pkr})</span>`;
                 }
                 return match;
             });
-            
-            if (newText !== text) {
-                node.nodeValue = newText;
+
+            if (newHTML !== originalText) {
+                el.innerHTML = newHTML;
             }
         }
-    }
+    });
 
-    // 2. Kaam khatam hone ke baad observer ko dobara on kar den
     startObserver();
 }
 
@@ -40,5 +53,5 @@ function startObserver() {
     observer.observe(document.body, { childList: true, subtree: true });
 }
 
-// First run
+// Initial run
 convertUSDtoPKR();
