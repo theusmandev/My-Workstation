@@ -1,60 +1,56 @@
 const rate = 280; 
 
-// CSS update: Ab hum PKR ko block banayenge taake wo neeche wali line par aaye
+// CSS Styles
 const style = document.createElement('style');
 style.innerHTML = `
-  .pkr-container {
-    display: block !important; /* Agli line par shift karne ke liye */
-    font-size: 0.5em !important; /* Size mazeed chota kiya */
-    color: #e2e8f0 !important;
-    font-weight: normal !important;
-    line-height: 1.2 !important;
+  .pkr-label {
+    display: block !important;
+    font-size: 0.55em !important;
+    color: rgba(255, 255, 255, 0.85) !important; /* Halka safaid rang */
+    font-weight: 400 !important;
     margin-top: 2px !important;
-    opacity: 0.9;
   }
-  /* Card ke main numbers ko jagah dene ke liye */
-  ins.adsbygoogle, .ads-stats-card {
-    overflow: visible !important;
+  /* Agat light theme ho to uske liye color fix */
+  [data-theme="light"] .pkr-label {
+    color: #5f6368 !important;
   }
 `;
 document.head.appendChild(style);
 
 function convertUSDtoPKR() {
+    // 1. Observer ko temporarily rokna
     observer.disconnect();
 
-    // Sirf un elements ko target karna jo text dikhate hain
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-    let nodes = [];
-    let node;
-    while (node = walker.nextNode()) nodes.push(node);
+    // 2. Sirf un elements ko dhoondna jin mein $ ho
+    const elements = document.querySelectorAll('span, div, b, h2');
 
-    nodes.forEach(textNode => {
-        let text = textNode.nodeValue;
-        
-        // Check: "$" ho aur "Rs" pehle se na ho
-        if (text.includes('$') && !text.includes('Rs')) {
-            let parent = textNode.parentElement;
-            
-            // AdSense ke nested elements ko handle karne ke liye replace logic
-            let newHTML = text.replace(/\$([\d,]+\.?\d*)/g, (match, p1) => {
-                let usd = parseFloat(p1.replace(/,/g, ''));
-                if (!isNaN(usd)) {
-                    let pkr = (usd * rate).toLocaleString('en-PK', { maximumFractionDigits: 0 });
-                    // Bracket hata diye taake mazeed saaf lage
-                    return `${match}<span class="pkr-container">Rs ${pkr}</span>`;
+    elements.forEach(el => {
+        // Check 1: Kya is mein $ hai?
+        // Check 2: Kya hum isay pehle convert kar chuke hain? (Stamp check)
+        // Check 3: Kya is ke andar mazeed tags to nahi? (Sirf final value pakarna)
+        if (el.innerText.includes('$') && 
+            !el.hasAttribute('data-converted') && 
+            el.children.length === 0) {
+
+            let originalText = el.innerText;
+            let match = originalText.match(/\$([\d,]+\.?\d*)/);
+
+            if (match) {
+                let usdValue = parseFloat(match[1].replace(/,/g, ''));
+                if (!isNaN(usdValue)) {
+                    let pkrValue = (usdValue * rate).toLocaleString('en-PK', { maximumFractionDigits: 0 });
+                    
+                    // Element ke andar naya HTML set karna
+                    el.innerHTML = `${match[0]} <span class="pkr-label">Rs ${pkrValue}</span>`;
+                    
+                    // STAMP LAGANA: Taake ye dobara convert na ho
+                    el.setAttribute('data-converted', 'true');
                 }
-                return match;
-            });
-
-            if (newHTML !== text) {
-                // Text node ko HTML span se replace karna
-                let span = document.createElement('span');
-                span.innerHTML = newHTML;
-                textNode.replaceWith(span);
             }
         }
     });
 
+    // 3. Observer dobara chalu karna
     startObserver();
 }
 
@@ -66,5 +62,5 @@ function startObserver() {
     observer.observe(document.body, { childList: true, subtree: true });
 }
 
-// Initial Run
+// Pehli dafa chalane ke liye
 convertUSDtoPKR();
