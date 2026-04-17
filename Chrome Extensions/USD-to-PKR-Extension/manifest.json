@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "AdSense PKR Converter",
+  "version": "1.0",
+  "description": "Converts USD to PKR on AdSense",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://adsense.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
