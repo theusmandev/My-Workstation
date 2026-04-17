@@ -1,60 +1,67 @@
-const rate = 280; 
 
-// CSS Styles
+
+const rate = 278; 
+
+// 1. Choti aur saaf styling
 const style = document.createElement('style');
 style.innerHTML = `
   .pkr-label {
-    display: block !important;
-    font-size: 0.55em !important;
-    color: rgba(255, 255, 255, 0.85) !important; /* Halka safaid rang */
-    font-weight: 400 !important;
-    margin-top: 2px !important;
-  }
-  /* Agat light theme ho to uske liye color fix */
-  [data-theme="light"] .pkr-label {
-    color: #5f6368 !important;
+    font-size: 0.6em !important;
+    color: #B7C7DA !important; /* Gold color taake blue background par saaf dikhe */
+    font-weight: normal !important;
+    margin-left: 5px !important;
+    display: inline-block !important;
   }
 `;
 document.head.appendChild(style);
 
 function convertUSDtoPKR() {
-    // 1. Observer ko temporarily rokna
     observer.disconnect();
 
-    // 2. Sirf un elements ko dhoondna jin mein $ ho
-    const elements = document.querySelectorAll('span, div, b, h2');
+    // TreeWalker sirf text ko dhoondta hai, HTML tags ko nahi cherta
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+    let node;
+    const nodesToReplace = [];
 
-    elements.forEach(el => {
-        // Check 1: Kya is mein $ hai?
-        // Check 2: Kya hum isay pehle convert kar chuke hain? (Stamp check)
-        // Check 3: Kya is ke andar mazeed tags to nahi? (Sirf final value pakarna)
-        if (el.innerText.includes('$') && 
-            !el.hasAttribute('data-converted') && 
-            el.children.length === 0) {
+    while (node = walker.nextNode()) {
+        let text = node.nodeValue;
+        // Check: Agar $ hai, PKR pehle se nahi hai, aur parent element pehle se converted nahi hai
+        if (text.includes('$') && !text.includes('Rs') && !node.parentElement.hasAttribute('data-converted')) {
+            nodesToReplace.push(node);
+        }
+    }
 
-            let originalText = el.innerText;
-            let match = originalText.match(/\$([\d,]+\.?\d*)/);
+    nodesToReplace.forEach(textNode => {
+        let text = textNode.nodeValue;
+        let parent = textNode.parentElement;
 
-            if (match) {
-                let usdValue = parseFloat(match[1].replace(/,/g, ''));
-                if (!isNaN(usdValue)) {
-                    let pkrValue = (usdValue * rate).toLocaleString('en-PK', { maximumFractionDigits: 0 });
-                    
-                    // Element ke andar naya HTML set karna
-                    el.innerHTML = `${match[0]} <span class="pkr-label">Rs ${pkrValue}</span>`;
-                    
-                    // STAMP LAGANA: Taake ye dobara convert na ho
-                    el.setAttribute('data-converted', 'true');
-                }
+        let newHTML = text.replace(/\$([\d,]+\.?\d*)/g, (match, p1) => {
+            let usd = parseFloat(p1.replace(/,/g, ''));
+            if (!isNaN(usd)) {
+                let pkr = (usd * rate).toLocaleString('en-PK', { maximumFractionDigits: 0 });
+                return `${match} <span class="pkr-label">Rs ${pkr}</span>`;
+            }
+            return match;
+        });
+
+        if (newHTML !== text) {
+            // Naya element banayen taake asli layout na tootay
+            let span = document.createElement('span');
+            span.innerHTML = newHTML;
+            span.setAttribute('data-converted', 'true');
+            
+            // Text node ko replace karen
+            if (textNode.parentNode) {
+                textNode.replaceWith(span);
             }
         }
     });
 
-    // 3. Observer dobara chalu karna
     startObserver();
 }
 
-const observer = new MutationObserver(() => {
+const observer = new MutationObserver((mutations) => {
+    // Sirf tab chalana jab waqayi koi naya content aaye
     convertUSDtoPKR();
 });
 
@@ -62,5 +69,5 @@ function startObserver() {
     observer.observe(document.body, { childList: true, subtree: true });
 }
 
-// Pehli dafa chalane ke liye
+// Start
 convertUSDtoPKR();
